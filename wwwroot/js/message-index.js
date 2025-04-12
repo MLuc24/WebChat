@@ -74,6 +74,8 @@ function initializeSignalR() {
     state.connection.on('ReceiveMessage', handleNewMessage);
     state.connection.on('UserOnline', handleUserOnline);
     state.connection.on('UserOffline', handleUserOffline);
+    state.connection.on('FriendRequestReceived', handleFriendRequestReceived);
+    state.connection.on('FriendRequestUpdated', handleFriendRequestUpdated);
 
     // Start connection
     state.connection.start()
@@ -132,6 +134,12 @@ function appendConversationItem(conversation) {
         ? '<span class="position-absolute bottom-0 end-0 bg-success rounded-circle p-1 border border-white" style="width: 12px; height: 12px;"></span>'
         : '';
 
+    // Add friend status indicator
+    let friendStatus = '';
+    if (conversation.isFriend) {
+        friendStatus = '<span class="badge bg-info rounded-circle p-1 ms-1" title="Bạn bè"><i class="bi bi-people-fill"></i></span>';
+    }
+
     const conversationItem = document.createElement('div');
     conversationItem.className = 'conversation-item d-flex align-items-center px-3 py-2';
     conversationItem.dataset.userId = conversation.userId;
@@ -143,7 +151,10 @@ function appendConversationItem(conversation) {
         </div>
         <div class="flex-grow-1 overflow-hidden">
             <div class="d-flex justify-content-between align-items-center">
-                <h6 class="mb-0 conversation-name">${conversation.fullName || conversation.username}</h6>
+                <h6 class="mb-0 conversation-name d-flex align-items-center">
+                    ${conversation.fullName || conversation.username}
+                    ${friendStatus}
+                </h6>
                 <small class="text-muted ms-2">${formattedDate}</small>
             </div>
             <div class="d-flex justify-content-between align-items-center">
@@ -245,27 +256,207 @@ async function searchUsers() {
                 ? '<span class="position-absolute bottom-0 end-0 bg-success rounded-circle p-1 border border-white" style="width: 10px; height: 10px;"></span>'
                 : '';
 
+            // Friend status indicators and actions
+            let friendStatus = '';
+            let friendButtons = '';
+
+            if (user.isFriend) {
+                friendStatus = '<span class="badge bg-info ms-2">Bạn bè</span>';
+            } else if (user.hasSentRequest) {
+                friendStatus = '<span class="badge bg-warning ms-2">Đã gửi lời mời</span>';
+            } else if (user.hasReceivedRequest) {
+                friendStatus = '<span class="badge bg-warning ms-2">Đã nhận lời mời</span>';
+                friendButtons = `
+                    <button class="btn btn-sm btn-success ms-2 btn-accept-friend" data-user-id="${user.userId}">
+                        <i class="bi bi-check"></i> Chấp nhận
+                    </button>
+                    <button class="btn btn-sm btn-danger ms-1 btn-reject-friend" data-user-id="${user.userId}">
+                        <i class="bi bi-x"></i> Từ chối
+                    </button>
+                `;
+            } else {
+                friendButtons = `
+                    <button class="btn btn-sm btn-outline-primary ms-2 btn-add-friend" data-user-id="${user.userId}">
+                        <i class="bi bi-person-plus"></i> Kết bạn
+                    </button>
+                `;
+            }
+
             userItem.innerHTML = `
                 <div class="me-3 position-relative">
                     <img src="${user.profilePicture || '/images/default-avatar.png'}" alt="${user.fullName || user.username}"
                         class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
                     ${onlineIndicator}
                 </div>
-                <div>
-                    <h6 class="mb-0">${user.fullName || user.username}</h6>
+                <div class="flex-grow-1">
+                    <div class="d-flex align-items-center">
+                        <h6 class="mb-0">${user.fullName || user.username}</h6>
+                        ${friendStatus}
+                    </div>
                     <small class="text-muted">${user.department || ''}</small>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-sm btn-primary btn-message" data-user-id="${user.userId}">
+                        <i class="bi bi-chat"></i> Nhắn tin
+                    </button>
+                    ${friendButtons}
                 </div>
             `;
 
-            userItem.addEventListener('click', () => {
-                startConversation(user.userId);
+            // Add event listeners for the buttons
+            userItem.addEventListener('click', (e) => {
+                // Prevent default behavior only if clicking on a button
+                if (e.target.closest('button')) {
+                    e.preventDefault();
+                }
             });
 
             elements.usersList.appendChild(userItem);
         });
+
+        // Add event listeners for friend actions
+        document.querySelectorAll('.btn-add-friend').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const userId = btn.getAttribute('data-user-id');
+                sendFriendRequest(userId);
+            });
+        });
+
+        document.querySelectorAll('.btn-accept-friend').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const userId = btn.getAttribute('data-user-id');
+                respondToFriendRequest(userId, true);
+            });
+        });
+
+        document.querySelectorAll('.btn-reject-friend').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const userId = btn.getAttribute('data-user-id');
+                respondToFriendRequest(userId, false);
+            });
+        });
+
+        document.querySelectorAll('.btn-message').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const userId = btn.getAttribute('data-user-id');
+                startConversation(userId);
+            });
+        });
+
     } catch (error) {
         console.error('Error searching users:', error);
         elements.usersList.innerHTML = '<div class="text-center p-3 text-danger">Lỗi khi tìm kiếm người dùng</div>';
+    }
+}
+
+/**
+ * Send a friend request to a user
+ */
+async function sendFriendRequest(userId) {
+    try {
+        const response = await fetch('/Friend/SendRequest', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ recipientId: userId })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // Update UI to reflect the sent request
+            const button = document.querySelector(`.btn-add-friend[data-user-id="${userId}"]`);
+            if (button) {
+                const parent = button.closest('.actions');
+                if (parent) {
+                    parent.innerHTML = `<span class="badge bg-warning">Đã gửi lời mời</span>`;
+                }
+            }
+
+            // Show success toast
+            showToast('Đã gửi lời mời kết bạn');
+        } else {
+            showToast('Không thể gửi lời mời kết bạn: ' + result.message);
+        }
+    } catch (error) {
+        console.error('Error sending friend request:', error);
+        showToast('Có lỗi xảy ra khi gửi lời mời kết bạn');
+    }
+}
+
+/**
+ * Respond to a friend request
+ */
+async function respondToFriendRequest(userId, accept) {
+    try {
+        const response = await fetch('/Friend/RespondToRequest', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                requesterId: userId,
+                accept: accept
+            })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // Update UI to reflect the response
+            const buttons = document.querySelectorAll(`.btn-accept-friend[data-user-id="${userId}"], .btn-reject-friend[data-user-id="${userId}"]`);
+            buttons.forEach(button => {
+                const parent = button.closest('.actions');
+                if (parent) {
+                    if (accept) {
+                        parent.innerHTML = `
+                            <span class="badge bg-info">Bạn bè</span>
+                            <button class="btn btn-sm btn-primary ms-2 btn-message" data-user-id="${userId}">
+                                <i class="bi bi-chat"></i> Nhắn tin
+                            </button>
+                        `;
+
+                        // Re-add event listener for message button
+                        parent.querySelector('.btn-message').addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            startConversation(userId);
+                        });
+                    } else {
+                        parent.innerHTML = `
+                            <button class="btn btn-sm btn-outline-primary ms-2 btn-add-friend" data-user-id="${userId}">
+                                <i class="bi bi-person-plus"></i> Kết bạn
+                            </button>
+                            <button class="btn btn-sm btn-primary btn-message" data-user-id="${userId}">
+                                <i class="bi bi-chat"></i> Nhắn tin
+                            </button>
+                        `;
+
+                        // Re-add event listeners
+                        parent.querySelector('.btn-add-friend').addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            sendFriendRequest(userId);
+                        });
+                        parent.querySelector('.btn-message').addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            startConversation(userId);
+                        });
+                    }
+                }
+            });
+
+            // Show success toast
+            showToast(accept ? 'Đã chấp nhận lời mời kết bạn' : 'Đã từ chối lời mời kết bạn');
+        } else {
+            showToast('Không thể xử lý lời mời kết bạn: ' + result.message);
+        }
+    } catch (error) {
+        console.error('Error responding to friend request:', error);
+        showToast('Có lỗi xảy ra khi xử lý lời mời kết bạn');
     }
 }
 
@@ -342,6 +533,100 @@ function handleUserOffline(userId) {
 }
 
 /**
+ * Handle receiving a friend request via SignalR
+ */
+function handleFriendRequestReceived(request) {
+    showToast(`Bạn có lời mời kết bạn mới từ ${request.requesterName}`);
+
+    // Update UI if user is in the search results
+    const userItem = document.querySelector(`.list-group-item[data-user-id="${request.requesterId}"]`);
+    if (userItem) {
+        const statusContainer = userItem.querySelector('.actions');
+        if (statusContainer) {
+            statusContainer.innerHTML = `
+                <button class="btn btn-sm btn-success ms-2 btn-accept-friend" data-user-id="${request.requesterId}">
+                    <i class="bi bi-check"></i> Chấp nhận
+                </button>
+                <button class="btn btn-sm btn-danger ms-1 btn-reject-friend" data-user-id="${request.requesterId}">
+                    <i class="bi bi-x"></i> Từ chối
+                </button>
+            `;
+
+            // Add event listeners
+            statusContainer.querySelector('.btn-accept-friend').addEventListener('click', (e) => {
+                e.stopPropagation();
+                respondToFriendRequest(request.requesterId, true);
+            });
+
+            statusContainer.querySelector('.btn-reject-friend').addEventListener('click', (e) => {
+                e.stopPropagation();
+                respondToFriendRequest(request.requesterId, false);
+            });
+        }
+    }
+}
+
+/**
+ * Handle friend request status update
+ */
+function handleFriendRequestUpdated(update) {
+    if (update.status === 'Accepted') {
+        showToast(`${update.userName} đã chấp nhận lời mời kết bạn của bạn`);
+
+        // Update UI if user is in the search results
+        const userItem = document.querySelector(`.list-group-item[data-user-id="${update.userId}"]`);
+        if (userItem) {
+            const statusContainer = userItem.querySelector('.actions');
+            if (statusContainer) {
+                statusContainer.innerHTML = `
+                    <span class="badge bg-info">Bạn bè</span>
+                    <button class="btn btn-sm btn-primary ms-2 btn-message" data-user-id="${update.userId}">
+                        <i class="bi bi-chat"></i> Nhắn tin
+                    </button>
+                `;
+
+                // Add event listener for message button
+                statusContainer.querySelector('.btn-message').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    startConversation(update.userId);
+                });
+            }
+        }
+
+        // Reload conversations in case this was an existing conversation
+        loadConversations();
+    } else if (update.status === 'Rejected') {
+        showToast(`${update.userName} đã từ chối lời mời kết bạn của bạn`);
+
+        // Update UI if user is in the search results
+        const userItem = document.querySelector(`.list-group-item[data-user-id="${update.userId}"]`);
+        if (userItem) {
+            const statusContainer = userItem.querySelector('.actions');
+            if (statusContainer) {
+                statusContainer.innerHTML = `
+                    <button class="btn btn-sm btn-outline-primary ms-2 btn-add-friend" data-user-id="${update.userId}">
+                        <i class="bi bi-person-plus"></i> Kết bạn
+                    </button>
+                    <button class="btn btn-sm btn-primary btn-message" data-user-id="${update.userId}">
+                        <i class="bi bi-chat"></i> Nhắn tin
+                    </button>
+                `;
+
+                // Add event listeners
+                statusContainer.querySelector('.btn-add-friend').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    sendFriendRequest(update.userId);
+                });
+                statusContainer.querySelector('.btn-message').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    startConversation(update.userId);
+                });
+            }
+        }
+    }
+}
+
+/**
  * Play message notification sound
  */
 function playMessageSound() {
@@ -372,6 +657,47 @@ function formatConversationDate(date) {
     } else {
         return date.toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric', year: 'numeric' });
     }
+}
+
+/**
+ * Show toast message
+ */
+function showToast(message) {
+    // Create toast container if it doesn't exist
+    let toastContainer = document.getElementById('toast-container');
+    if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.id = 'toast-container';
+        toastContainer.className = 'position-fixed bottom-0 end-0 p-3';
+        toastContainer.style.zIndex = '9999';
+        document.body.appendChild(toastContainer);
+    }
+
+    // Create toast element
+    const toastId = 'toast-' + Date.now();
+    const toast = document.createElement('div');
+    toast.id = toastId;
+    toast.className = 'toast show';
+    toast.role = 'alert';
+    toast.ariaLive = 'assertive';
+    toast.ariaAtomic = 'true';
+    toast.innerHTML = `
+        <div class="toast-header">
+            <strong class="me-auto">Thông báo</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">${message}</div>
+    `;
+
+    toastContainer.appendChild(toast);
+
+    // Auto hide after 3 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            toast.remove();
+        }, 300);
+    }, 3000);
 }
 
 /**

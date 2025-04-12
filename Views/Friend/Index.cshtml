@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Friends Management";
+}
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bold"><i class="bi bi-people-fill me-2"></i>My Friends</h2>
+                <button class="btn btn-primary" id="findFriendsBtn">
+                    <i class="bi bi-person-plus me-2"></i>Find Friends
+                </button>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Friend Requests Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="bi bi-envelope me-2"></i>Friend Requests</h5>
+                    <span class="badge bg-primary" id="requestCount">0</span>
+                </div>
+                <div class="card-body p-0">
+                    <div class="list-group list-group-flush" id="friendRequestsList">
+                        <!-- Friend requests will be loaded here -->
+                        <div class="text-center p-4" id="noRequestsMessage">
+                            <p class="text-muted mb-0"><i class="bi bi-inbox me-2"></i>No pending friend requests</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Friends List Section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="bi bi-people me-2"></i>My Friends</h5>
+                    <div class="input-group input-group-sm" style="max-width: 300px;">
+                        <input type="text" class="form-control" id="searchFriends" placeholder="Search friends...">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <div class="list-group list-group-flush" id="friendsList">
+                        <!-- Friends will be loaded here -->
+                        <div class="text-center p-4" id="loadingFriends">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 d-none" id="noFriendsMessage">
+                            <p class="text-muted mb-0"><i class="bi bi-emoji-neutral me-2"></i>You don't have any friends yet</p>
+                            <button class="btn btn-outline-primary btn-sm mt-3" id="findFriendsBtnAlt">
+                                <i class="bi bi-person-plus me-2"></i>Find Friends
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Find Friends Modal -->
+<div class="modal fade" id="findFriendsModal" tabindex="-1" aria-labelledby="findFriendsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="findFriendsModalLabel">Find Friends</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchUsers" placeholder="Search by name, email or department...">
+                        <button class="btn btn-outline-secondary" type="button" id="searchUsersBtn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="searchResults" class="list-group">
+                    <!-- Search results will be displayed here -->
+                    <div class="text-center p-3 text-muted" id="initialSearchMessage">
+                        <i class="bi bi-search fs-4"></i>
+                        <p class="mb-0">Search for users to add as friends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- User Details Modal -->
+<div class="modal fade" id="userDetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userDetailsTitle">User Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="userDetailsContent">
+                <!-- User details will be loaded here -->
+                <div class="text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/friend-management.js" asp-append-version="true"></script>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/friend-management.css" asp-append-version="true" />
+}

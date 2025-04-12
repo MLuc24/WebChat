@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lo+CK7xdkogcpLWHbpGbJ0UYR0ZTEA0OdPKwqrofU6Y=",
+  "Hash": "2buQ4fBdfoi6Khv3TSW0VYvjpua4SlzfZztCbaVm7aM=",
   "Source": "WeChat",
   "BasePath": "_content/WeChat",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9weume1z72",
-      "Integrity": "6URvZpzC5ttV8/QQsjIWZCh2NlNuk/+YKB7hqDJRzUc=",
+      "Fingerprint": "yryr5au6nw",
+      "Integrity": "MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\conversation.css"
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\event.css"
+    },
+    {
+      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\friend-management.css",
+      "SourceId": "WeChat",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Web nâng cao\\WeChat\\wwwroot\\",
+      "BasePath": "_content/WeChat",
+      "RelativePath": "css/friend-management#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "czh2dfxx9r",
+      "Integrity": "eB9ljyM4AV7yUoS82ctYcex/hF3kXb+4A8wHZIPrYhg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\friend-management.css"
     },
     {
       "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\home.css",
@@ -283,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1fa0znjq0y",
-      "Integrity": "vaNO7+XhT1Yhnj+DOKn09Tt4RpL40u88rYSnw6ZTXds=",
+      "Fingerprint": "1uy85inj7x",
+      "Integrity": "p8AVvOGDemql/2J9efjyR+WiCaERbgaor4ts6C5kxP0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\conversation.js"
@@ -304,11 +325,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "78wvfqeoxm",
-      "Integrity": "56ut62DiWdAG1mPzrACjhS4QGcHORdRrzWlMCJc5dFY=",
+      "Fingerprint": "x8607od9ih",
+      "Integrity": "XwnDv6XKE7+t2g5g0Qxm+P9G2/7QXl4HrRRD0HXk/uw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\event.js"
+    },
+    {
+      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\friend-management.js",
+      "SourceId": "WeChat",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Web nâng cao\\WeChat\\wwwroot\\",
+      "BasePath": "_content/WeChat",
+      "RelativePath": "js/friend-management#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2ds72otb24",
+      "Integrity": "Vr3LBq3VdhdHfehnU9kcpRdsTHcvDfcXHxBWLOECNyE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\friend-management.js"
     },
     {
       "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\home.js",
@@ -325,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q0nmbncp4z",
-      "Integrity": "9jrouznaokK6ODq42m7pf9f8u/h0INQ5xiVW7zLvZ+g=",
+      "Fingerprint": "418xp2mrfo",
+      "Integrity": "6MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\home.js"
@@ -346,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "otm3unv9r9",
-      "Integrity": "TGBaLcSy2bhnXt7rvXLmsLYipL2vija3NToKetGJMKI=",
+      "Fingerprint": "jhh8pgs3iv",
+      "Integrity": "eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\layout.js"
@@ -367,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r6y2vxm4dq",
-      "Integrity": "kxx1RGqxJ+hYS5Aj8tbdfeUDS7mtbhM/b1LB0mvJRD8=",
+      "Fingerprint": "4wh8z9z182",
+      "Integrity": "lEPEKGS8HW9VSO8yF0nA2Gsgabo6tQHCyjP2TUdpPYY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\message-index.js"
@@ -409,8 +451,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vmfm1m4hpw",
-      "Integrity": "pzGLW0JFEEZIALTSlgMoYClvgzNpjj0WrodXOTT10fk=",
+      "Fingerprint": "tleofoxumy",
+      "Integrity": "8b4ryTjhNf0/khk2lMnaUPsrZ2m12rpnYMuA+FmYUaM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\subscription-management.js"
@@ -430,8 +472,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ct36k1aym6",
-      "Integrity": "ME+nhxFbFVCq5FLdJXi2WpQJJZg0Yk+09JzQMQv4ihk=",
+      "Fingerprint": "91ncjaetxz",
+      "Integrity": "nXoHpusYK5wsfS8AahDDtK49F39eMhD2GnXyR5+afY4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\user-management.js"
@@ -451,8 +493,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xv19q8ntda",
-      "Integrity": "zZui5qjXAb4bq5CfoOUR2cPnfh8/8BIuLlRFyyMzopc=",
+      "Fingerprint": "lkth4yc09y",
+      "Integrity": "C0Q9lK8bC9ShmcEOu0qQcju86cFYqIfrzhKk6a/ZleY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\user-subscriptions.js"
@@ -472,8 +514,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mpyigms19s",
-      "Integrity": "xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=",
+      "Fingerprint": "ozu22stjof",
+      "Integrity": "ZMvmWDSU4zY1Z29EQGm5Mubfz/YxF4hiReGqx84o4tA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
@@ -514,8 +556,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bpk8xqwxhs",
-      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
@@ -556,8 +598,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ve6x09088i",
-      "Integrity": "SZ2mKaD4A+b+HIvttwl+TvLFnVy8o8/X40j+EKVwyvY=",
+      "Fingerprint": "gjcw7pocpk",
+      "Integrity": "hA1uBYAPgKq7OVoXF7sqU9NtylyP0K7AJn0a4zQcTbg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
@@ -598,8 +640,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9b9oa1qrmt",
-      "Integrity": "22wR6QTidoeiRZXp6zkRQyMSUb/FB+Av11jqmZJF6uU=",
+      "Fingerprint": "6l4ir0ityv",
+      "Integrity": "ukKL5IDSyNoXFyp0wkgXeBpBITyM7JsCE6Dp96H1vI8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
@@ -640,8 +682,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "agp80tu62r",
-      "Integrity": "JtktgiuQAd+AXerCnPMrHCDz1h5AtkH5tobvpuG7xZ4=",
+      "Fingerprint": "nakmwdwsxp",
+      "Integrity": "P4Ski6RrsG4nxKfPqaVoyRMoesl9UzArmfT+4fLqKHY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
@@ -682,8 +724,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "unj9p35syc",
-      "Integrity": "ysBT/JYxH9gcMnwxT4+MB4sPxOx/JMg9wi77FA13T9A=",
+      "Fingerprint": "5p029spbuu",
+      "Integrity": "96ayIUEnpKr7n5BIsFK5vJ3qXMXFgvRl9/CBcHs6/Ts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
@@ -724,8 +766,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q2ku51ktnl",
-      "Integrity": "3vUJkZSpKL/zG7x6GNvDjs0TxYUo9zMt6dAc8hp9CVo=",
+      "Fingerprint": "e6q6xbwqzk",
+      "Integrity": "+ugQREUkP4Wnp1VX2L2lvw0Q2mgKYvYAZr1c2or+ysM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
@@ -766,8 +808,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "n1oizzvkh6",
-      "Integrity": "O6lb2kXarGgVw4/RDD42yYPhZIwREthThQFKGmD+3j0=",
+      "Fingerprint": "dy6jgresuo",
+      "Integrity": "9eX2dpELXvYs+6il2MHwf5OOPVOZjxVK1b1GWgL0B0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
@@ -808,8 +850,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7na4sro3qu",
-      "Integrity": "4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY=",
+      "Fingerprint": "mk8rdyw69w",
+      "Integrity": "Jtl65EICD4ds6dQZbx1ongvMXj8D127HCg5XRBXXYGw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
@@ -850,8 +892,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f8imaxxbri",
-      "Integrity": "z0OApR88UEocYXTXHU7Ueycaiib9XbDUmel9Gx0gbx4=",
+      "Fingerprint": "z7kmom2977",
+      "Integrity": "359CMPAICGkV+zve4A4HJMha3bwqTFTjl+QC1KJK5DQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
@@ -892,8 +934,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0wve5yxp74",
-      "Integrity": "8NXw3kF49FkQVPMdjnGDqoXXRU0TwzsLfCGbK9U8gnk=",
+      "Fingerprint": "97yrjpyf9r",
+      "Integrity": "G0PQCDL7ETO6rITRlBIHDKvvSuJFn5p6h+WmbPX5xr4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
@@ -934,8 +976,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "npxfuf8dg6",
-      "Integrity": "a5KlgysZ4fQXw4rzIvXDHErFDPeHRSLccP7kX6HuvSQ=",
+      "Fingerprint": "y53cy5s2zj",
+      "Integrity": "BnHmEJpgor1n0UuwNdXG2VhHdV1r9MibuqBVHsgp9a8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
@@ -976,8 +1018,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tey0rigmnh",
-      "Integrity": "NbFZxZLmBVNLzb/7B0WdFfb6+8jXHGX6XY190uwgbec=",
+      "Fingerprint": "z9shlbduue",
+      "Integrity": "mcVOHRq7FsWaycSfboGsTpzuQZ3cIOR/GDHYxL6q2Yg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
@@ -1018,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "16095smhkz",
-      "Integrity": "5+ExmMkiaI3keYQRLhNibJ5ZXnNuWRbwrXOAZoTXMFg=",
+      "Fingerprint": "2yn17lgxub",
+      "Integrity": "ekoF4YNq4OUU4BoZ6FG2LTKD68LJvW49arNgykHOZfM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
@@ -1060,8 +1102,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b4skse8du6",
-      "Integrity": "peAGH8Gu/ZL9VnbUGSMN69Ji5MxwbvOb53gDXU2cPaQ=",
+      "Fingerprint": "ophe14yye5",
+      "Integrity": "1N1aPW6sTYexHfJCcDS4iElpPdWahP2Fr+Um56w0PjI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
@@ -1102,8 +1144,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u3xrusw2ol",
-      "Integrity": "Wi5ZuFSHLfx6dlEgjvW3BY9TC/1NqdBjj+XFifSSqN4=",
+      "Fingerprint": "ik6i2hrs65",
+      "Integrity": "wseUsl7uipUzPYc/DBMMTMFA7hBTcxpw29RKOxLzXSc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
@@ -1144,8 +1186,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l2av4jpuoj",
-      "Integrity": "vQTf4d3WJi9vmWQNA4kJnjoedgEhMFXFDEMXqtHtgzk=",
+      "Fingerprint": "f6zq8v6eb3",
+      "Integrity": "l/hyCcHXdGwW6cO0xfobuAMZk3Nh8dsRdWwdaeSn9qo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
@@ -1186,8 +1228,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "25iw1kog22",
-      "Integrity": "KuvCVS19rfTjoLgMyDDCdOkRRlhNrY4psEM4uezts2M=",
+      "Fingerprint": "89qbw8ngem",
+      "Integrity": "rAnWnVnzChxAAi8NS+Ilr1mE7Sj+do+X/DqyilNsznM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
@@ -1228,8 +1270,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m39kt2b5c9",
-      "Integrity": "EuDXUJYKnfZuO8dSLN0f5iVbVasz36AROuAU3NJ3JBo=",
+      "Fingerprint": "n5w6o92d9r",
+      "Integrity": "SySIctW5IQsq8JoYGrNJU4ZilHaieJru5P0+8vTcfDA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
@@ -1270,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "um2aeqy4ik",
-      "Integrity": "Kj4irQWPwfSb5NFeos/h0IroI5/nIg0HtAjQ+w4v6TE=",
+      "Fingerprint": "jqwzsa9uv6",
+      "Integrity": "hVv0IJy8sIv1uIlVQOHnZFNAGprmLfDV+x0anYPmxYU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
@@ -1312,8 +1354,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "o4kw7cc6tf",
-      "Integrity": "6IStRQerBchYSw6J2GWTOWGOnDRrWXmaG0r6nCwN5s4=",
+      "Fingerprint": "1piudyfv7h",
+      "Integrity": "JV8zLOxqX3ENLwiQX8lCiDY3TvQzbeibDAsdYtalZ4w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
@@ -1354,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zwph15dxgs",
-      "Integrity": "c4Ll6eSIg6Eothk8pCWAF8aE923EvtU11pqjBy+NjNM=",
+      "Fingerprint": "4908xmbfjr",
+      "Integrity": "uAMYHAQlaHq1buKLwrk7FF4qxvcLWntS2/DpdKucfmU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
@@ -1417,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fwhahm2icz",
-      "Integrity": "H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=",
+      "Fingerprint": "7s2n0ol71w",
+      "Integrity": "KSI/3xxCrCexCupdzQJRP1B6Iqg+2NA+X2u38cQdqq8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
@@ -1438,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dd6z7egasc",
-      "Integrity": "/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=",
+      "Fingerprint": "ehgnz7f14e",
+      "Integrity": "zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
@@ -1543,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pzqfkb6aqo",
-      "Integrity": "m0l81WDPiG7CcG7CDsTuZzvcGvyFmrQY5DLIxx3aRGw=",
+      "Fingerprint": "6d0lkjaslc",
+      "Integrity": "5qqb5VxQ2t2a6Zx/neW5uppLLvaGn4nn0NdYp6g8Lyg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
@@ -1564,8 +1606,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b7iojwaux1",
-      "Integrity": "JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA=",
+      "Fingerprint": "l1zq2mitth",
+      "Integrity": "6e0N+WJiVKBeTitK1GKSwPi3rbdPpLtuqaiitZjeD2w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
@@ -1606,8 +1648,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "47otxtyo56",
-      "Integrity": "wJQaJ0XynBE2fq6CexXXhxKu7fstVmQc7V2MHNTo+WQ=",
+      "Fingerprint": "03hjc8e09r",
+      "Integrity": "xJbBMLGhYbXlPrrrddrSVmduyF6KEtbxEsYxw7hYZV4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
@@ -1627,8 +1669,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4v8eqarkd7",
-      "Integrity": "YJa7W8EiQdQpkk93iGEjjnLSUWRpRJbSfzfURh1kxz4=",
+      "Fingerprint": "48y08845bh",
+      "Integrity": "RFWFWIIPsjB4DucR4jqwxTWw13ZmtI+s6tVR2LJmZXk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
@@ -1669,8 +1711,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cqu3aupeo3",
-      "Integrity": "rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=",
+      "Fingerprint": "49hvrsqvxt",
+      "Integrity": "6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
@@ -1690,8 +1732,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m3i9f6419i",
-      "Integrity": "4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg=",
+      "Fingerprint": "nyhhepaqjg",
+      "Integrity": "0ZjG1tA5FCDiN+Hz20Ig+vfNbt8IyQGbpG3VJzGGMEw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
@@ -1928,12 +1970,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\profiles\\3bad70fd-e194-4737-9440-5465f70f79e4_Ảnh chụp màn hình 2023-03-13 134243.png"
     },
     {
-      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png",
+      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg",
       "SourceId": "WeChat",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Web nâng cao\\WeChat\\wwwroot\\",
       "BasePath": "_content/WeChat",
-      "RelativePath": "uploads/profiles/aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322#[.{fingerprint}]?.png",
+      "RelativePath": "uploads/profiles/9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1942,11 +1984,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2q9iwjxiaf",
-      "Integrity": "ut2yd9Jptx0rxxg9XuhdDMWZkAHPQc6lcoO92cs1Bjo=",
+      "Fingerprint": "jnws33pgbq",
+      "Integrity": "sQzf1qSTe3KhEXm0ZfFWGAxirOtMfHuDhJicAB89KUo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\profiles\\9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg"
     },
     {
       "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\f0eb237e-3ce2-45ca-8717-12bff6d11bdb_Ảnh chụp màn hình 2023-03-10 214243.png",
@@ -1993,51 +2035,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/conversation.9weume1z72.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\conversation.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3844"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6URvZpzC5ttV8/QQsjIWZCh2NlNuk/+YKB7hqDJRzUc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:05:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9weume1z72"
-        },
-        {
-          "Name": "label",
-          "Value": "css/conversation.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6URvZpzC5ttV8/QQsjIWZCh2NlNuk/+YKB7hqDJRzUc="
-        }
-      ]
-    },
-    {
       "Route": "css/conversation.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\conversation.css",
       "Selectors": [],
@@ -2048,7 +2045,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3844"
+          "Value": "5205"
         },
         {
           "Name": "Content-Type",
@@ -2056,11 +2053,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6URvZpzC5ttV8/QQsjIWZCh2NlNuk/+YKB7hqDJRzUc=\""
+          "Value": "\"MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:05:35 GMT"
+          "Value": "Sat, 12 Apr 2025 12:53:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2070,7 +2067,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6URvZpzC5ttV8/QQsjIWZCh2NlNuk/+YKB7hqDJRzUc="
+          "Value": "sha256-MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk="
+        }
+      ]
+    },
+    {
+      "Route": "css/conversation.yryr5au6nw.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\conversation.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 12:53:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yryr5au6nw"
+        },
+        {
+          "Name": "label",
+          "Value": "css/conversation.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk="
         }
       ]
     },
@@ -2097,7 +2139,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 02:54:51 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2134,7 +2176,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 02:54:51 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2153,6 +2195,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-vN00UYqcz+HpclKbVdvhnZDim1S/hr/fLtrcuanlKGA="
+        }
+      ]
+    },
+    {
+      "Route": "css/friend-management.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\friend-management.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eB9ljyM4AV7yUoS82ctYcex/hF3kXb+4A8wHZIPrYhg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eB9ljyM4AV7yUoS82ctYcex/hF3kXb+4A8wHZIPrYhg="
+        }
+      ]
+    },
+    {
+      "Route": "css/friend-management.czh2dfxx9r.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\friend-management.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eB9ljyM4AV7yUoS82ctYcex/hF3kXb+4A8wHZIPrYhg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "czh2dfxx9r"
+        },
+        {
+          "Name": "label",
+          "Value": "css/friend-management.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eB9ljyM4AV7yUoS82ctYcex/hF3kXb+4A8wHZIPrYhg="
         }
       ]
     },
@@ -2179,7 +2303,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 01:51:47 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2216,7 +2340,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 01:51:47 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2261,7 +2385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:39:02 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2298,7 +2422,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:39:02 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2343,7 +2467,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:10:17 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2380,7 +2504,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:10:17 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2425,7 +2549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2470,7 +2594,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2507,7 +2631,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 08:42:50 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2544,7 +2668,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 08:42:50 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2589,7 +2713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2634,7 +2758,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2671,7 +2795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Mar 2023 06:40:41 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2716,7 +2840,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Mar 2023 06:40:41 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2753,7 +2877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 28 Oct 2023 10:17:16 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2798,7 +2922,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 28 Oct 2023 10:17:16 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2813,7 +2937,7 @@
       ]
     },
     {
-      "Route": "js/conversation.1fa0znjq0y.js",
+      "Route": "js/conversation.1uy85inj7x.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\conversation.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2823,7 +2947,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41201"
+          "Value": "46459"
         },
         {
           "Name": "Content-Type",
@@ -2831,11 +2955,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vaNO7+XhT1Yhnj+DOKn09Tt4RpL40u88rYSnw6ZTXds=\""
+          "Value": "\"p8AVvOGDemql/2J9efjyR+WiCaERbgaor4ts6C5kxP0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:05:35 GMT"
+          "Value": "Sat, 12 Apr 2025 12:53:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2845,7 +2969,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1fa0znjq0y"
+          "Value": "1uy85inj7x"
         },
         {
           "Name": "label",
@@ -2853,7 +2977,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vaNO7+XhT1Yhnj+DOKn09Tt4RpL40u88rYSnw6ZTXds="
+          "Value": "sha256-p8AVvOGDemql/2J9efjyR+WiCaERbgaor4ts6C5kxP0="
         }
       ]
     },
@@ -2868,7 +2992,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41201"
+          "Value": "46459"
         },
         {
           "Name": "Content-Type",
@@ -2876,11 +3000,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vaNO7+XhT1Yhnj+DOKn09Tt4RpL40u88rYSnw6ZTXds=\""
+          "Value": "\"p8AVvOGDemql/2J9efjyR+WiCaERbgaor4ts6C5kxP0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:05:35 GMT"
+          "Value": "Sat, 12 Apr 2025 12:53:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2890,52 +3014,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vaNO7+XhT1Yhnj+DOKn09Tt4RpL40u88rYSnw6ZTXds="
-        }
-      ]
-    },
-    {
-      "Route": "js/event.78wvfqeoxm.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24333"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"56ut62DiWdAG1mPzrACjhS4QGcHORdRrzWlMCJc5dFY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 02:54:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "78wvfqeoxm"
-        },
-        {
-          "Name": "label",
-          "Value": "js/event.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-56ut62DiWdAG1mPzrACjhS4QGcHORdRrzWlMCJc5dFY="
+          "Value": "sha256-p8AVvOGDemql/2J9efjyR+WiCaERbgaor4ts6C5kxP0="
         }
       ]
     },
@@ -2950,7 +3029,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24333"
+          "Value": "24997"
         },
         {
           "Name": "Content-Type",
@@ -2958,11 +3037,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"56ut62DiWdAG1mPzrACjhS4QGcHORdRrzWlMCJc5dFY=\""
+          "Value": "\"XwnDv6XKE7+t2g5g0Qxm+P9G2/7QXl4HrRRD0HXk/uw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 02:54:51 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2972,7 +3051,179 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-56ut62DiWdAG1mPzrACjhS4QGcHORdRrzWlMCJc5dFY="
+          "Value": "sha256-XwnDv6XKE7+t2g5g0Qxm+P9G2/7QXl4HrRRD0HXk/uw="
+        }
+      ]
+    },
+    {
+      "Route": "js/event.x8607od9ih.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XwnDv6XKE7+t2g5g0Qxm+P9G2/7QXl4HrRRD0HXk/uw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x8607od9ih"
+        },
+        {
+          "Name": "label",
+          "Value": "js/event.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XwnDv6XKE7+t2g5g0Qxm+P9G2/7QXl4HrRRD0HXk/uw="
+        }
+      ]
+    },
+    {
+      "Route": "js/friend-management.2ds72otb24.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\friend-management.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vr3LBq3VdhdHfehnU9kcpRdsTHcvDfcXHxBWLOECNyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 13:11:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2ds72otb24"
+        },
+        {
+          "Name": "label",
+          "Value": "js/friend-management.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vr3LBq3VdhdHfehnU9kcpRdsTHcvDfcXHxBWLOECNyE="
+        }
+      ]
+    },
+    {
+      "Route": "js/friend-management.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\friend-management.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vr3LBq3VdhdHfehnU9kcpRdsTHcvDfcXHxBWLOECNyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 13:11:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vr3LBq3VdhdHfehnU9kcpRdsTHcvDfcXHxBWLOECNyE="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.418xp2mrfo.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "418xp2mrfo"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4="
         }
       ]
     },
@@ -2987,7 +3238,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24668"
+          "Value": "25304"
         },
         {
           "Name": "Content-Type",
@@ -2995,11 +3246,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9jrouznaokK6ODq42m7pf9f8u/h0INQ5xiVW7zLvZ+g=\""
+          "Value": "\"6MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:10:35 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3009,13 +3260,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9jrouznaokK6ODq42m7pf9f8u/h0INQ5xiVW7zLvZ+g="
+          "Value": "sha256-6MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4="
         }
       ]
     },
     {
-      "Route": "js/home.q0nmbncp4z.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\home.js",
+      "Route": "js/layout.jhh8pgs3iv.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\layout.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3024,7 +3275,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24668"
+          "Value": "15872"
         },
         {
           "Name": "Content-Type",
@@ -3032,11 +3283,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9jrouznaokK6ODq42m7pf9f8u/h0INQ5xiVW7zLvZ+g=\""
+          "Value": "\"eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:10:35 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3046,15 +3297,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q0nmbncp4z"
+          "Value": "jhh8pgs3iv"
         },
         {
           "Name": "label",
-          "Value": "js/home.js"
+          "Value": "js/layout.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9jrouznaokK6ODq42m7pf9f8u/h0INQ5xiVW7zLvZ+g="
+          "Value": "sha256-eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A="
         }
       ]
     },
@@ -3069,7 +3320,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15475"
+          "Value": "15872"
         },
         {
           "Name": "Content-Type",
@@ -3077,11 +3328,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TGBaLcSy2bhnXt7rvXLmsLYipL2vija3NToKetGJMKI=\""
+          "Value": "\"eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:32:26 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3091,13 +3342,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TGBaLcSy2bhnXt7rvXLmsLYipL2vija3NToKetGJMKI="
+          "Value": "sha256-eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A="
         }
       ]
     },
     {
-      "Route": "js/layout.otm3unv9r9.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\layout.js",
+      "Route": "js/message-index.4wh8z9z182.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\message-index.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3106,7 +3357,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15475"
+          "Value": "28046"
         },
         {
           "Name": "Content-Type",
@@ -3114,11 +3365,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TGBaLcSy2bhnXt7rvXLmsLYipL2vija3NToKetGJMKI=\""
+          "Value": "\"lEPEKGS8HW9VSO8yF0nA2Gsgabo6tQHCyjP2TUdpPYY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:32:26 GMT"
+          "Value": "Sat, 12 Apr 2025 12:53:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3128,15 +3379,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "otm3unv9r9"
+          "Value": "4wh8z9z182"
         },
         {
           "Name": "label",
-          "Value": "js/layout.js"
+          "Value": "js/message-index.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TGBaLcSy2bhnXt7rvXLmsLYipL2vija3NToKetGJMKI="
+          "Value": "sha256-lEPEKGS8HW9VSO8yF0nA2Gsgabo6tQHCyjP2TUdpPYY="
         }
       ]
     },
@@ -3151,7 +3402,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13978"
+          "Value": "28046"
         },
         {
           "Name": "Content-Type",
@@ -3159,11 +3410,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kxx1RGqxJ+hYS5Aj8tbdfeUDS7mtbhM/b1LB0mvJRD8=\""
+          "Value": "\"lEPEKGS8HW9VSO8yF0nA2Gsgabo6tQHCyjP2TUdpPYY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:05:35 GMT"
+          "Value": "Sat, 12 Apr 2025 12:53:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3173,52 +3424,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kxx1RGqxJ+hYS5Aj8tbdfeUDS7mtbhM/b1LB0mvJRD8="
-        }
-      ]
-    },
-    {
-      "Route": "js/message-index.r6y2vxm4dq.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\message-index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13978"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kxx1RGqxJ+hYS5Aj8tbdfeUDS7mtbhM/b1LB0mvJRD8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:05:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r6y2vxm4dq"
-        },
-        {
-          "Name": "label",
-          "Value": "js/message-index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kxx1RGqxJ+hYS5Aj8tbdfeUDS7mtbhM/b1LB0mvJRD8="
+          "Value": "sha256-lEPEKGS8HW9VSO8yF0nA2Gsgabo6tQHCyjP2TUdpPYY="
         }
       ]
     },
@@ -3245,7 +3451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3282,7 +3488,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3315,7 +3521,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26121"
+          "Value": "26768"
         },
         {
           "Name": "Content-Type",
@@ -3323,11 +3529,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pzGLW0JFEEZIALTSlgMoYClvgzNpjj0WrodXOTT10fk=\""
+          "Value": "\"8b4ryTjhNf0/khk2lMnaUPsrZ2m12rpnYMuA+FmYUaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 08:22:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3337,12 +3543,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pzGLW0JFEEZIALTSlgMoYClvgzNpjj0WrodXOTT10fk="
+          "Value": "sha256-8b4ryTjhNf0/khk2lMnaUPsrZ2m12rpnYMuA+FmYUaM="
         }
       ]
     },
     {
-      "Route": "js/subscription-management.vmfm1m4hpw.js",
+      "Route": "js/subscription-management.tleofoxumy.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\subscription-management.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3352,7 +3558,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26121"
+          "Value": "26768"
         },
         {
           "Name": "Content-Type",
@@ -3360,11 +3566,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pzGLW0JFEEZIALTSlgMoYClvgzNpjj0WrodXOTT10fk=\""
+          "Value": "\"8b4ryTjhNf0/khk2lMnaUPsrZ2m12rpnYMuA+FmYUaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 08:22:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3374,7 +3580,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vmfm1m4hpw"
+          "Value": "tleofoxumy"
         },
         {
           "Name": "label",
@@ -3382,12 +3588,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pzGLW0JFEEZIALTSlgMoYClvgzNpjj0WrodXOTT10fk="
+          "Value": "sha256-8b4ryTjhNf0/khk2lMnaUPsrZ2m12rpnYMuA+FmYUaM="
         }
       ]
     },
     {
-      "Route": "js/user-management.ct36k1aym6.js",
+      "Route": "js/user-management.91ncjaetxz.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\user-management.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3397,7 +3603,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29267"
+          "Value": "39200"
         },
         {
           "Name": "Content-Type",
@@ -3405,11 +3611,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ME+nhxFbFVCq5FLdJXi2WpQJJZg0Yk+09JzQMQv4ihk=\""
+          "Value": "\"nXoHpusYK5wsfS8AahDDtK49F39eMhD2GnXyR5+afY4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:51:43 GMT"
+          "Value": "Sat, 12 Apr 2025 12:28:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3419,7 +3625,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ct36k1aym6"
+          "Value": "91ncjaetxz"
         },
         {
           "Name": "label",
@@ -3427,7 +3633,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ME+nhxFbFVCq5FLdJXi2WpQJJZg0Yk+09JzQMQv4ihk="
+          "Value": "sha256-nXoHpusYK5wsfS8AahDDtK49F39eMhD2GnXyR5+afY4="
         }
       ]
     },
@@ -3442,7 +3648,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29267"
+          "Value": "39200"
         },
         {
           "Name": "Content-Type",
@@ -3450,11 +3656,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ME+nhxFbFVCq5FLdJXi2WpQJJZg0Yk+09JzQMQv4ihk=\""
+          "Value": "\"nXoHpusYK5wsfS8AahDDtK49F39eMhD2GnXyR5+afY4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 09:51:43 GMT"
+          "Value": "Sat, 12 Apr 2025 12:28:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3464,7 +3670,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ME+nhxFbFVCq5FLdJXi2WpQJJZg0Yk+09JzQMQv4ihk="
+          "Value": "sha256-nXoHpusYK5wsfS8AahDDtK49F39eMhD2GnXyR5+afY4="
         }
       ]
     },
@@ -3479,7 +3685,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8201"
+          "Value": "8387"
         },
         {
           "Name": "Content-Type",
@@ -3487,11 +3693,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zZui5qjXAb4bq5CfoOUR2cPnfh8/8BIuLlRFyyMzopc=\""
+          "Value": "\"C0Q9lK8bC9ShmcEOu0qQcju86cFYqIfrzhKk6a/ZleY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 04:49:13 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3501,12 +3707,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zZui5qjXAb4bq5CfoOUR2cPnfh8/8BIuLlRFyyMzopc="
+          "Value": "sha256-C0Q9lK8bC9ShmcEOu0qQcju86cFYqIfrzhKk6a/ZleY="
         }
       ]
     },
     {
-      "Route": "js/user-subscriptions.xv19q8ntda.js",
+      "Route": "js/user-subscriptions.lkth4yc09y.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\user-subscriptions.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3516,7 +3722,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8201"
+          "Value": "8387"
         },
         {
           "Name": "Content-Type",
@@ -3524,11 +3730,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zZui5qjXAb4bq5CfoOUR2cPnfh8/8BIuLlRFyyMzopc=\""
+          "Value": "\"C0Q9lK8bC9ShmcEOu0qQcju86cFYqIfrzhKk6a/ZleY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 04:49:13 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3538,7 +3744,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xv19q8ntda"
+          "Value": "lkth4yc09y"
         },
         {
           "Name": "label",
@@ -3546,7 +3752,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zZui5qjXAb4bq5CfoOUR2cPnfh8/8BIuLlRFyyMzopc="
+          "Value": "sha256-C0Q9lK8bC9ShmcEOu0qQcju86cFYqIfrzhKk6a/ZleY="
         }
       ]
     },
@@ -3561,7 +3767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "204136"
+          "Value": "215356"
         },
         {
           "Name": "Content-Type",
@@ -3569,11 +3775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=\""
+          "Value": "\"ZMvmWDSU4zY1Z29EQGm5Mubfz/YxF4hiReGqx84o4tA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3583,7 +3789,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM="
+          "Value": "sha256-ZMvmWDSU4zY1Z29EQGm5Mubfz/YxF4hiReGqx84o4tA="
         }
       ]
     },
@@ -3610,7 +3816,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3655,7 +3861,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3670,7 +3876,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.6gzpyzhau4.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3680,7 +3886,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -3688,11 +3894,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3702,7 +3908,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bpk8xqwxhs"
+          "Value": "6gzpyzhau4"
         },
         {
           "Name": "label",
@@ -3710,7 +3916,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
@@ -3725,7 +3931,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -3733,11 +3939,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3747,7 +3953,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
@@ -3774,7 +3980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3819,7 +4025,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3834,7 +4040,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.ozu22stjof.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3844,7 +4050,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "204136"
+          "Value": "215356"
         },
         {
           "Name": "Content-Type",
@@ -3852,11 +4058,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=\""
+          "Value": "\"ZMvmWDSU4zY1Z29EQGm5Mubfz/YxF4hiReGqx84o4tA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3866,7 +4072,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mpyigms19s"
+          "Value": "ozu22stjof"
         },
         {
           "Name": "label",
@@ -3874,7 +4080,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM="
+          "Value": "sha256-ZMvmWDSU4zY1Z29EQGm5Mubfz/YxF4hiReGqx84o4tA="
         }
       ]
     },
@@ -3889,7 +4095,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "203803"
+          "Value": "214999"
         },
         {
           "Name": "Content-Type",
@@ -3897,11 +4103,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SZ2mKaD4A+b+HIvttwl+TvLFnVy8o8/X40j+EKVwyvY=\""
+          "Value": "\"hA1uBYAPgKq7OVoXF7sqU9NtylyP0K7AJn0a4zQcTbg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3911,7 +4117,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SZ2mKaD4A+b+HIvttwl+TvLFnVy8o8/X40j+EKVwyvY="
+          "Value": "sha256-hA1uBYAPgKq7OVoXF7sqU9NtylyP0K7AJn0a4zQcTbg="
         }
       ]
     },
@@ -3938,7 +4144,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3983,7 +4189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3998,8 +4204,8 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.gjcw7pocpk.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4008,7 +4214,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162825"
+          "Value": "214999"
         },
         {
           "Name": "Content-Type",
@@ -4016,11 +4222,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"22wR6QTidoeiRZXp6zkRQyMSUb/FB+Av11jqmZJF6uU=\""
+          "Value": "\"hA1uBYAPgKq7OVoXF7sqU9NtylyP0K7AJn0a4zQcTbg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4030,7 +4236,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9b9oa1qrmt"
+          "Value": "gjcw7pocpk"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hA1uBYAPgKq7OVoXF7sqU9NtylyP0K7AJn0a4zQcTbg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.6l4ir0ityv.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ukKL5IDSyNoXFyp0wkgXeBpBITyM7JsCE6Dp96H1vI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6l4ir0ityv"
         },
         {
           "Name": "label",
@@ -4038,7 +4289,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-22wR6QTidoeiRZXp6zkRQyMSUb/FB+Av11jqmZJF6uU="
+          "Value": "sha256-ukKL5IDSyNoXFyp0wkgXeBpBITyM7JsCE6Dp96H1vI8="
         }
       ]
     },
@@ -4053,7 +4304,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162825"
+          "Value": "162831"
         },
         {
           "Name": "Content-Type",
@@ -4061,11 +4312,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"22wR6QTidoeiRZXp6zkRQyMSUb/FB+Av11jqmZJF6uU=\""
+          "Value": "\"ukKL5IDSyNoXFyp0wkgXeBpBITyM7JsCE6Dp96H1vI8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4075,7 +4326,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-22wR6QTidoeiRZXp6zkRQyMSUb/FB+Av11jqmZJF6uU="
+          "Value": "sha256-ukKL5IDSyNoXFyp0wkgXeBpBITyM7JsCE6Dp96H1vI8="
         }
       ]
     },
@@ -4102,7 +4353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4147,7 +4398,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4162,96 +4413,6 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "203803"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SZ2mKaD4A+b+HIvttwl+TvLFnVy8o8/X40j+EKVwyvY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ve6x09088i"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SZ2mKaD4A+b+HIvttwl+TvLFnVy8o8/X40j+EKVwyvY="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "70538"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JtktgiuQAd+AXerCnPMrHCDz1h5AtkH5tobvpuG7xZ4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "agp80tu62r"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JtktgiuQAd+AXerCnPMrHCDz1h5AtkH5tobvpuG7xZ4="
-        }
-      ]
-    },
-    {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
@@ -4262,7 +4423,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "70538"
+          "Value": "75534"
         },
         {
           "Name": "Content-Type",
@@ -4270,11 +4431,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JtktgiuQAd+AXerCnPMrHCDz1h5AtkH5tobvpuG7xZ4=\""
+          "Value": "\"P4Ski6RrsG4nxKfPqaVoyRMoesl9UzArmfT+4fLqKHY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4284,7 +4445,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JtktgiuQAd+AXerCnPMrHCDz1h5AtkH5tobvpuG7xZ4="
+          "Value": "sha256-P4Ski6RrsG4nxKfPqaVoyRMoesl9UzArmfT+4fLqKHY="
         }
       ]
     },
@@ -4311,7 +4472,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4348,7 +4509,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4371,6 +4532,51 @@
       ]
     },
     {
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.5p029spbuu.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"96ayIUEnpKr7n5BIsFK5vJ3qXMXFgvRl9/CBcHs6/Ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5p029spbuu"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-96ayIUEnpKr7n5BIsFK5vJ3qXMXFgvRl9/CBcHs6/Ts="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
@@ -4381,7 +4587,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51319"
+          "Value": "51325"
         },
         {
           "Name": "Content-Type",
@@ -4389,11 +4595,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ysBT/JYxH9gcMnwxT4+MB4sPxOx/JMg9wi77FA13T9A=\""
+          "Value": "\"96ayIUEnpKr7n5BIsFK5vJ3qXMXFgvRl9/CBcHs6/Ts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4403,7 +4609,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ysBT/JYxH9gcMnwxT4+MB4sPxOx/JMg9wi77FA13T9A="
+          "Value": "sha256-96ayIUEnpKr7n5BIsFK5vJ3qXMXFgvRl9/CBcHs6/Ts="
         }
       ]
     },
@@ -4430,7 +4636,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4475,7 +4681,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4490,8 +4696,8 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.nakmwdwsxp.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4500,7 +4706,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51319"
+          "Value": "75534"
         },
         {
           "Name": "Content-Type",
@@ -4508,11 +4714,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ysBT/JYxH9gcMnwxT4+MB4sPxOx/JMg9wi77FA13T9A=\""
+          "Value": "\"P4Ski6RrsG4nxKfPqaVoyRMoesl9UzArmfT+4fLqKHY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4522,15 +4728,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "unj9p35syc"
+          "Value": "nakmwdwsxp"
         },
         {
           "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ysBT/JYxH9gcMnwxT4+MB4sPxOx/JMg9wi77FA13T9A="
+          "Value": "sha256-P4Ski6RrsG4nxKfPqaVoyRMoesl9UzArmfT+4fLqKHY="
         }
       ]
     },
@@ -4545,7 +4751,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "70612"
+          "Value": "75607"
         },
         {
           "Name": "Content-Type",
@@ -4553,11 +4759,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3vUJkZSpKL/zG7x6GNvDjs0TxYUo9zMt6dAc8hp9CVo=\""
+          "Value": "\"+ugQREUkP4Wnp1VX2L2lvw0Q2mgKYvYAZr1c2or+ysM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4567,7 +4773,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3vUJkZSpKL/zG7x6GNvDjs0TxYUo9zMt6dAc8hp9CVo="
+          "Value": "sha256-+ugQREUkP4Wnp1VX2L2lvw0Q2mgKYvYAZr1c2or+ysM="
         }
       ]
     },
@@ -4594,7 +4800,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4639,7 +4845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4654,6 +4860,51 @@
       ]
     },
     {
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.e6q6xbwqzk.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ugQREUkP4Wnp1VX2L2lvw0Q2mgKYvYAZr1c2or+ysM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e6q6xbwqzk"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+ugQREUkP4Wnp1VX2L2lvw0Q2mgKYvYAZr1c2or+ysM="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
@@ -4664,7 +4915,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51394"
+          "Value": "51400"
         },
         {
           "Name": "Content-Type",
@@ -4672,11 +4923,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O6lb2kXarGgVw4/RDD42yYPhZIwREthThQFKGmD+3j0=\""
+          "Value": "\"9eX2dpELXvYs+6il2MHwf5OOPVOZjxVK1b1GWgL0B0k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4686,7 +4937,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-O6lb2kXarGgVw4/RDD42yYPhZIwREthThQFKGmD+3j0="
+          "Value": "sha256-9eX2dpELXvYs+6il2MHwf5OOPVOZjxVK1b1GWgL0B0k="
         }
       ]
     },
@@ -4713,7 +4964,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4750,7 +5001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4773,7 +5024,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.dy6jgresuo.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4783,7 +5034,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51394"
+          "Value": "51400"
         },
         {
           "Name": "Content-Type",
@@ -4791,11 +5042,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O6lb2kXarGgVw4/RDD42yYPhZIwREthThQFKGmD+3j0=\""
+          "Value": "\"9eX2dpELXvYs+6il2MHwf5OOPVOZjxVK1b1GWgL0B0k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4805,7 +5056,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n1oizzvkh6"
+          "Value": "dy6jgresuo"
         },
         {
           "Name": "label",
@@ -4813,97 +5064,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O6lb2kXarGgVw4/RDD42yYPhZIwREthThQFKGmD+3j0="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "70612"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3vUJkZSpKL/zG7x6GNvDjs0TxYUo9zMt6dAc8hp9CVo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "q2ku51ktnl"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3vUJkZSpKL/zG7x6GNvDjs0TxYUo9zMt6dAc8hp9CVo="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5850"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7na4sro3qu"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY="
+          "Value": "sha256-9eX2dpELXvYs+6il2MHwf5OOPVOZjxVK1b1GWgL0B0k="
         }
       ]
     },
@@ -4918,7 +5079,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5850"
+          "Value": "6276"
         },
         {
           "Name": "Content-Type",
@@ -4926,11 +5087,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY=\""
+          "Value": "\"Jtl65EICD4ds6dQZbx1ongvMXj8D127HCg5XRBXXYGw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4940,7 +5101,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY="
+          "Value": "sha256-Jtl65EICD4ds6dQZbx1ongvMXj8D127HCg5XRBXXYGw="
         }
       ]
     },
@@ -4967,7 +5128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5012,7 +5173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5037,7 +5198,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4646"
+          "Value": "4653"
         },
         {
           "Name": "Content-Type",
@@ -5045,11 +5206,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z0OApR88UEocYXTXHU7Ueycaiib9XbDUmel9Gx0gbx4=\""
+          "Value": "\"359CMPAICGkV+zve4A4HJMha3bwqTFTjl+QC1KJK5DQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5059,7 +5220,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z0OApR88UEocYXTXHU7Ueycaiib9XbDUmel9Gx0gbx4="
+          "Value": "sha256-359CMPAICGkV+zve4A4HJMha3bwqTFTjl+QC1KJK5DQ="
         }
       ]
     },
@@ -5086,7 +5247,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5123,7 +5284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5146,7 +5307,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.z7kmom2977.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5156,7 +5317,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4646"
+          "Value": "4653"
         },
         {
           "Name": "Content-Type",
@@ -5164,11 +5325,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z0OApR88UEocYXTXHU7Ueycaiib9XbDUmel9Gx0gbx4=\""
+          "Value": "\"359CMPAICGkV+zve4A4HJMha3bwqTFTjl+QC1KJK5DQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5178,7 +5339,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "f8imaxxbri"
+          "Value": "z7kmom2977"
         },
         {
           "Name": "label",
@@ -5186,12 +5347,57 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z0OApR88UEocYXTXHU7Ueycaiib9XbDUmel9Gx0gbx4="
+          "Value": "sha256-359CMPAICGkV+zve4A4HJMha3bwqTFTjl+QC1KJK5DQ="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.mk8rdyw69w.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtl65EICD4ds6dQZbx1ongvMXj8D127HCg5XRBXXYGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mk8rdyw69w"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtl65EICD4ds6dQZbx1ongvMXj8D127HCg5XRBXXYGw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.97yrjpyf9r.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5201,7 +5407,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5827"
+          "Value": "6250"
         },
         {
           "Name": "Content-Type",
@@ -5209,11 +5415,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8NXw3kF49FkQVPMdjnGDqoXXRU0TwzsLfCGbK9U8gnk=\""
+          "Value": "\"G0PQCDL7ETO6rITRlBIHDKvvSuJFn5p6h+WmbPX5xr4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5223,7 +5429,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0wve5yxp74"
+          "Value": "97yrjpyf9r"
         },
         {
           "Name": "label",
@@ -5231,7 +5437,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8NXw3kF49FkQVPMdjnGDqoXXRU0TwzsLfCGbK9U8gnk="
+          "Value": "sha256-G0PQCDL7ETO6rITRlBIHDKvvSuJFn5p6h+WmbPX5xr4="
         }
       ]
     },
@@ -5246,7 +5452,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5827"
+          "Value": "6250"
         },
         {
           "Name": "Content-Type",
@@ -5254,11 +5460,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8NXw3kF49FkQVPMdjnGDqoXXRU0TwzsLfCGbK9U8gnk=\""
+          "Value": "\"G0PQCDL7ETO6rITRlBIHDKvvSuJFn5p6h+WmbPX5xr4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5268,7 +5474,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8NXw3kF49FkQVPMdjnGDqoXXRU0TwzsLfCGbK9U8gnk="
+          "Value": "sha256-G0PQCDL7ETO6rITRlBIHDKvvSuJFn5p6h+WmbPX5xr4="
         }
       ]
     },
@@ -5295,7 +5501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5340,7 +5546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5365,7 +5571,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4718"
+          "Value": "4725"
         },
         {
           "Name": "Content-Type",
@@ -5373,11 +5579,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a5KlgysZ4fQXw4rzIvXDHErFDPeHRSLccP7kX6HuvSQ=\""
+          "Value": "\"BnHmEJpgor1n0UuwNdXG2VhHdV1r9MibuqBVHsgp9a8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5387,7 +5593,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a5KlgysZ4fQXw4rzIvXDHErFDPeHRSLccP7kX6HuvSQ="
+          "Value": "sha256-BnHmEJpgor1n0UuwNdXG2VhHdV1r9MibuqBVHsgp9a8="
         }
       ]
     },
@@ -5414,7 +5620,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5451,7 +5657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5474,7 +5680,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.y53cy5s2zj.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5484,7 +5690,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4718"
+          "Value": "4725"
         },
         {
           "Name": "Content-Type",
@@ -5492,11 +5698,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a5KlgysZ4fQXw4rzIvXDHErFDPeHRSLccP7kX6HuvSQ=\""
+          "Value": "\"BnHmEJpgor1n0UuwNdXG2VhHdV1r9MibuqBVHsgp9a8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5506,7 +5712,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "npxfuf8dg6"
+          "Value": "y53cy5s2zj"
         },
         {
           "Name": "label",
@@ -5514,7 +5720,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a5KlgysZ4fQXw4rzIvXDHErFDPeHRSLccP7kX6HuvSQ="
+          "Value": "sha256-BnHmEJpgor1n0UuwNdXG2VhHdV1r9MibuqBVHsgp9a8="
         }
       ]
     },
@@ -5529,7 +5735,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "71584"
+          "Value": "76449"
         },
         {
           "Name": "Content-Type",
@@ -5537,11 +5743,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NbFZxZLmBVNLzb/7B0WdFfb6+8jXHGX6XY190uwgbec=\""
+          "Value": "\"mcVOHRq7FsWaycSfboGsTpzuQZ3cIOR/GDHYxL6q2Yg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5551,7 +5757,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NbFZxZLmBVNLzb/7B0WdFfb6+8jXHGX6XY190uwgbec="
+          "Value": "sha256-mcVOHRq7FsWaycSfboGsTpzuQZ3cIOR/GDHYxL6q2Yg="
         }
       ]
     },
@@ -5578,7 +5784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5623,7 +5829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5638,7 +5844,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.2yn17lgxub.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5648,7 +5854,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53479"
+          "Value": "53485"
         },
         {
           "Name": "Content-Type",
@@ -5656,11 +5862,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5+ExmMkiaI3keYQRLhNibJ5ZXnNuWRbwrXOAZoTXMFg=\""
+          "Value": "\"ekoF4YNq4OUU4BoZ6FG2LTKD68LJvW49arNgykHOZfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5670,7 +5876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "16095smhkz"
+          "Value": "2yn17lgxub"
         },
         {
           "Name": "label",
@@ -5678,7 +5884,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5+ExmMkiaI3keYQRLhNibJ5ZXnNuWRbwrXOAZoTXMFg="
+          "Value": "sha256-ekoF4YNq4OUU4BoZ6FG2LTKD68LJvW49arNgykHOZfM="
         }
       ]
     },
@@ -5693,7 +5899,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53479"
+          "Value": "53485"
         },
         {
           "Name": "Content-Type",
@@ -5701,11 +5907,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5+ExmMkiaI3keYQRLhNibJ5ZXnNuWRbwrXOAZoTXMFg=\""
+          "Value": "\"ekoF4YNq4OUU4BoZ6FG2LTKD68LJvW49arNgykHOZfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5715,7 +5921,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5+ExmMkiaI3keYQRLhNibJ5ZXnNuWRbwrXOAZoTXMFg="
+          "Value": "sha256-ekoF4YNq4OUU4BoZ6FG2LTKD68LJvW49arNgykHOZfM="
         }
       ]
     },
@@ -5742,7 +5948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5779,7 +5985,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5802,51 +6008,6 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "71451"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"peAGH8Gu/ZL9VnbUGSMN69Ji5MxwbvOb53gDXU2cPaQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b4skse8du6"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-peAGH8Gu/ZL9VnbUGSMN69Ji5MxwbvOb53gDXU2cPaQ="
-        }
-      ]
-    },
-    {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
@@ -5857,7 +6018,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "71451"
+          "Value": "76307"
         },
         {
           "Name": "Content-Type",
@@ -5865,11 +6026,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"peAGH8Gu/ZL9VnbUGSMN69Ji5MxwbvOb53gDXU2cPaQ=\""
+          "Value": "\"1N1aPW6sTYexHfJCcDS4iElpPdWahP2Fr+Um56w0PjI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5879,7 +6040,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-peAGH8Gu/ZL9VnbUGSMN69Ji5MxwbvOb53gDXU2cPaQ="
+          "Value": "sha256-1N1aPW6sTYexHfJCcDS4iElpPdWahP2Fr+Um56w0PjI="
         }
       ]
     },
@@ -5906,7 +6067,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5951,7 +6112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5976,7 +6137,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53407"
+          "Value": "53413"
         },
         {
           "Name": "Content-Type",
@@ -5984,11 +6145,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Wi5ZuFSHLfx6dlEgjvW3BY9TC/1NqdBjj+XFifSSqN4=\""
+          "Value": "\"wseUsl7uipUzPYc/DBMMTMFA7hBTcxpw29RKOxLzXSc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5998,7 +6159,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Wi5ZuFSHLfx6dlEgjvW3BY9TC/1NqdBjj+XFifSSqN4="
+          "Value": "sha256-wseUsl7uipUzPYc/DBMMTMFA7hBTcxpw29RKOxLzXSc="
         }
       ]
     },
@@ -6025,7 +6186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6070,7 +6231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6085,7 +6246,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.ik6i2hrs65.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6095,7 +6256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53407"
+          "Value": "53413"
         },
         {
           "Name": "Content-Type",
@@ -6103,11 +6264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Wi5ZuFSHLfx6dlEgjvW3BY9TC/1NqdBjj+XFifSSqN4=\""
+          "Value": "\"wseUsl7uipUzPYc/DBMMTMFA7hBTcxpw29RKOxLzXSc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6117,7 +6278,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u3xrusw2ol"
+          "Value": "ik6i2hrs65"
         },
         {
           "Name": "label",
@@ -6125,12 +6286,57 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Wi5ZuFSHLfx6dlEgjvW3BY9TC/1NqdBjj+XFifSSqN4="
+          "Value": "sha256-wseUsl7uipUzPYc/DBMMTMFA7hBTcxpw29RKOxLzXSc="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.ophe14yye5.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1N1aPW6sTYexHfJCcDS4iElpPdWahP2Fr+Um56w0PjI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ophe14yye5"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1N1aPW6sTYexHfJCcDS4iElpPdWahP2Fr+Um56w0PjI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.z9shlbduue.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6140,7 +6346,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "71584"
+          "Value": "76449"
         },
         {
           "Name": "Content-Type",
@@ -6148,11 +6354,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NbFZxZLmBVNLzb/7B0WdFfb6+8jXHGX6XY190uwgbec=\""
+          "Value": "\"mcVOHRq7FsWaycSfboGsTpzuQZ3cIOR/GDHYxL6q2Yg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6162,7 +6368,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tey0rigmnh"
+          "Value": "z9shlbduue"
         },
         {
           "Name": "label",
@@ -6170,7 +6376,97 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NbFZxZLmBVNLzb/7B0WdFfb6+8jXHGX6XY190uwgbec="
+          "Value": "sha256-mcVOHRq7FsWaycSfboGsTpzuQZ3cIOR/GDHYxL6q2Yg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.1piudyfv7h.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JV8zLOxqX3ENLwiQX8lCiDY3TvQzbeibDAsdYtalZ4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1piudyfv7h"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JV8zLOxqX3ENLwiQX8lCiDY3TvQzbeibDAsdYtalZ4w="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.f6zq8v6eb3.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l/hyCcHXdGwW6cO0xfobuAMZk3Nh8dsRdWwdaeSn9qo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f6zq8v6eb3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l/hyCcHXdGwW6cO0xfobuAMZk3Nh8dsRdWwdaeSn9qo="
         }
       ]
     },
@@ -6185,7 +6481,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "208492"
+          "Value": "215272"
         },
         {
           "Name": "Content-Type",
@@ -6193,11 +6489,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vQTf4d3WJi9vmWQNA4kJnjoedgEhMFXFDEMXqtHtgzk=\""
+          "Value": "\"l/hyCcHXdGwW6cO0xfobuAMZk3Nh8dsRdWwdaeSn9qo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6207,7 +6503,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vQTf4d3WJi9vmWQNA4kJnjoedgEhMFXFDEMXqtHtgzk="
+          "Value": "sha256-l/hyCcHXdGwW6cO0xfobuAMZk3Nh8dsRdWwdaeSn9qo="
         }
       ]
     },
@@ -6234,7 +6530,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6279,7 +6575,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6294,52 +6590,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "208492"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vQTf4d3WJi9vmWQNA4kJnjoedgEhMFXFDEMXqtHtgzk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l2av4jpuoj"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vQTf4d3WJi9vmWQNA4kJnjoedgEhMFXFDEMXqtHtgzk="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.89qbw8ngem.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6349,7 +6600,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "78468"
+          "Value": "78474"
         },
         {
           "Name": "Content-Type",
@@ -6357,11 +6608,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KuvCVS19rfTjoLgMyDDCdOkRRlhNrY4psEM4uezts2M=\""
+          "Value": "\"rAnWnVnzChxAAi8NS+Ilr1mE7Sj+do+X/DqyilNsznM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6371,7 +6622,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "25iw1kog22"
+          "Value": "89qbw8ngem"
         },
         {
           "Name": "label",
@@ -6379,7 +6630,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KuvCVS19rfTjoLgMyDDCdOkRRlhNrY4psEM4uezts2M="
+          "Value": "sha256-rAnWnVnzChxAAi8NS+Ilr1mE7Sj+do+X/DqyilNsznM="
         }
       ]
     },
@@ -6394,7 +6645,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "78468"
+          "Value": "78474"
         },
         {
           "Name": "Content-Type",
@@ -6402,11 +6653,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KuvCVS19rfTjoLgMyDDCdOkRRlhNrY4psEM4uezts2M=\""
+          "Value": "\"rAnWnVnzChxAAi8NS+Ilr1mE7Sj+do+X/DqyilNsznM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6416,7 +6667,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KuvCVS19rfTjoLgMyDDCdOkRRlhNrY4psEM4uezts2M="
+          "Value": "sha256-rAnWnVnzChxAAi8NS+Ilr1mE7Sj+do+X/DqyilNsznM="
         }
       ]
     },
@@ -6443,7 +6694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6488,7 +6739,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6513,7 +6764,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "139019"
+          "Value": "143996"
         },
         {
           "Name": "Content-Type",
@@ -6521,11 +6772,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EuDXUJYKnfZuO8dSLN0f5iVbVasz36AROuAU3NJ3JBo=\""
+          "Value": "\"SySIctW5IQsq8JoYGrNJU4ZilHaieJru5P0+8vTcfDA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6535,7 +6786,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EuDXUJYKnfZuO8dSLN0f5iVbVasz36AROuAU3NJ3JBo="
+          "Value": "sha256-SySIctW5IQsq8JoYGrNJU4ZilHaieJru5P0+8vTcfDA="
         }
       ]
     },
@@ -6562,7 +6813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6607,7 +6858,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6622,8 +6873,8 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jqwzsa9uv6.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6632,7 +6883,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "139019"
+          "Value": "72022"
         },
         {
           "Name": "Content-Type",
@@ -6640,11 +6891,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EuDXUJYKnfZuO8dSLN0f5iVbVasz36AROuAU3NJ3JBo=\""
+          "Value": "\"hVv0IJy8sIv1uIlVQOHnZFNAGprmLfDV+x0anYPmxYU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6654,15 +6905,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m39kt2b5c9"
+          "Value": "jqwzsa9uv6"
         },
         {
           "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EuDXUJYKnfZuO8dSLN0f5iVbVasz36AROuAU3NJ3JBo="
+          "Value": "sha256-hVv0IJy8sIv1uIlVQOHnZFNAGprmLfDV+x0anYPmxYU="
         }
       ]
     },
@@ -6677,7 +6928,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "72016"
+          "Value": "72022"
         },
         {
           "Name": "Content-Type",
@@ -6685,11 +6936,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Kj4irQWPwfSb5NFeos/h0IroI5/nIg0HtAjQ+w4v6TE=\""
+          "Value": "\"hVv0IJy8sIv1uIlVQOHnZFNAGprmLfDV+x0anYPmxYU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6699,7 +6950,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Kj4irQWPwfSb5NFeos/h0IroI5/nIg0HtAjQ+w4v6TE="
+          "Value": "sha256-hVv0IJy8sIv1uIlVQOHnZFNAGprmLfDV+x0anYPmxYU="
         }
       ]
     },
@@ -6726,7 +6977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6763,7 +7014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6786,8 +7037,8 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.n5w6o92d9r.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6796,7 +7047,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "72016"
+          "Value": "143996"
         },
         {
           "Name": "Content-Type",
@@ -6804,11 +7055,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Kj4irQWPwfSb5NFeos/h0IroI5/nIg0HtAjQ+w4v6TE=\""
+          "Value": "\"SySIctW5IQsq8JoYGrNJU4ZilHaieJru5P0+8vTcfDA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6818,15 +7069,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "um2aeqy4ik"
+          "Value": "n5w6o92d9r"
         },
         {
           "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Kj4irQWPwfSb5NFeos/h0IroI5/nIg0HtAjQ+w4v6TE="
+          "Value": "sha256-SySIctW5IQsq8JoYGrNJU4ZilHaieJru5P0+8vTcfDA="
         }
       ]
     },
@@ -6841,7 +7092,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "148168"
+          "Value": "153194"
         },
         {
           "Name": "Content-Type",
@@ -6849,11 +7100,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6IStRQerBchYSw6J2GWTOWGOnDRrWXmaG0r6nCwN5s4=\""
+          "Value": "\"JV8zLOxqX3ENLwiQX8lCiDY3TvQzbeibDAsdYtalZ4w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6863,7 +7114,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6IStRQerBchYSw6J2GWTOWGOnDRrWXmaG0r6nCwN5s4="
+          "Value": "sha256-JV8zLOxqX3ENLwiQX8lCiDY3TvQzbeibDAsdYtalZ4w="
         }
       ]
     },
@@ -6890,7 +7141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6935,7 +7186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6950,6 +7201,51 @@
       ]
     },
     {
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.4908xmbfjr.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uAMYHAQlaHq1buKLwrk7FF4qxvcLWntS2/DpdKucfmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4908xmbfjr"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uAMYHAQlaHq1buKLwrk7FF4qxvcLWntS2/DpdKucfmU="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
@@ -6960,7 +7256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59511"
+          "Value": "59517"
         },
         {
           "Name": "Content-Type",
@@ -6968,11 +7264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"c4Ll6eSIg6Eothk8pCWAF8aE923EvtU11pqjBy+NjNM=\""
+          "Value": "\"uAMYHAQlaHq1buKLwrk7FF4qxvcLWntS2/DpdKucfmU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6982,7 +7278,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-c4Ll6eSIg6Eothk8pCWAF8aE923EvtU11pqjBy+NjNM="
+          "Value": "sha256-uAMYHAQlaHq1buKLwrk7FF4qxvcLWntS2/DpdKucfmU="
         }
       ]
     },
@@ -7009,7 +7305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7046,7 +7342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7065,96 +7361,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-ui/FQI+y0IUsY8Pbi80b8s3GeEL+PsvdaLTONobpn88="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59511"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c4Ll6eSIg6Eothk8pCWAF8aE923EvtU11pqjBy+NjNM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zwph15dxgs"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.min.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-c4Ll6eSIg6Eothk8pCWAF8aE923EvtU11pqjBy+NjNM="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "148168"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6IStRQerBchYSw6J2GWTOWGOnDRrWXmaG0r6nCwN5s4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o4kw7cc6tf"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6IStRQerBchYSw6J2GWTOWGOnDRrWXmaG0r6nCwN5s4="
         }
       ]
     },
@@ -7181,7 +7387,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7218,7 +7424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7241,7 +7447,7 @@
       ]
     },
     {
-      "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
+      "Route": "lib/jquery/dist/jquery.7s2n0ol71w.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7251,7 +7457,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "288580"
+          "Value": "299461"
         },
         {
           "Name": "Content-Type",
@@ -7259,11 +7465,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=\""
+          "Value": "\"KSI/3xxCrCexCupdzQJRP1B6Iqg+2NA+X2u38cQdqq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7273,7 +7479,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fwhahm2icz"
+          "Value": "7s2n0ol71w"
         },
         {
           "Name": "label",
@@ -7281,7 +7487,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          "Value": "sha256-KSI/3xxCrCexCupdzQJRP1B6Iqg+2NA+X2u38cQdqq8="
         }
       ]
     },
@@ -7296,7 +7502,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "288580"
+          "Value": "299461"
         },
         {
           "Name": "Content-Type",
@@ -7304,11 +7510,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=\""
+          "Value": "\"KSI/3xxCrCexCupdzQJRP1B6Iqg+2NA+X2u38cQdqq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7318,7 +7524,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          "Value": "sha256-KSI/3xxCrCexCupdzQJRP1B6Iqg+2NA+X2u38cQdqq8="
         }
       ]
     },
@@ -7345,7 +7551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7368,7 +7574,7 @@
       ]
     },
     {
-      "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
+      "Route": "lib/jquery/dist/jquery.min.ehgnz7f14e.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7378,7 +7584,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "89501"
+          "Value": "89503"
         },
         {
           "Name": "Content-Type",
@@ -7386,11 +7592,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=\""
+          "Value": "\"zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7400,7 +7606,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dd6z7egasc"
+          "Value": "ehgnz7f14e"
         },
         {
           "Name": "label",
@@ -7408,7 +7614,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          "Value": "sha256-zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs="
         }
       ]
     },
@@ -7423,7 +7629,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "89501"
+          "Value": "89503"
         },
         {
           "Name": "Content-Type",
@@ -7431,11 +7637,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=\""
+          "Value": "\"zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7445,7 +7651,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          "Value": "sha256-zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs="
         }
       ]
     },
@@ -7472,7 +7678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7509,7 +7715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7554,7 +7760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7591,7 +7797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7636,7 +7842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7673,7 +7879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7718,7 +7924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7733,6 +7939,51 @@
       ]
     },
     {
+      "Route": "lib/jquery-validation/dist/jquery.validate.6d0lkjaslc.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5qqb5VxQ2t2a6Zx/neW5uppLLvaGn4nn0NdYp6g8Lyg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6d0lkjaslc"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/jquery-validation/dist/jquery.validate.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5qqb5VxQ2t2a6Zx/neW5uppLLvaGn4nn0NdYp6g8Lyg="
+        }
+      ]
+    },
+    {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
@@ -7743,7 +7994,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51171"
+          "Value": "52831"
         },
         {
           "Name": "Content-Type",
@@ -7751,11 +8002,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"m0l81WDPiG7CcG7CDsTuZzvcGvyFmrQY5DLIxx3aRGw=\""
+          "Value": "\"5qqb5VxQ2t2a6Zx/neW5uppLLvaGn4nn0NdYp6g8Lyg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7765,52 +8016,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-m0l81WDPiG7CcG7CDsTuZzvcGvyFmrQY5DLIxx3aRGw="
-        }
-      ]
-    },
-    {
-      "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24601"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b7iojwaux1"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/jquery-validation/dist/jquery.validate.min.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA="
+          "Value": "sha256-5qqb5VxQ2t2a6Zx/neW5uppLLvaGn4nn0NdYp6g8Lyg="
         }
       ]
     },
@@ -7825,7 +8031,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24601"
+          "Value": "24604"
         },
         {
           "Name": "Content-Type",
@@ -7833,11 +8039,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA=\""
+          "Value": "\"6e0N+WJiVKBeTitK1GKSwPi3rbdPpLtuqaiitZjeD2w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7847,13 +8053,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JwUksNJ6/R07ZiLRoXbGeNrtlFZMFDKX4hemPiHOmCA="
+          "Value": "sha256-6e0N+WJiVKBeTitK1GKSwPi3rbdPpLtuqaiitZjeD2w="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Route": "lib/jquery-validation/dist/jquery.validate.min.l1zq2mitth.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7862,7 +8068,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51171"
+          "Value": "24604"
         },
         {
           "Name": "Content-Type",
@@ -7870,11 +8076,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"m0l81WDPiG7CcG7CDsTuZzvcGvyFmrQY5DLIxx3aRGw=\""
+          "Value": "\"6e0N+WJiVKBeTitK1GKSwPi3rbdPpLtuqaiitZjeD2w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7884,15 +8090,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pzqfkb6aqo"
+          "Value": "l1zq2mitth"
         },
         {
           "Name": "label",
-          "Value": "lib/jquery-validation/dist/jquery.validate.js"
+          "Value": "lib/jquery-validation/dist/jquery.validate.min.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-m0l81WDPiG7CcG7CDsTuZzvcGvyFmrQY5DLIxx3aRGw="
+          "Value": "sha256-6e0N+WJiVKBeTitK1GKSwPi3rbdPpLtuqaiitZjeD2w="
         }
       ]
     },
@@ -7919,7 +8125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7956,7 +8162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7979,7 +8185,7 @@
       ]
     },
     {
-      "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
+      "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.03hjc8e09r.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7989,7 +8195,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19385"
+          "Value": "19820"
         },
         {
           "Name": "Content-Type",
@@ -7997,11 +8203,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wJQaJ0XynBE2fq6CexXXhxKu7fstVmQc7V2MHNTo+WQ=\""
+          "Value": "\"xJbBMLGhYbXlPrrrddrSVmduyF6KEtbxEsYxw7hYZV4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8011,7 +8217,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "47otxtyo56"
+          "Value": "03hjc8e09r"
         },
         {
           "Name": "label",
@@ -8019,7 +8225,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wJQaJ0XynBE2fq6CexXXhxKu7fstVmQc7V2MHNTo+WQ="
+          "Value": "sha256-xJbBMLGhYbXlPrrrddrSVmduyF6KEtbxEsYxw7hYZV4="
         }
       ]
     },
@@ -8034,7 +8240,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19385"
+          "Value": "19820"
         },
         {
           "Name": "Content-Type",
@@ -8042,11 +8248,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wJQaJ0XynBE2fq6CexXXhxKu7fstVmQc7V2MHNTo+WQ=\""
+          "Value": "\"xJbBMLGhYbXlPrrrddrSVmduyF6KEtbxEsYxw7hYZV4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8056,12 +8262,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wJQaJ0XynBE2fq6CexXXhxKu7fstVmQc7V2MHNTo+WQ="
+          "Value": "sha256-xJbBMLGhYbXlPrrrddrSVmduyF6KEtbxEsYxw7hYZV4="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
+      "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.48y08845bh.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8071,7 +8277,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5824"
+          "Value": "5831"
         },
         {
           "Name": "Content-Type",
@@ -8079,11 +8285,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YJa7W8EiQdQpkk93iGEjjnLSUWRpRJbSfzfURh1kxz4=\""
+          "Value": "\"RFWFWIIPsjB4DucR4jqwxTWw13ZmtI+s6tVR2LJmZXk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8093,7 +8299,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4v8eqarkd7"
+          "Value": "48y08845bh"
         },
         {
           "Name": "label",
@@ -8101,7 +8307,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-YJa7W8EiQdQpkk93iGEjjnLSUWRpRJbSfzfURh1kxz4="
+          "Value": "sha256-RFWFWIIPsjB4DucR4jqwxTWw13ZmtI+s6tVR2LJmZXk="
         }
       ]
     },
@@ -8116,7 +8322,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5824"
+          "Value": "5831"
         },
         {
           "Name": "Content-Type",
@@ -8124,11 +8330,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YJa7W8EiQdQpkk93iGEjjnLSUWRpRJbSfzfURh1kxz4=\""
+          "Value": "\"RFWFWIIPsjB4DucR4jqwxTWw13ZmtI+s6tVR2LJmZXk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8138,7 +8344,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YJa7W8EiQdQpkk93iGEjjnLSUWRpRJbSfzfURh1kxz4="
+          "Value": "sha256-RFWFWIIPsjB4DucR4jqwxTWw13ZmtI+s6tVR2LJmZXk="
         }
       ]
     },
@@ -8165,7 +8371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8210,7 +8416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:42:30 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8225,7 +8431,7 @@
       ]
     },
     {
-      "Route": "lib/microsoft/signalr/dist/browser/signalr.cqu3aupeo3.js",
+      "Route": "lib/microsoft/signalr/dist/browser/signalr.49hvrsqvxt.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8235,7 +8441,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160262"
+          "Value": "160402"
         },
         {
           "Name": "Content-Type",
@@ -8243,11 +8449,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=\""
+          "Value": "\"6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 14:48:34 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8257,7 +8463,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cqu3aupeo3"
+          "Value": "49hvrsqvxt"
         },
         {
           "Name": "label",
@@ -8265,7 +8471,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA="
+          "Value": "sha256-6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ="
         }
       ]
     },
@@ -8280,7 +8486,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160262"
+          "Value": "160402"
         },
         {
           "Name": "Content-Type",
@@ -8288,11 +8494,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=\""
+          "Value": "\"6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 14:48:34 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8302,7 +8508,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA="
+          "Value": "sha256-6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ="
         }
       ]
     },
@@ -8317,7 +8523,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "47647"
+          "Value": "47648"
         },
         {
           "Name": "Content-Type",
@@ -8325,11 +8531,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg=\""
+          "Value": "\"0ZjG1tA5FCDiN+Hz20Ig+vfNbt8IyQGbpG3VJzGGMEw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 14:48:34 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8339,12 +8545,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg="
+          "Value": "sha256-0ZjG1tA5FCDiN+Hz20Ig+vfNbt8IyQGbpG3VJzGGMEw="
         }
       ]
     },
     {
-      "Route": "lib/microsoft/signalr/dist/browser/signalr.min.m3i9f6419i.js",
+      "Route": "lib/microsoft/signalr/dist/browser/signalr.min.nyhhepaqjg.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8354,7 +8560,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "47647"
+          "Value": "47648"
         },
         {
           "Name": "Content-Type",
@@ -8362,11 +8568,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg=\""
+          "Value": "\"0ZjG1tA5FCDiN+Hz20Ig+vfNbt8IyQGbpG3VJzGGMEw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 14:48:34 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8376,7 +8582,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m3i9f6419i"
+          "Value": "nyhhepaqjg"
         },
         {
           "Name": "label",
@@ -8384,7 +8590,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg="
+          "Value": "sha256-0ZjG1tA5FCDiN+Hz20Ig+vfNbt8IyQGbpG3VJzGGMEw="
         }
       ]
     },
@@ -8411,7 +8617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:09:07 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8456,7 +8662,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:09:07 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8493,7 +8699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 14:54:43 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8530,7 +8736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 14:54:43 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8575,7 +8781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:11:57 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8612,7 +8818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:11:57 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8657,7 +8863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:34:59 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8702,7 +8908,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:34:59 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8739,7 +8945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:45:59 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8784,7 +8990,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:45:59 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8821,7 +9027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 08:37:58 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8866,7 +9072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 08:37:58 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8903,7 +9109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:07 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8940,7 +9146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:07 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8985,7 +9191,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 13:49:57 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9030,7 +9236,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 13:49:57 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9067,7 +9273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:33:00 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9104,7 +9310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:33:00 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9149,7 +9355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:10:51 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9194,7 +9400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:10:51 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9231,7 +9437,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 13:46:34 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9276,7 +9482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 13:46:34 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9291,8 +9497,8 @@
       ]
     },
     {
-      "Route": "uploads/profiles/aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.2q9iwjxiaf.png",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png",
+      "Route": "uploads/profiles/9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jnws33pgbq.jpg",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9301,19 +9507,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1590006"
+          "Value": "236336"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"ut2yd9Jptx0rxxg9XuhdDMWZkAHPQc6lcoO92cs1Bjo=\""
+          "Value": "\"sQzf1qSTe3KhEXm0ZfFWGAxirOtMfHuDhJicAB89KUo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 09:51:59 GMT"
+          "Value": "Sat, 12 Apr 2025 12:29:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9323,21 +9529,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2q9iwjxiaf"
+          "Value": "jnws33pgbq"
         },
         {
           "Name": "label",
-          "Value": "uploads/profiles/aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png"
+          "Value": "uploads/profiles/9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ut2yd9Jptx0rxxg9XuhdDMWZkAHPQc6lcoO92cs1Bjo="
+          "Value": "sha256-sQzf1qSTe3KhEXm0ZfFWGAxirOtMfHuDhJicAB89KUo="
         }
       ]
     },
     {
-      "Route": "uploads/profiles/aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png",
+      "Route": "uploads/profiles/9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9346,19 +9552,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1590006"
+          "Value": "236336"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"ut2yd9Jptx0rxxg9XuhdDMWZkAHPQc6lcoO92cs1Bjo=\""
+          "Value": "\"sQzf1qSTe3KhEXm0ZfFWGAxirOtMfHuDhJicAB89KUo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 09:51:59 GMT"
+          "Value": "Sat, 12 Apr 2025 12:29:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9368,7 +9574,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ut2yd9Jptx0rxxg9XuhdDMWZkAHPQc6lcoO92cs1Bjo="
+          "Value": "sha256-sQzf1qSTe3KhEXm0ZfFWGAxirOtMfHuDhJicAB89KUo="
         }
       ]
     },
@@ -9395,7 +9601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:26:24 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9440,7 +9646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 03:26:24 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9477,7 +9683,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:19:43 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9522,7 +9728,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:19:43 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9559,7 +9765,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:44:29 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9604,7 +9810,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:44:29 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9649,7 +9855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:44:29 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9686,7 +9892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 07:44:29 GMT"
+          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
         },
         {
           "Name": "Cache-Control",

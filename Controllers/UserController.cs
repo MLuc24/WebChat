@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -45,6 +47,7 @@ namespace WeChat.Controllers
                     u.CreatedDate,
                     u.LastLogin,
                     u.IsActive,
+                    u.ProfilePicture,
                     Role = u.Role.ToString()
                 }).ToListAsync();
 
@@ -125,20 +128,55 @@ namespace WeChat.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([FromBody] User user)
+        public async Task<IActionResult> Create([FromForm] CreateUserViewModel userModel)
         {
             if (ModelState.IsValid)
             {
-                // Ensure that new users can only be created as regular users, not admins
-                user.Role = UserRole.User;
+                // Create new user entity
+                var user = new User
+                {
+                    Username = userModel.Username,
+                    Email = userModel.Email,
+                    FullName = userModel.FullName,
+                    Department = userModel.Department,
+                    JobTitle = userModel.JobTitle,
+                    Role = UserRole.User, // Ensure that new users can only be created as regular users, not admins
+                    Password = Helpers.PasswordHasher.HashPassword(userModel.Password),
+                    CreatedDate = DateTime.Now,
+                    IsActive = true,
+                    // Default profile picture
+                    ProfilePicture = "/images/avatars/default-avatar.png"
+                };
 
-                // Hash the password
-                user.Password = Helpers.PasswordHasher.HashPassword(user.Password);
-                user.CreatedDate = DateTime.Now;
-                user.IsActive = true;
+                // Handle profile picture upload if provided
+                if (userModel.ProfilePicture != null && userModel.ProfilePicture.Length > 0)
+                {
+                    string profilePicturePath = await SaveProfilePicture(userModel.ProfilePicture);
+                    if (!string.IsNullOrEmpty(profilePicturePath))
+                    {
+                        user.ProfilePicture = profilePicturePath;
+                    }
+                }
+
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return Json(new { success = true, user });
+
+                return Json(new
+                {
+                    success = true,
+                    user = new
+                    {
+                        user.UserId,
+                        user.Username,
+                        user.Email,
+                        user.FullName,
+                        user.Department,
+                        user.JobTitle,
+                        user.ProfilePicture,
+                        user.IsActive,
+                        Role = user.Role.ToString()
+                    }
+                });
             }
             return Json(new { success = false, errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage) });
         }
@@ -147,7 +185,7 @@ namespace WeChat.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPut]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, [FromBody] User user)
+        public async Task<IActionResult> Update(int id, [FromForm] UpdateUserViewModel user)
         {
             if (id != user.UserId)
             {
@@ -182,14 +220,45 @@ namespace WeChat.Controllers
                     existingUser.Role = UserRole.User;
 
                     // Only update password if provided
+                    // If Password is null or empty, keep the existing password
                     if (!string.IsNullOrEmpty(user.Password))
                     {
                         existingUser.Password = Helpers.PasswordHasher.HashPassword(user.Password);
                     }
+                    // else: Do nothing - keep the existing password
+
+                    // Handle profile picture upload if provided
+                    if (user.ProfilePicture != null && user.ProfilePicture.Length > 0)
+                    {
+                        string newProfilePicturePath = await SaveProfilePicture(user.ProfilePicture);
+                        if (!string.IsNullOrEmpty(newProfilePicturePath))
+                        {
+                            // Delete old profile picture if it exists and is not the default
+                            if (!string.IsNullOrEmpty(existingUser.ProfilePicture) &&
+                                !existingUser.ProfilePicture.Contains("default-avatar"))
+                            {
+                                DeleteProfilePicture(existingUser.ProfilePicture);
+                            }
+                            existingUser.ProfilePicture = newProfilePicturePath;
+                        }
+                    }
 
                     _context.Update(existingUser);
                     await _context.SaveChangesAsync();
-                    return Json(new { success = true });
+
+                    // If the user being updated is the current user, refresh their claims
+                    var currentUserIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    if (currentUserIdClaim != null && int.Parse(currentUserIdClaim) == existingUser.UserId)
+                    {
+                        await RefreshUserClaims(existingUser);
+                    }
+
+                    return Json(new
+                    {
+                        success = true,
+                        message = "User updated successfully.",
+                        profilePicture = existingUser.ProfilePicture ?? "/images/avatars/default-avatar.png"
+                    });
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -205,6 +274,31 @@ namespace WeChat.Controllers
             }
             return Json(new { success = false, errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage) });
         }
+
+        // GET: User/GetInactiveUsers (Admin data endpoint)
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> GetInactiveUsers()
+        {
+            var inactiveUsers = await _context.Users
+                .Where(u => u.Role != UserRole.Admin && u.IsActive == false)
+                .Select(u => new {
+                    u.UserId,
+                    u.Username,
+                    u.Email,
+                    u.FullName,
+                    u.Department,
+                    u.JobTitle,
+                    u.CreatedDate,
+                    u.LastLogin,
+                    u.ProfilePicture,
+                    Role = u.Role.ToString()
+                }).ToListAsync();
+
+            return Json(inactiveUsers);
+        }
+
+
 
         // DELETE: User/Delete/5 (Admin endpoint)
         [Authorize(Roles = "Admin")]
@@ -238,6 +332,46 @@ namespace WeChat.Controllers
             }
         }
 
+        // POST: User/Reactivate/5 (Admin endpoint)
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Reactivate(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Prevent modification of admin accounts
+            if (user.Role == UserRole.Admin)
+            {
+                return Json(new { success = false, message = "Cannot modify admin accounts through this interface." });
+            }
+
+            try
+            {
+                // Reactivate the user account
+                if (user.IsActive != true)
+                {
+                    user.IsActive = true;
+                    _context.Update(user);
+                    await _context.SaveChangesAsync();
+                    return Json(new { success = true, message = "User account reactivated successfully." });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "User account is already active." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = $"Error reactivating user: {ex.Message}" });
+            }
+        }
+
+
         // GET: User/Plans - Display available subscription plans
         // In UserController.cs
         [Authorize]
@@ -267,8 +401,6 @@ namespace WeChat.Controllers
             return View("~/Views/Users/MySubscriptions.cshtml", subscriptions);
         }
 
-
-        // POST: User/UpdateProfile - Update user profile
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -308,19 +440,24 @@ namespace WeChat.Controllers
             }
 
             // Handle profile picture upload if provided
-            if (model.ProfilePicture != null)
+            if (model.ProfilePicture != null && model.ProfilePicture.Length > 0)
             {
-                // Logic to save profile picture goes here
-                // For example:
-                var fileName = $"{currentUserId}_{DateTime.Now.Ticks}{Path.GetExtension(model.ProfilePicture.FileName)}";
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/profiles", fileName);
-
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                string newProfilePicturePath = await SaveProfilePicture(model.ProfilePicture);
+                if (!string.IsNullOrEmpty(newProfilePicturePath))
                 {
-                    await model.ProfilePicture.CopyToAsync(stream);
+                    // Delete old profile picture if it exists and is not the default
+                    if (!string.IsNullOrEmpty(user.ProfilePicture) &&
+                        !user.ProfilePicture.Contains("default-avatar"))
+                    {
+                        DeleteProfilePicture(user.ProfilePicture);
+                    }
+                    user.ProfilePicture = newProfilePicturePath;
                 }
-
-                user.ProfilePicture = $"/images/profiles/{fileName}";
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid profile picture. Please upload a valid image file (jpg, png, gif) under 5MB.");
+                    return View("~/Views/Account/Profile.cshtml", model);
+                }
             }
 
             try
@@ -328,7 +465,8 @@ namespace WeChat.Controllers
                 _context.Update(user);
                 await _context.SaveChangesAsync();
 
-                // Update authentication cookie with new user data if needed
+                // Refresh the user claims to update the ProfilePicture claim
+                await RefreshUserClaims(user);
 
                 TempData["SuccessMessage"] = "Your profile has been updated successfully!";
                 return RedirectToAction("Profile", "Account");
@@ -340,6 +478,110 @@ namespace WeChat.Controllers
             }
         }
 
+        // Helper method to save profile picture
+        private async Task<string> SaveProfilePicture(IFormFile profilePicture)
+        {
+            try
+            {
+                // Validate file type
+                string[] permittedExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
+                var ext = Path.GetExtension(profilePicture.FileName).ToLowerInvariant();
+
+                if (string.IsNullOrEmpty(ext) || !permittedExtensions.Contains(ext))
+                {
+                    return null; // Invalid file type
+                }
+
+                // Validate file size (max 5MB)
+                if (profilePicture.Length > 5 * 1024 * 1024)
+                {
+                    return null; // File too large
+                }
+
+                // Create uploads directory if it doesn't exist
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "profiles");
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                // Generate unique filename for the image
+                var uniqueFileName = Guid.NewGuid().ToString() + "_" + profilePicture.FileName;
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                // Save the file
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await profilePicture.CopyToAsync(fileStream);
+                }
+
+                // Return the relative URL for the profile picture
+                return "/uploads/profiles/" + uniqueFileName;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        // Helper method to delete profile picture
+        private void DeleteProfilePicture(string profilePicturePath)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(profilePicturePath))
+                    return;
+
+                // Get the physical path of the file
+                string filePath = Path.Combine(
+                    Directory.GetCurrentDirectory(),
+                    "wwwroot",
+                    profilePicturePath.TrimStart('/')
+                );
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+            }
+            catch
+            {
+                // Log error or handle exception as needed
+            }
+        }
+
+        // Helper method to refresh user claims
+        private async Task RefreshUserClaims(User user)
+        {
+            // Sign out the current user
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            // Create claims for the user with the updated profile picture
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+        new Claim(ClaimTypes.Name, user.Username),
+        new Claim(ClaimTypes.Email, user.Email),
+        new Claim(ClaimTypes.GivenName, user.FullName ?? string.Empty),
+        new Claim(ClaimTypes.Role, user.Role.ToString()),
+        new Claim("UserId", user.UserId.ToString()),
+        // Make sure to include the ProfilePicture claim with the updated value
+        new Claim("ProfilePicture", user.ProfilePicture ?? "/images/avatars/default-avatar.png")
+    };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var authProperties = new AuthenticationProperties
+            {
+                IsPersistent = true,
+                ExpiresUtc = DateTimeOffset.UtcNow.AddHours(12)
+            };
+
+            // Sign in the user with updated claims
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+        }
 
         private bool UserExists(int id)
         {

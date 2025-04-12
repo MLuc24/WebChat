@@ -1,45 +1,54 @@
-﻿/* wwwroot/css/conversation.css */
+﻿/* Updated CSS for conversation.css */
 
 /* Message bubbles */
 .message-bubble {
     border-radius: 18px;
-    padding: 10px 15px;
+    padding: 12px 16px;
     max-width: 75%;
     position: relative;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     word-break: break-word;
+    transition: all 0.2s ease;
 }
+
+    .message-bubble:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
 
 .message-sender {
     background-color: #e9f5ff;
     border-top-left-radius: 4px;
+    margin-right: auto;
 }
 
 .message-receiver {
     background-color: #0d6efd;
     color: white;
     border-top-right-radius: 4px;
+    margin-left: auto;
 }
 
 /* User avatar in messages */
 .message-avatar {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Message with avatar layout */
 .message-with-avatar {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
     /* Hide avatar for consecutive messages from same sender */
     .message-with-avatar.consecutive {
-        margin-left: 40px; /* Space for avatar + margin */
+        margin-left: 44px; /* Space for avatar + margin */
     }
 
 /* Adjust spacing for sender's messages */
@@ -49,7 +58,173 @@
     order: 2;
 }
 
-/* Typing indicator */
+/* Conversation list styling */
+.conversation-item {
+    transition: all 0.2s ease;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+    .conversation-item:hover {
+        background-color: #f5f7fb;
+        transform: translateY(-2px);
+    }
+
+    .conversation-item.active {
+        background-color: #e9f0fe;
+        border-left: 3px solid #0d6efd;
+    }
+
+/* Friend badge styling */
+.friend-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Online/offline indicator */
+.online-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #28a745;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+/* Message container styling */
+.chat-messages {
+    background-color: #f8f9fc;
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('/images/chat-bg.png');
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Message actions */
+.message-actions {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none;
+    padding: 3px 8px;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.message-container:hover .message-actions {
+    display: flex;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message-actions button {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+    .message-actions button:hover {
+        color: #dc3545;
+        transform: scale(1.1);
+    }
+
+/* Attachment styling */
+.attachment-preview {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+    .attachment-preview:hover {
+        transform: scale(1.05);
+    }
+
+.attachment-remove {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #dc3545;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 2px solid white;
+    transition: all 0.2s ease;
+}
+
+    .attachment-remove:hover {
+        transform: scale(1.1);
+        background: #c82333;
+    }
+
+/* Toast notifications */
+.toast {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.toast-header {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+/* Friends section in conversation header */
+.conversation-header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-add-friend {
+    transition: all 0.3s ease;
+}
+
+    .btn-add-friend:hover {
+        transform: translateY(-2px);
+    }
+
+/* Typing indicator animation */
+@keyframes wave {
+    0%, 60%, 100% {
+        transform: initial;
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+}
+
 .typing-dots {
     display: flex;
     align-items: center;
@@ -72,135 +247,3 @@
     .dot:nth-child(3) {
         animation-delay: -0.9s;
     }
-
-@keyframes wave {
-    0%, 60%, 100% {
-        transform: initial;
-    }
-
-    30% {
-        transform: translateY(-5px);
-    }
-}
-
-/* Message groups */
-.message-group {
-    margin-bottom: 16px;
-}
-
-.message-item {
-    margin-bottom: 2px;
-}
-
-/* Time stamp */
-.time-stamp {
-    font-size: 11px;
-    opacity: 0.7;
-}
-
-/* Animations */
-.new-message {
-    animation: newMessage 0.3s ease-in-out;
-}
-
-@keyframes newMessage {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Message actions menu */
-.message-actions {
-    position: absolute;
-    top: -15px;
-    right: 10px;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    display: none;
-}
-
-.message-container:hover .message-actions {
-    display: flex;
-}
-
-.message-actions button {
-    border: none;
-    background: transparent;
-    font-size: 14px;
-    padding: 3px 8px;
-    color: #555;
-}
-
-    .message-actions button:hover {
-        color: #0d6efd;
-    }
-
-/* Conversation list */
-.conversation-item {
-    transition: background-color 0.2s;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-    .conversation-item:hover, .conversation-item.active {
-        background-color: #f0f2f5;
-    }
-
-/* Typing indicator */
-.typing-indicator {
-    background-color: transparent;
-    z-index: 1;
-}
-
-/* New message indicator */
-#newMessagesIndicator {
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-}
-
-/* Date separator */
-.date-separator {
-    position: relative;
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Attachments */
-.message-attachments img {
-    max-width: 200px;
-    max-height: 150px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.attachment-preview {
-    position: relative;
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
-
-.attachment-remove {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-}

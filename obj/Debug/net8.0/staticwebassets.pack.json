@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\event.css"
     },
     {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\friend-management.css",
+      "PackagePath": "staticwebassets\\css\\friend-management.css"
+    },
+    {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -51,6 +55,10 @@
     {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",
       "PackagePath": "staticwebassets\\js\\event.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\friend-management.js",
+      "PackagePath": "staticwebassets\\js\\friend-management.js"
     },
     {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\home.js",
@@ -361,8 +369,8 @@
       "PackagePath": "staticwebassets\\uploads\\profiles\\3bad70fd-e194-4737-9440-5465f70f79e4_Ảnh chụp màn hình 2023-03-13 134243.png"
     },
     {
-      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png",
-      "PackagePath": "staticwebassets\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png"
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\9df71bfd-ed1e-4c4d-b09e-c875c288dc85_agatsuma-zenitsu.jpg"
     },
     {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\f0eb237e-3ce2-45ca-8717-12bff6d11bdb_Ảnh chụp màn hình 2023-03-10 214243.png",

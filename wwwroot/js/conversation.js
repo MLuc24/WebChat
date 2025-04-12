@@ -378,9 +378,7 @@ function addDateSeparator(dateString) {
     elements.messagesList.appendChild(separator);
 }
 
-/**
- * Append a message to a message group
- */
+// Modify the appendMessageToGroup function in conversation.js
 function appendMessageToGroup(message, container, isConsecutive) {
     const messageTime = formatTime(new Date(message.sentAt));
     const messageId = message.id;
@@ -474,7 +472,9 @@ function appendMessageToGroup(message, container, isConsecutive) {
     // Add avatar for own messages if not consecutive
     if (message.isMine && !isConsecutive) {
         const avatar = document.createElement('img');
-        avatar.src = '/images/default-avatar.png'; // Replace with current user avatar
+        // Use current user's avatar from server or default
+        const currentUserAvatar = getCurrentUserAvatar();
+        avatar.src = currentUserAvatar;
         avatar.className = 'message-avatar';
         avatar.alt = 'Avatar';
         messageWithAvatar.appendChild(avatar);
@@ -482,6 +482,98 @@ function appendMessageToGroup(message, container, isConsecutive) {
 
     messageItem.appendChild(messageWithAvatar);
     container.appendChild(messageItem);
+}
+
+// Add this function to get the current user's avatar
+function getCurrentUserAvatar() {
+    // Try to get from cache first
+    const cachedAvatar = localStorage.getItem('currentUserAvatar');
+    if (cachedAvatar) {
+        return cachedAvatar;
+    }
+
+    // Default avatar
+    return '/images/default-avatar.png';
+}
+
+// Add this in the loadUserDetails function
+async function loadUserDetails() {
+    try {
+        const response = await fetch(`/User/GetUserDetails/${state.otherUserId}`);
+        const user = await response.json();
+
+        if (!user || user.success === false) {
+            console.error('Error loading user details');
+            elements.conversationUsername.textContent = 'Người dùng không xác định';
+            return;
+        }
+
+        // Update UI with user details
+        elements.conversationUsername.textContent = user.fullName || user.username;
+        elements.otherUserAvatar.src = user.profilePicture || '/images/default-avatar.png';
+        elements.typingAvatar.src = user.profilePicture || '/images/default-avatar.png';
+
+        // Check if user is online
+        const isOnline = user.lastLogin && (new Date() - new Date(user.lastLogin)) / (1000 * 60) < 15;
+        updateUserStatus(isOnline, user.lastLogin);
+
+        // Check if they are friends and update UI
+        if (user.isFriend) {
+            // Add friend indicator to the header
+            const nameContainer = elements.conversationUsername.parentElement;
+            if (nameContainer && !nameContainer.querySelector('.friend-badge')) {
+                const friendBadge = document.createElement('span');
+                friendBadge.className = 'badge bg-info rounded-pill ms-2 friend-badge';
+                friendBadge.innerHTML = '<i class="bi bi-people-fill"></i> Bạn bè';
+                nameContainer.appendChild(friendBadge);
+            }
+        } else {
+            // Add an "add friend" button
+            const headerActions = document.querySelector('.card-header .dropdown');
+            if (headerActions && !headerActions.querySelector('.btn-add-friend')) {
+                const addFriendBtn = document.createElement('button');
+                addFriendBtn.className = 'btn btn-sm btn-outline-primary me-2 btn-add-friend';
+                addFriendBtn.innerHTML = '<i class="bi bi-person-plus"></i> Kết bạn';
+                addFriendBtn.addEventListener('click', () => sendFriendRequest(state.otherUserId));
+                headerActions.insertBefore(addFriendBtn, headerActions.firstChild);
+            }
+        }
+    } catch (error) {
+        console.error('Error loading user details:', error);
+        elements.conversationUsername.textContent = 'Người dùng không xác định';
+    }
+}
+
+// Also add the friend request functions
+async function sendFriendRequest(userId) {
+    try {
+        const response = await fetch('/Friend/SendRequest', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ recipientId: userId })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // Update UI
+            const addFriendBtn = document.querySelector('.btn-add-friend');
+            if (addFriendBtn) {
+                addFriendBtn.className = 'btn btn-sm btn-warning me-2';
+                addFriendBtn.innerHTML = '<i class="bi bi-person-check"></i> Đã gửi lời mời';
+                addFriendBtn.disabled = true;
+            }
+
+            showToast('Đã gửi lời mời kết bạn');
+        } else {
+            showToast('Không thể gửi lời mời kết bạn: ' + result.message);
+        }
+    } catch (error) {
+        console.error('Error sending friend request:', error);
+        showToast('Có lỗi xảy ra khi gửi lời mời kết bạn');
+    }
 }
 
 /**

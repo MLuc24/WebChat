@@ -29,6 +29,8 @@ namespace WeChat.Data
 
         // Subscription system
         public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<Friend> Friends { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -184,6 +186,19 @@ namespace WeChat.Data
                     .HasForeignKey(s => s.UserId)
                     .OnDelete(DeleteBehavior.Cascade);
             });
+
+            // Add in OnModelCreating method
+            modelBuilder.Entity<Friend>()
+                .HasOne(f => f.Requester)
+                .WithMany(u => u.SentFriendRequests)
+                .HasForeignKey(f => f.RequesterId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Friend>()
+                .HasOne(f => f.Recipient)
+                .WithMany(u => u.ReceivedFriendRequests)
+                .HasForeignKey(f => f.RecipientId)
+                .OnDelete(DeleteBehavior.Restrict);
 
 
         }

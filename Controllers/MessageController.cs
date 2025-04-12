@@ -57,6 +57,12 @@ namespace WeChat.Controllers
                 .Where(c => c.User1Id == currentUserId || c.User2Id == currentUserId)
                 .ToListAsync();
 
+            // Get friendship data
+            var friendships = await _context.Friends
+                .Where(f => (f.RequesterId == currentUserId || f.RecipientId == currentUserId) &&
+                           f.Status == FriendStatus.Accepted)
+                .ToListAsync();
+
             var result = new List<ConversationViewModel>();
 
             foreach (var conversation in conversations)
@@ -74,8 +80,12 @@ namespace WeChat.Controllers
 
                 if (lastMessage == null) continue;
 
+                // Check if they are friends
+                bool isFriend = friendships.Any(f =>
+                    (f.RequesterId == otherUser.UserId && f.RecipientId == currentUserId) ||
+                    (f.RequesterId == currentUserId && f.RecipientId == otherUser.UserId));
+
                 // Add conversation details to the result
-                // Update result.Add with null coalescing for ProfilePicture
                 result.Add(new ConversationViewModel
                 {
                     UserId = otherUser.UserId,
@@ -86,14 +96,15 @@ namespace WeChat.Controllers
                     LastMessageDate = lastMessage.SentAt,
                     UnreadCount = conversation.GetUnreadCount(currentUserId),
                     IsOnline = otherUser.LastLogin.HasValue &&
-                               (DateTime.Now - otherUser.LastLogin.Value).TotalMinutes < 15
+                              (DateTime.Now - otherUser.LastLogin.Value).TotalMinutes < 15,
+                    IsFriend = isFriend
                 });
-
             }
 
             // Return the conversations sorted by the last message date
             return Json(result.OrderByDescending(c => c.LastMessageDate));
         }
+
 
 
         // GET: Message/GetMessages/5
@@ -264,7 +275,7 @@ namespace WeChat.Controllers
             return Json(new { success = true });
         }
 
-        // GET: Message/GetUsers
+        // Update GetUsers method to include friendship status
         [HttpGet]
         public async Task<IActionResult> GetUsers(string search = "")
         {
@@ -284,9 +295,8 @@ namespace WeChat.Controllers
                                         u.Email.ToLower().Contains(search));
             }
 
-            var users = await query
-                .Select(u => new
-                {
+            var usersList = await query
+                .Select(u => new {
                     u.UserId,
                     u.Username,
                     u.FullName,
@@ -296,7 +306,76 @@ namespace WeChat.Controllers
                 })
                 .ToListAsync();
 
-            return Json(users);
+            // Get friendship data
+            var friendships = await _context.Friends
+                .Where(f => (f.RequesterId == currentUserId || f.RecipientId == currentUserId) &&
+                           usersList.Select(u => u.UserId).Contains(f.RequesterId == currentUserId ? f.RecipientId : f.RequesterId))
+                .ToListAsync();
+
+            // Enhance user data with friendship info
+            var result = usersList.Select(u => new {
+                u.UserId,
+                u.Username,
+                u.FullName,
+                u.ProfilePicture,
+                u.Department,
+                u.IsOnline,
+
+                // Check friendship status
+                IsFriend = friendships.Any(f => f.Status == FriendStatus.Accepted &&
+                                             (f.RequesterId == u.UserId || f.RecipientId == u.UserId)),
+                HasSentRequest = friendships.Any(f => f.Status == FriendStatus.Pending &&
+                                                  f.RequesterId == currentUserId &&
+                                                  f.RecipientId == u.UserId),
+                HasReceivedRequest = friendships.Any(f => f.Status == FriendStatus.Pending &&
+                                                      f.RequesterId == u.UserId &&
+                                                      f.RecipientId == currentUserId)
+            }).ToList();
+
+            return Json(result);
+        }
+
+        // Add this method to MessageController
+        [HttpGet]
+        public async Task<IActionResult> GetUserDetails(int id)
+        {
+            int currentUserId = GetCurrentUserId();
+
+            // Find user
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return Json(new { success = false });
+            }
+
+            // Check if they are friends
+            var friendship = await _context.Friends
+                .FirstOrDefaultAsync(f =>
+                    (f.RequesterId == currentUserId && f.RecipientId == id) ||
+                    (f.RequesterId == id && f.RecipientId == currentUserId));
+
+            bool isFriend = friendship != null && friendship.Status == FriendStatus.Accepted;
+            bool hasSentRequest = friendship != null &&
+                                  friendship.Status == FriendStatus.Pending &&
+                                  friendship.RequesterId == currentUserId;
+            bool hasReceivedRequest = friendship != null &&
+                                     friendship.Status == FriendStatus.Pending &&
+                                     friendship.RecipientId == currentUserId;
+
+            // Return user details with friendship status
+            return Json(new
+            {
+                success = true,
+                userId = user.UserId,
+                username = user.Username,
+                fullName = user.FullName,
+                profilePicture = user.ProfilePicture,
+                department = user.Department,
+                lastLogin = user.LastLogin,
+                isFriend = isFriend,
+                hasSentRequest = hasSentRequest,
+                hasReceivedRequest = hasReceivedRequest
+            });
         }
 
         #region Helper Methods

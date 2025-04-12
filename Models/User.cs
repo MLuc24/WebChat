@@ -19,6 +19,8 @@ public partial class User
     public virtual ICollection<Event> Events { get; set; } = new List<Event>();
     public virtual ICollection<Subscription> Subscriptions { get; set; } = new List<Subscription>();
 
+    public virtual ICollection<Friend> SentFriendRequests { get; set; } = new List<Friend>();
+    public virtual ICollection<Friend> ReceivedFriendRequests { get; set; } = new List<Friend>();
     // Loại bỏ các dòng sau nếu có:
     // public virtual ICollection<Message> MessageReceivers { get; set; } = new List<Message>();
     // public virtual ICollection<Message> MessageSenders { get; set; } = new List<Message>();
