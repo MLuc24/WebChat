@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Tin nhắn";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center rounded-top">
+                    <h5 class="mb-0"><i class="bi bi-chat-dots me-2"></i>Tin nhắn</h5>
+                    <div>
+                        <button class="btn btn-light btn-sm rounded-pill" id="newMessageBtn">
+                            <i class="bi bi-pencil"></i> Tin nhắn mới
+                        </button>
+                    </div>
+                </div>
+
+                <div class="px-3 py-2 border-bottom">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" id="searchConversation" class="form-control border-0 bg-light"
+                               placeholder="Tìm kiếm cuộc trò chuyện...">
+                    </div>
+                </div>
+
+                <div class="list-group list-group-flush overflow-auto" id="conversationsList" style="height: 70vh;">
+                    <div class="text-center p-3" id="loadingConversations">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Đang tải...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-8">
+            <div class="card border-0 shadow-sm rounded-3 h-100 d-flex justify-content-center align-items-center bg-light">
+                <div class="text-center p-5">
+                    <i class="bi bi-chat-text display-1 text-muted"></i>
+                    <h4 class="mt-4">Chọn một cuộc trò chuyện để bắt đầu</h4>
+                    <p class="text-muted">Hoặc bắt đầu một cuộc trò chuyện mới</p>
+                    <button class="btn btn-primary mt-3" id="newMessageBtnLarge">
+                        <i class="bi bi-pencil me-2"></i>Tin nhắn mới
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Message Modal -->
+<div class="modal fade" id="newMessageModal" tabindex="-1" aria-labelledby="newMessageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newMessageModalLabel">Tin nhắn mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="userSearch" class="form-label">Tìm người dùng</label>
+                    <input type="text" class="form-control" id="userSearch" placeholder="Nhập tên người dùng...">
+                </div>
+                <div class="list-group" id="usersList">
+                    <!-- Users will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/message-index.js"></script>
+}

@@ -1,0 +1,925 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Web n\u00E2ng cao\\WeChat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\subscription-management.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\subscription-management.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\message\\conversation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\message\\conversation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\user-management.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\user-management.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\users\\plans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\users\\plans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\users\\mysubscriptions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\users\\mysubscriptions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\subscription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\subscription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\subcriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\subcriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\user-subscriptions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\user-subscriptions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\message-index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\message-index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\event.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\event.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\conversation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\conversation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\user-management.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\user-management.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\event.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\event.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\conversation.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\conversation.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\sendmessageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\sendmessageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\messageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\messageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\data\\webchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:data\\webchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\updateprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\updateprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\conversationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\conversationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\home.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\home.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conversation.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Message\\Conversation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Message\\Conversation.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Message\\Conversation.cshtml",
+              "RelativeToolTip": "Views\\Message\\Conversation.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAI8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:16:33.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "subscription-management.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\subscription-management.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\subscription-management.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\subscription-management.js",
+              "RelativeToolTip": "wwwroot\\js\\subscription-management.js",
+              "ViewState": "AgIAAGYBAAAAAAAAAAAAAGYBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T16:43:28.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAAAHABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:52:42.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:25:26.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-11T07:42:37.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:02:23.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Profile.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T09:18:10.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "user-management.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\user-management.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\user-management.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\user-management.js",
+              "RelativeToolTip": "wwwroot\\js\\user-management.js",
+              "ViewState": "AgIAAJgCAAAAAAAAAAAkwMMCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T08:36:34.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Index.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "Views\\Event\\Index.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAkwNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:55:38.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Message\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Message\\Index.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Message\\Index.cshtml",
+              "RelativeToolTip": "Views\\Message\\Index.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowE0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:16:18.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Plans.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\Plans.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Plans.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\Plans.cshtml",
+              "RelativeToolTip": "Views\\Users\\Plans.cshtml",
+              "ViewState": "AgIAAFkBAAAAAAAAAAAkwKIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T16:54:07.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MySubscriptions.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\MySubscriptions.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\MySubscriptions.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\MySubscriptions.cshtml",
+              "RelativeToolTip": "Views\\Users\\MySubscriptions.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T16:53:24.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAswAIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:52:24.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Subscription\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Subscription\\Index.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Subscription\\Index.cshtml",
+              "RelativeToolTip": "Views\\Subscription\\Index.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAAArwJEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T16:15:09.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Document.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "Models\\Document.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Document.cs",
+              "RelativeToolTip": "Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:07:30.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Attachment.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Attachment.cs",
+              "RelativeDocumentMoniker": "Models\\Attachment.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Attachment.cs",
+              "RelativeToolTip": "Models\\Attachment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:52:25.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAADwvyUBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:51:51.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SubcriptionController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\SubcriptionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SubcriptionController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\SubcriptionController.cs",
+              "RelativeToolTip": "Controllers\\SubcriptionController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwEoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T16:14:40.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MessageController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Controllers\\MessageController.cs",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAAANEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:14:51.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:42:00.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Controllers\\EventController.cs",
+              "ViewState": "AgIAAF4BAAAAAAAAAAAIwIQBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:53:37.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAywP0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:57:47.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "site.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T18:10:47.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "user-subscriptions.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\user-subscriptions.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\user-subscriptions.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\user-subscriptions.js",
+              "RelativeToolTip": "wwwroot\\js\\user-subscriptions.js",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwLoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T04:39:50.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "message-index.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\message-index.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\message-index.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\message-index.js",
+              "RelativeToolTip": "wwwroot\\js\\message-index.js",
+              "ViewState": "AgIAAGQBAAAAAAAAAAAswJoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T15:59:19.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "layout.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\layout.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\layout.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\layout.js",
+              "RelativeToolTip": "wwwroot\\js\\layout.js",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAowI0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T01:55:56.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "event.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\event.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\event.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\event.js",
+              "RelativeToolTip": "wwwroot\\js\\event.js",
+              "ViewState": "AgIAAFICAAAAAAAAAAAkwJgCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T02:41:03.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "home.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\home.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\home.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\home.js",
+              "RelativeToolTip": "wwwroot\\js\\home.js",
+              "ViewState": "AgIAAPABAAAAAAAAAAAUwBcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T17:03:53.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "conversation.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\conversation.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\conversation.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\conversation.js",
+              "RelativeToolTip": "wwwroot\\js\\conversation.js",
+              "ViewState": "AgIAAIQEAAAAAAAAAAAowLkEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T15:32:22.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "user-management.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\user-management.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\user-management.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\user-management.css",
+              "RelativeToolTip": "wwwroot\\css\\user-management.css",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T08:40:16.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T09:46:37.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "profile.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\profile.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\profile.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\profile.css",
+              "RelativeToolTip": "wwwroot\\css\\profile.css",
+              "ViewState": "AgIAABIAAAAAAAAAAADwv2MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T03:04:23.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "layout.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\layout.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\layout.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\layout.css",
+              "RelativeToolTip": "wwwroot\\css\\layout.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T01:55:47.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "event.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\event.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\event.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\event.css",
+              "RelativeToolTip": "wwwroot\\css\\event.css",
+              "ViewState": "AgIAAOEAAAAAAAAAAADwvykBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T02:41:23.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "conversation.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\conversation.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\conversation.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\conversation.css",
+              "RelativeToolTip": "wwwroot\\css\\conversation.css",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAkwM4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-11T15:32:01.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:59:05.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SendMessageViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\SendMessageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\SendMessageViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\SendMessageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\SendMessageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:15:50.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MessageViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\MessageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MessageViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\MessageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MessageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:53:25.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:58:38.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EventViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\EventViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EventViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\EventViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EventViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:54:20.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAnwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:47:13.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "Models\\Subscription.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Subscription.cs",
+              "RelativeToolTip": "Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T18:20:38.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "WebChatContext.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\WebChatContext.cs",
+              "RelativeDocumentMoniker": "Data\\WebChatContext.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\WebChatContext.cs",
+              "RelativeToolTip": "Data\\WebChatContext.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAUwLoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:44:38.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Helpers\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Helpers\\PasswordHasher.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Helpers\\PasswordHasher.cs",
+              "RelativeToolTip": "Helpers\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:57:28.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:34:44.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Conversation.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Conversation.cs",
+              "RelativeDocumentMoniker": "Models\\Conversation.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Conversation.cs",
+              "RelativeToolTip": "Models\\Conversation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:04:27.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Message.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:52:10.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:07:33.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Event.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:07:35.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:55:58.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "Models\\UserRole.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\UserRole.cs",
+              "RelativeToolTip": "Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:56:30.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UpdateProfileViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\UpdateProfileViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\UpdateProfileViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\UpdateProfileViewModel.cs",
+              "RelativeToolTip": "ViewModels\\UpdateProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:18:54.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ConversationViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\ConversationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ConversationViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\ConversationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ConversationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:53:43.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "home.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\home.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "wwwroot\\css\\home.css",
+              "ViewState": "AgIAAD4DAAAAAAAAAADwv4ADAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-11T17:04:02.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "home.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\home.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "wwwroot\\css\\home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-11T08:34:37.833Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

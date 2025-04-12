@@ -1,0 +1,419 @@
+﻿@model List<WeChat.Controllers.PlanViewModel>
+@{
+    ViewData["Title"] = "Gói đăng ký";
+}
+
+<div class="container mt-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Chọn gói đăng ký phù hợp với bạn</h1>
+        <p class="lead">Mở khóa toàn bộ sức mạnh của WeChat với các gói đăng ký linh hoạt</p>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-10">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-striped comparison-table mb-0">
+                            <thead>
+                                <tr>
+                                    <th style="min-width: 200px;">Tính năng</th>
+                                    @foreach (var plan in Model)
+                                    {
+                                        <th class="text-center">@plan.Name</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Giá</td>
+                                    @foreach (var plan in Model)
+                                    {
+                                        <td class="text-center fw-bold">$@plan.PriceMonthly/tháng</td>
+                                    }
+                                </tr>
+                                <tr>
+                                    <td>Nhắn tin</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                </tr>
+                                <tr>
+                                    <td>Lưu trữ</td>
+                                    <td class="text-center">1GB</td>
+                                    <td class="text-center">5GB</td>
+                                    <td class="text-center">20GB</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                </tr>
+                                <tr>
+                                    <td>Sự kiện hàng tháng</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">15</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                </tr>
+                                <tr>
+                                    <td>Thành viên nhóm chat</td>
+                                    <td class="text-center">10</td>
+                                    <td class="text-center">20</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                    <td class="text-center">Không giới hạn</td>
+                                </tr>
+                                <tr>
+                                    <td>Hỗ trợ</td>
+                                    <td class="text-center">Cơ bản</td>
+                                    <td class="text-center">Ưu tiên</td>
+                                    <td class="text-center">24/7</td>
+                                    <td class="text-center">Quản lý riêng</td>
+                                </tr>
+                                <tr>
+                                    <td>Tích hợp API</td>
+                                    <td class="text-center"><i class="bi bi-x-circle text-danger"></i></td>
+                                    <td class="text-center"><i class="bi bi-x-circle text-danger"></i></td>
+                                    <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+                                    <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Bảo mật nâng cao</td>
+                                    <td class="text-center"><i class="bi bi-x-circle text-danger"></i></td>
+                                    <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+                                    <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+                                    <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    @foreach (var plan in Model)
+                                    {
+                                        <td class="text-center">
+                                            <button class="btn btn-primary btn-subscribe" data-plan="@plan.Id" data-name="@plan.Name" data-price="@plan.PriceMonthly">
+                                                Chọn gói này
+                                            </button>
+                                        </td>
+                                    }
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title"><i class="bi bi-stars text-warning me-2"></i>Tại sao nên nâng cấp?</h3>
+                    <p class="lead">Mở khóa các tính năng cao cấp để nâng cao trải nghiệm WeChat của bạn</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                            <div>
+                                <strong>Giao tiếp không giới hạn</strong>
+                                <p class="text-muted">Nhắn tin, chia sẻ tệp và tạo nhóm chat không giới hạn</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                            <div>
+                                <strong>Lưu trữ lớn hơn</strong>
+                                <p class="text-muted">Thêm dung lượng để lưu trữ tệp, hình ảnh và tài liệu quan trọng</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                            <div>
+                                <strong>Quản lý sự kiện nâng cao</strong>
+                                <p class="text-muted">Tạo và quản lý nhiều sự kiện hơn với các tính năng lịch nâng cao</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                            <div>
+                                <strong>Hỗ trợ ưu tiên</strong>
+                                <p class="text-muted">Nhận hỗ trợ nhanh chóng khi bạn cần</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title"><i class="bi bi-question-circle text-primary me-2"></i>Câu hỏi thường gặp</h3>
+                    <div class="accordion mt-4" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 bg-light rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Tôi có thể thay đổi gói đăng ký của mình không?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Có, bạn có thể nâng cấp hoặc hạ cấp gói đăng ký của mình bất cứ lúc nào. Nếu bạn nâng cấp, phí bổ sung sẽ được tính dựa trên thời gian còn lại. Nếu bạn hạ cấp, thay đổi sẽ có hiệu lực khi gói hiện tại kết thúc.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 bg-light rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Các phương thức thanh toán nào được chấp nhận?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Chúng tôi chấp nhận tất cả các thẻ tín dụng chính, PayPal, và chuyển khoản ngân hàng cho gói Doanh nghiệp.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 bg-light rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Tôi có thể hủy đăng ký bất cứ lúc nào không?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Có, bạn có thể hủy đăng ký bất cứ lúc nào. Gói đăng ký của bạn sẽ vẫn có hiệu lực cho đến cuối kỳ thanh toán hiện tại.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-light rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Có được dùng thử trước khi đăng ký không?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Chúng tôi cung cấp 7 ngày dùng thử miễn phí cho gói Standard. Bạn có thể đăng ký dùng thử trong trang tài khoản của mình.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Subscribe Modal -->
+<div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Đăng ký gói <span id="selectedPlanName"></span></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="subscription-validation-summary" class="text-danger mb-3"></div>
+                <form id="subscriptionForm">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="planId" name="PlanId" value="" />
+                    <input type="hidden" id="planName" name="PlanName" value="" />
+                    <input type="hidden" id="price" name="Price" value="" />
+
+                    <div class="mb-3">
+                        <label for="durationMonths" class="form-label">Thời hạn đăng ký</label>
+                        <select id="durationMonths" name="DurationMonths" class="form-select">
+                            <option value="1">1 tháng</option>
+                            <option value="3">3 tháng</option>
+                            <option value="6">6 tháng</option>
+                            <option value="12">12 tháng</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tổng thanh toán</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" id="totalPrice" readonly>
+                        </div>
+                        <small class="text-muted">Đăng ký dài hạn sẽ được giảm giá.</small>
+                    </div>
+
+                    <hr />
+
+                    <div class="mb-3">
+                        <h6>Phương thức thanh toán</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                            <label class="form-check-label" for="creditCard">Thẻ tín dụng / Thẻ ghi nợ</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="banking" value="banking">
+                            <label class="form-check-label" for="banking">Chuyển khoản ngân hàng</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" id="confirmSubscriptionBtn">
+                    <span id="subscribeSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    Xác nhận đăng ký
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Đăng ký thành công</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                <h4 class="mt-3">Cảm ơn bạn đã đăng ký!</h4>
+                <p class="mb-0">Gói <strong id="successPlanName"></strong> của bạn đã được kích hoạt thành công.</p>
+                <p>Bạn có thể quản lý các gói đăng ký của mình trong trang "Gói đăng ký của tôi".</p>
+            </div>
+            <div class="modal-footer">
+                <a href="/User/MySubscriptions" class="btn btn-primary">Đi đến gói đăng ký của tôi</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+    <style>
+        .comparison-table th:not(:first-child),
+        .comparison-table td:not(:first-child) {
+            width: 18%;
+        }
+
+        .btn-subscribe {
+            min-width: 120px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e7f1ff !important;
+            color: #0d6efd;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-item {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Initialize subscription buttons
+            $('.btn-subscribe').click(function() {
+                var planId = $(this).data('plan');
+                var planName = $(this).data('name');
+                var price = $(this).data('price');
+
+                // Update modal with plan information
+                $('#selectedPlanName').text(planName);
+                $('#planId').val(planId);
+                $('#planName').val(planName);
+                $('#price').val(price);
+
+                // Calculate initial total price
+                calculateTotal();
+
+                // Show the modal
+                $('#subscribeModal').modal('show');
+            });
+
+            // Handle duration selection change
+            $('#durationMonths').on('change', function() {
+                calculateTotal();
+            });
+
+            // Calculate total price based on duration
+            function calculateTotal() {
+                const basePrice = parseFloat($('#price').val());
+                const duration = parseInt($('#durationMonths').val());
+                let discount = 0;
+
+                // Apply discounts for longer subscriptions
+                if (duration === 3) discount = 0.05;      // 5% discount for 3 months
+                else if (duration === 6) discount = 0.10; // 10% discount for 6 months
+                else if (duration === 12) discount = 0.15; // 15% discount for 12 months
+
+                const totalPrice = basePrice * duration * (1 - discount);
+                $('#totalPrice').val(totalPrice.toFixed(2));
+            }
+
+            // Handle subscription confirmation
+            $('#confirmSubscriptionBtn').click(function() {
+                const btn = $(this);
+                const spinner = $('#subscribeSpinner');
+
+                // Show spinner and disable button
+                spinner.removeClass('d-none');
+                btn.prop('disabled', true);
+
+                // Clear previous validation messages
+                $('#subscription-validation-summary').html('');
+
+                // Get form data
+                const formData = new FormData(document.getElementById('subscriptionForm'));
+
+                // Send subscription request to server
+                $.ajax({
+                    url: '/Subscription/Subscribe',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if (response.success) {
+                            // Handle successful subscription
+                            $('#subscribeModal').modal('hide');
+
+                            // Show success modal
+                            $('#successPlanName').text($('#planName').val());
+                            $('#successModal').modal('show');
+                        } else {
+                            // Show error message
+                            let errorMessage = response.message || 'Có lỗi xảy ra. Vui lòng thử lại.';
+                            if (response.errors) {
+                                errorMessage = '<ul>';
+                                for (const error of response.errors) {
+                                    errorMessage += `<li>${error}</li>`;
+                                }
+                                errorMessage += '</ul>';
+                            }
+                            $('#subscription-validation-summary').html(errorMessage);
+                        }
+                    },
+                    error: function(xhr) {
+                        // Show error message
+                        let errorMessage = 'Có lỗi xảy ra khi xử lý đăng ký. Vui lòng thử lại sau.';
+                        try {
+                            const response = JSON.parse(xhr.responseText);
+                            if (response.message) {
+                                errorMessage = response.message;
+                            }
+                        } catch (e) {
+                            console.error('Error parsing response:', e);
+                        }
+                        $('#subscription-validation-summary').html(errorMessage);
+                    },
+                    complete: function() {
+                        // Hide spinner and enable button
+                        spinner.addClass('d-none');
+                        btn.prop('disabled', false);
+                    }
+                });
+            });
+        });
+    </script>
+}
+

@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WeChat.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WeChat.4kvta8i09z.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\conversation.css",
+      "PackagePath": "staticwebassets\\css\\conversation.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\event.css",
+      "PackagePath": "staticwebassets\\css\\event.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\user-management.css",
+      "PackagePath": "staticwebassets\\css\\user-management.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\images\\avatars\\default-avatar.png",
+      "PackagePath": "staticwebassets\\images\\avatars\\default-avatar.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\images\\default-image.png",
+      "PackagePath": "staticwebassets\\images\\default-image.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\conversation.js",
+      "PackagePath": "staticwebassets\\js\\conversation.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",
+      "PackagePath": "staticwebassets\\js\\event.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\layout.js",
+      "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\message-index.js",
+      "PackagePath": "staticwebassets\\js\\message-index.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\subscription-management.js",
+      "PackagePath": "staticwebassets\\js\\subscription-management.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\user-management.js",
+      "PackagePath": "staticwebassets\\js\\user-management.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\user-subscriptions.js",
+      "PackagePath": "staticwebassets\\js\\user-subscriptions.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\18\\379658080_353691920329547_3447369586348857393_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\messages\\18\\379658080_353691920329547_3447369586348857393_n.jpg"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\1\\Ảnh chụp màn hình 2023-03-13 134041.png",
+      "PackagePath": "staticwebassets\\uploads\\messages\\1\\Ảnh chụp màn hình 2023-03-13 134041.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\22\\Ảnh chụp màn hình 2023-03-27 001726.png",
+      "PackagePath": "staticwebassets\\uploads\\messages\\22\\Ảnh chụp màn hình 2023-03-27 001726.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\23\\Ảnh chụp màn hình 2023-03-10 214243.png",
+      "PackagePath": "staticwebassets\\uploads\\messages\\23\\Ảnh chụp màn hình 2023-03-10 214243.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\24\\Ảnh chụp màn hình 2023-03-13 134243.png",
+      "PackagePath": "staticwebassets\\uploads\\messages\\24\\Ảnh chụp màn hình 2023-03-13 134243.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\3\\Ảnh chụp màn hình 2023-03-13 134243.png",
+      "PackagePath": "staticwebassets\\uploads\\messages\\3\\Ảnh chụp màn hình 2023-03-13 134243.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\5\\mvc.docx",
+      "PackagePath": "staticwebassets\\uploads\\messages\\5\\mvc.docx"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\messages\\7\\Ảnh chụp màn hình 2023-03-13 134041.png",
+      "PackagePath": "staticwebassets\\uploads\\messages\\7\\Ảnh chụp màn hình 2023-03-13 134041.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\33ddd905-3465-4759-b399-a563558a5220_Ảnh chụp màn hình 2023-03-27 001726.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\33ddd905-3465-4759-b399-a563558a5220_Ảnh chụp màn hình 2023-03-27 001726.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\3a34c9fd-8ef9-4e29-84bf-4a998a915ca0_Ảnh chụp màn hình 2023-04-18 023422.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\3a34c9fd-8ef9-4e29-84bf-4a998a915ca0_Ảnh chụp màn hình 2023-04-18 023422.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\3bad70fd-e194-4737-9440-5465f70f79e4_Ảnh chụp màn hình 2023-03-13 134243.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\3bad70fd-e194-4737-9440-5465f70f79e4_Ảnh chụp màn hình 2023-03-13 134243.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\aca72544-58fe-4a91-a459-71da7e40f6fa_Ảnh chụp màn hình 2023-03-17 211322.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\f0eb237e-3ce2-45ca-8717-12bff6d11bdb_Ảnh chụp màn hình 2023-03-10 214243.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\f0eb237e-3ce2-45ca-8717-12bff6d11bdb_Ảnh chụp màn hình 2023-03-10 214243.png"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\uploads\\profiles\\f3038a5a-9e42-41af-97c1-89f569f84ebf_Ảnh chụp màn hình 2023-03-17 211322.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\f3038a5a-9e42-41af-97c1-89f569f84ebf_Ảnh chụp màn hình 2023-03-17 211322.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WeChat.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WeChat.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WeChat.props",
+      "PackagePath": "build\\WeChat.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WeChat.props",
+      "PackagePath": "buildMultiTargeting\\WeChat.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WeChat.props",
+      "PackagePath": "buildTransitive\\WeChat.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

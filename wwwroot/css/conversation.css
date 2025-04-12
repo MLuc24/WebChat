@@ -1,0 +1,206 @@
+﻿/* wwwroot/css/conversation.css */
+
+/* Message bubbles */
+.message-bubble {
+    border-radius: 18px;
+    padding: 10px 15px;
+    max-width: 75%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    word-break: break-word;
+}
+
+.message-sender {
+    background-color: #e9f5ff;
+    border-top-left-radius: 4px;
+}
+
+.message-receiver {
+    background-color: #0d6efd;
+    color: white;
+    border-top-right-radius: 4px;
+}
+
+/* User avatar in messages */
+.message-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+/* Message with avatar layout */
+.message-with-avatar {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2px;
+}
+
+    /* Hide avatar for consecutive messages from same sender */
+    .message-with-avatar.consecutive {
+        margin-left: 40px; /* Space for avatar + margin */
+    }
+
+/* Adjust spacing for sender's messages */
+.justify-content-end .message-avatar {
+    margin-right: 0;
+    margin-left: 8px;
+    order: 2;
+}
+
+/* Typing indicator */
+.typing-dots {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #6c757d;
+    margin-right: 4px;
+    animation: wave 1.3s linear infinite;
+}
+
+    .dot:nth-child(2) {
+        animation-delay: -1.1s;
+    }
+
+    .dot:nth-child(3) {
+        animation-delay: -0.9s;
+    }
+
+@keyframes wave {
+    0%, 60%, 100% {
+        transform: initial;
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Message groups */
+.message-group {
+    margin-bottom: 16px;
+}
+
+.message-item {
+    margin-bottom: 2px;
+}
+
+/* Time stamp */
+.time-stamp {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+/* Animations */
+.new-message {
+    animation: newMessage 0.3s ease-in-out;
+}
+
+@keyframes newMessage {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Message actions menu */
+.message-actions {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.message-container:hover .message-actions {
+    display: flex;
+}
+
+.message-actions button {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 3px 8px;
+    color: #555;
+}
+
+    .message-actions button:hover {
+        color: #0d6efd;
+    }
+
+/* Conversation list */
+.conversation-item {
+    transition: background-color 0.2s;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+    .conversation-item:hover, .conversation-item.active {
+        background-color: #f0f2f5;
+    }
+
+/* Typing indicator */
+.typing-indicator {
+    background-color: transparent;
+    z-index: 1;
+}
+
+/* New message indicator */
+#newMessagesIndicator {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+/* Date separator */
+.date-separator {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Attachments */
+.message-attachments img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.attachment-preview {
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.attachment-remove {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}

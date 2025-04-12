@@ -1,0 +1,313 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Hồ sơ cá nhân";
+}
+
+<link rel="stylesheet" href="~/css/profile.css" />
+
+<div class="container profile-container py-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4 border-0 shadow-sm profile-card">
+                <div class="card-body text-center">
+                    @if (!string.IsNullOrEmpty(Model.ProfilePicture))
+                    {
+                        <img src="@Model.ProfilePicture" alt="@Model.FullName" class="rounded-circle img-fluid profile-image">
+                    }
+                    else
+                    {
+                        <img src="~/images/default-avatar.png" alt="@Model.FullName" class="rounded-circle img-fluid profile-image">
+                    }
+                    <h5 class="my-3">@Model.FullName</h5>
+                    <p class="text-muted mb-1">@Model.JobTitle</p>
+                    <p class="text-muted mb-4">@Model.Department</p>
+                    <div class="d-flex justify-content-center mb-2">
+                        <button type="button" class="btn btn-primary edit-profile-btn" id="editProfileBtn">
+                            <i class="bi bi-pencil-fill me-2"></i>Chỉnh sửa hồ sơ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card mb-4 border-0 shadow-sm profile-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0 profile-info-label">Họ tên</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="profile-info-value mb-0">@Model.FullName</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0 profile-info-label">Tên đăng nhập</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="profile-info-value mb-0">@Model.Username</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0 profile-info-label">Email</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="profile-info-value mb-0">@Model.Email</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0 profile-info-label">Phòng ban</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="profile-info-value mb-0">@(Model.Department ?? "Chưa cập nhật")</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0 profile-info-label">Chức vụ</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="profile-info-value mb-0">@(Model.JobTitle ?? "Chưa cập nhật")</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="mb-0 profile-info-label">Ngày tham gia</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="profile-info-value mb-0">@(Model.CreatedDate?.ToString("dd/MM/yyyy"))</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Profile Modal -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProfileModalLabel">Chỉnh sửa hồ sơ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info mb-3">
+                    <i class="bi bi-info-circle me-2"></i>Bạn chỉ cần cập nhật các trường mong muốn thay đổi, các trường còn lại có thể để trống.
+                </div>
+                <div id="validation-summary" class="text-danger mb-3"></div>
+
+                <form id="profileForm" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="userId" name="UserId" value="@Model.UserId" />
+
+                    <div class="mb-3 text-center">
+                        @if (!string.IsNullOrEmpty(Model.ProfilePicture))
+                        {
+                            <img src="@Model.ProfilePicture" id="profileImagePreview" class="rounded-circle mb-3 profile-image" style="width: 100px; height: 100px;">
+                        }
+                        else
+                        {
+                            <img src="~/images/default-avatar.png" id="profileImagePreview" class="rounded-circle mb-3 profile-image" style="width: 100px; height: 100px;">
+                        }
+                        <div class="mb-3">
+                            <label for="profilePicture" class="form-label optional-field">Ảnh đại diện</label>
+                            <input type="file" class="form-control" id="profilePicture" name="ProfilePicture" accept="image/*">
+                            <div class="form-text">Chọn ảnh đại diện mới (JPG, PNG)</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Họ tên</label>
+                        <input type="text" class="form-control" id="fullName" name="FullName" value="@Model.FullName" placeholder="Nhập họ tên">
+                        <span class="text-danger" data-valmsg-for="FullName"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="Email" value="@Model.Email" placeholder="Nhập email">
+                        <span class="text-danger" data-valmsg-for="Email"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="department" class="form-label optional-field">Phòng ban</label>
+                        <input type="text" class="form-control" id="department" name="Department" value="@Model.Department" placeholder="Nhập phòng ban">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="jobTitle" class="form-label optional-field">Chức vụ</label>
+                        <input type="text" class="form-control" id="jobTitle" name="JobTitle" value="@Model.JobTitle" placeholder="Nhập chức vụ">
+                    </div>
+
+                    <hr>
+                    <h6 class="mb-3">Thay đổi mật khẩu (tùy chọn)</h6>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label optional-field">Mật khẩu mới</label>
+                        <input type="password" class="form-control" id="password" name="Password" placeholder="Nhập mật khẩu mới">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label optional-field">Xác nhận mật khẩu mới</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword" placeholder="Xác nhận mật khẩu mới">
+                        <span class="text-danger" id="password-error"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary edit-profile-btn" id="saveProfileBtn">
+                    <span id="saveSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    Lưu thay đổi
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Container -->
+<div id="toast-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1100"></div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Show edit profile modal
+            $("#editProfileBtn").click(function () {
+                // Clear previous validation messages
+                $('.text-danger').text('');
+                $('#validation-summary').html('');
+
+                // Clear password fields for security
+                $("#password").val('');
+                $("#confirmPassword").val('');
+
+                $("#editProfileModal").modal("show");
+            });
+
+            // Preview profile image when a new one is selected
+            $("#profilePicture").change(function () {
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#profileImagePreview').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+
+            // Save profile changes using fetch API
+            $("#saveProfileBtn").click(function () {
+                // Validate password match if entered
+                const password = $("#password").val();
+                const confirmPassword = $("#confirmPassword").val();
+
+                // Clear previous validation messages
+                $('.text-danger').text('');
+                $('#validation-summary').html('');
+
+                if (password && password !== confirmPassword) {
+                    $("#password-error").text("Mật khẩu xác nhận không khớp!");
+                    return;
+                }
+
+                // Show spinner
+                $('#saveSpinner').removeClass('d-none');
+                $('#saveProfileBtn').attr('disabled', true);
+
+                // Get form data
+                const form = document.getElementById('profileForm');
+                const formData = new FormData(form);
+
+                // Use fetch API for the request
+                fetch('/Account/UpdateProfile', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    }
+                })
+                .then(response => response.json())
+                .then(result => {
+                    console.log("Response received:", result);
+
+                    if (result.success) {
+                        $("#editProfileModal").modal("hide");
+                        showToast("Cập nhật hồ sơ thành công", "success");
+
+                        // Reload page to show updated info
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1000);
+                    } else {
+                        // Handle validation errors
+                        if (result.errors) {
+                            Object.keys(result.errors).forEach(key => {
+                                const errorSpan = $(`span[data-valmsg-for="${key}"]`);
+                                if (errorSpan.length) {
+                                    errorSpan.text(result.errors[key][0]);
+                                } else {
+                                    $('#validation-summary').append(`<p>${result.errors[key][0]}</p>`);
+                                }
+                            });
+                        } else if (result.message) {
+                            $('#validation-summary').html(`<p>${result.message}</p>`);
+                        }
+
+                        showToast("Có lỗi xảy ra: " + result.message, "error");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    showToast("Không thể cập nhật hồ sơ. Vui lòng thử lại sau.", "error");
+                })
+                .finally(() => {
+                    // Hide spinner
+                    $('#saveSpinner').addClass('d-none');
+                    $('#saveProfileBtn').attr('disabled', false);
+                });
+            });
+
+            // Toast notification function with improved styling
+            function showToast(message, type) {
+                const bgClass = type === 'success' ? 'bg-success' : 'bg-danger';
+                const icon = type === 'success' ?
+                    '<i class="bi bi-check-circle-fill me-2"></i>' :
+                    '<i class="bi bi-exclamation-circle-fill me-2"></i>';
+
+                const toast = `
+                    <div class="toast align-items-center ${bgClass} text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                            <div class="toast-body">
+                                ${icon}${message}
+                            </div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                    </div>
+                `;
+
+                $('#toast-container').append(toast);
+                const toastElement = $('.toast').last();
+                const bsToast = new bootstrap.Toast(toastElement, {
+                    animation: true,
+                    autohide: true,
+                    delay: 3000
+                });
+                bsToast.show();
+
+                // Remove toast element after it's hidden
+                toastElement.on('hidden.bs.toast', function() {
+                    $(this).remove();
+                });
+            }
+        });
+    </script>
+}

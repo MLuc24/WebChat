@@ -1,0 +1,99 @@
+﻿/* Enhanced profile.css */
+.profile-container {
+    padding: 2rem 0;
+}
+
+.profile-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+    .profile-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+    .profile-image:hover {
+        transform: scale(1.05);
+    }
+
+.profile-info-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.profile-info-value {
+    color: #6c757d;
+}
+
+/* Modal Improvements */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-radius: 0 0 15px 15px;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+    .form-control:focus {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+        border-color: #86b7fe;
+    }
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+/* Button styling */
+.edit-profile-btn {
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+    .edit-profile-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Toast styling */
+.toast {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional field indicators */
+.optional-field::after {
+    content: " (tùy chọn)";
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-weight: normal;
+}

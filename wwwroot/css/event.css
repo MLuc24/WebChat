@@ -1,0 +1,297 @@
+﻿/* Event Management Stylesheet */
+
+/* Calendar container */
+#calendarContainer {
+    position: relative;
+}
+
+/* Calendar loading indicator */
+#calendarLoading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Calendar customization */
+#calendar {
+    min-height: 650px;
+    font-family: var(--bs-font-sans-serif);
+}
+
+/* Keep calendar header sticky */
+.fc .fc-toolbar.fc-header-toolbar {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 5;
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Calendar theme overrides */
+.fc .fc-button-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    box-shadow: none !important;
+}
+
+    .fc .fc-button-primary:hover {
+        background-color: var(--bs-primary-dark, #0a58ca);
+        border-color: var(--bs-primary-dark, #0a58ca);
+    }
+
+    .fc .fc-button-primary:disabled {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);
+        opacity: 0.65;
+    }
+
+.fc .fc-today-button {
+    text-transform: capitalize;
+}
+
+/* Selected date styling */
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+}
+
+/* Events styling */
+.fc-event {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none !important;
+    padding: 2px 5px;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .fc-event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+.fc-event-time {
+    font-weight: 500;
+}
+
+/* Custom event colors based on time of day */
+.fc-event.morning-event {
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+.fc-event.afternoon-event {
+    background-color: #20B2AA;
+    border-color: #20B2AA;
+}
+
+.fc-event.evening-event {
+    background-color: #9370DB;
+    border-color: #9370DB;
+}
+
+.fc-event.all-day-event {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Event cards for list view */
+.fc-list-event:hover td {
+    background-color: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+.fc-list-event-dot {
+    border-color: var(--bs-primary) !important;
+}
+
+/* Event modal styling */
+.modal-event .modal-header {
+    border-bottom: 4px solid var(--bs-primary);
+}
+
+.modal-event .modal-footer {
+    border-top: none;
+    padding-top: 0;
+}
+
+#eventTitle {
+    font-size: 1.5rem;
+    word-break: break-word;
+}
+
+.event-detail-group {
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.event-detail-icon {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--bs-primary);
+}
+
+/* Event form styling */
+.event-form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* Time fields container */
+#timeFieldsContainer {
+    transition: opacity 0.3s ease;
+}
+
+/* All day toggle styling */
+.form-check-input:checked {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+/* Delete confirm modal */
+.modal-confirm .modal-header {
+    border-bottom-color: var(--bs-danger);
+}
+
+.modal-confirm .modal-body {
+    padding: 1.5rem;
+}
+
+/* Custom css for different screen sizes */
+@media (max-width: 991.98px) {
+    #calendar {
+        min-height: 500px;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .fc-toolbar-chunk {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #calendar {
+        min-height: 400px;
+    }
+
+    .fc-event {
+        font-size: 0.75rem;
+    }
+
+    .modal-event .modal-body {
+        padding: 1rem;
+    }
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Home page upcoming events display */
+.event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-left: 4px solid var(--bs-primary) !important;
+}
+
+    .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .event-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+        opacity: 0.6;
+    }
+
+.event-date {
+    background: linear-gradient(to bottom, rgba(var(--bs-primary-rgb), 0.1), rgba(var(--bs-info-rgb), 0.05));
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 70px;
+    text-align: center;
+}
+
+.event-date-month {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bs-secondary);
+}
+
+.event-date-day {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bs-primary);
+    line-height: 1;
+}
+
+.event-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--bs-gray-800);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Print styles */
+@media print {
+    .fc-event {
+        background-color: #f8f9fa !important;
+        color: #212529 !important;
+        border: 1px solid #dee2e6 !important;
+    }
+
+    .fc-toolbar-chunk button {
+        display: none !important;
+    }
+}

@@ -1,0 +1,266 @@
+﻿@{
+    ViewData["Title"] = "Quản lý người dùng";
+}
+
+<div class="container-fluid py-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <h1 class="h3 mb-0">Quản lý người dùng</h1>
+                        <p class="text-muted mb-0">Quản lý tài khoản người dùng thường (không bao gồm admin)</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnAddUser">
+                        <i class="bi bi-person-plus-fill me-2"></i>Thêm người dùng mới
+                    </button>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0" id="usersTable">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th class="ps-3">ID</th>
+                                    <th>Tên người dùng</th>
+                                    <th>Email</th>
+                                    <th>Họ tên</th>
+                                    <th>Phòng ban</th>
+                                    <th>Chức vụ</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Đăng nhập cuối</th>
+                                    <th>Trạng thái</th>
+                                    <th class="text-end pe-3">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody">
+                                <!-- Users will be loaded dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer bg-white py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="text-muted small mb-0" id="usersCount">Đang tải dữ liệu...</p>
+                        <div>
+                            <button class="btn btn-outline-secondary btn-sm" id="refreshUserList">
+                                <i class="bi bi-arrow-clockwise me-1"></i>Làm mới
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Create/Edit User -->
+<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userModalLabel">Thêm người dùng mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="userFormErrors" class="alert alert-danger d-none mb-3">
+                </div>
+                <form id="userForm">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="userId" value="0">
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="username" class="form-label">Tên đăng nhập <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 password-field">
+                        <label for="password" class="form-label">Mật khẩu <span class="text-danger password-required">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-key"></i></span>
+                            <input type="password" class="form-control" id="password" required>
+                            <button class="btn btn-outline-secondary toggle-password" type="button">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                        <div class="form-text">Để trống nếu không muốn thay đổi mật khẩu.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Họ tên <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="department" class="form-label">Phòng ban</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-building"></i></span>
+                                <input type="text" class="form-control" id="department">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="jobTitle" class="form-label">Chức vụ</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-briefcase"></i></span>
+                                <input type="text" class="form-control" id="jobTitle">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body py-2">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="isActive" checked>
+                                    <label class="form-check-label" for="isActive">
+                                        Kích hoạt tài khoản
+                                    </label>
+                                </div>
+                                <small class="text-muted">Người dùng không thể đăng nhập nếu tài khoản không được kích hoạt.</small>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                <button type="button" class="btn btn-primary" id="saveUser">
+                    <span id="saveUserSpinner" class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                    Lưu thay đổi
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- View User Details Modal -->
+<div class="modal fade" id="viewUserModal" tabindex="-1" aria-labelledby="viewUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewUserModalLabel">Chi tiết người dùng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <div class="avatar-container mb-3">
+                        <img id="viewUserAvatar" src="/images/avatars/default-avatar.png" alt="Profile Picture" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+                    </div>
+                    <h4 id="viewUserFullName">--</h4>
+                    <p class="text-muted" id="viewUserTitle">--</p>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">ID:</div>
+                    <div class="col-sm-8" id="viewUserId">--</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">Tên đăng nhập:</div>
+                    <div class="col-sm-8" id="viewUserUsername">--</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">Email:</div>
+                    <div class="col-sm-8"><a href="mailto:" id="viewUserEmail">--</a></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">Phòng ban:</div>
+                    <div class="col-sm-8" id="viewUserDepartment">--</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">Trạng thái:</div>
+                    <div class="col-sm-8" id="viewUserStatus">--</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">Ngày tạo:</div>
+                    <div class="col-sm-8" id="viewUserCreated">--</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4 text-muted">Đăng nhập cuối:</div>
+                    <div class="col-sm-8" id="viewUserLastLogin">--</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" id="viewUserEdit">
+                    <i class="bi bi-pencil-fill me-2"></i>Chỉnh sửa
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="deleteModalLabel">Xác nhận vô hiệu hóa</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-3">
+                    <i class="bi bi-exclamation-triangle-fill text-danger" style="font-size: 3rem;"></i>
+                </div>
+                <p class="text-center mb-1">Bạn có chắc chắn muốn vô hiệu hóa tài khoản người dùng này?</p>
+                <p class="text-center text-muted">Người dùng sẽ không thể đăng nhập khi tài khoản bị vô hiệu hóa.</p>
+                <input type="hidden" id="deleteUserId" value="0">
+                <div class="text-muted border-top border-bottom py-2 mt-3 mb-3">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-person-fill text-danger me-2"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <strong id="deleteUserName">--</strong><br>
+                            <small id="deleteUserEmail">--</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                <button type="button" class="btn btn-danger" id="confirmDelete">
+                    <span id="deleteUserSpinner" class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                    Vô hiệu hóa
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="userToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header" id="toastHeader">
+            <i class="bi bi-check-circle-fill text-success me-2" id="toastIcon"></i>
+            <strong class="me-auto" id="toastTitle">Thành công</strong>
+            <small id="toastTime">Vừa xong</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toastMessage">
+            Thao tác đã được thực hiện thành công.
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/user-management.js"></script>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/user-management.css" />
+}

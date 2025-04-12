@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WeChat</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-container"></div>
+
+    <header class="header-area">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <div class="d-flex align-items-center">
+                        <div class="brand-logo-wrapper me-2">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <span class="brand-text fw-bold">WeChat</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door me-1"></i> Home
+                            </a>
+                        </li>
+                        @if (User?.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Message" ? "active" : "")"
+                                   asp-controller="Message" asp-action="Index">
+                                    <i class="bi bi-chat-dots me-1"></i> Messages
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Event" ? "active" : "")"
+                                   asp-controller="Event" asp-action="Index">
+                                    <i class="bi bi-calendar-event me-1"></i> Events
+                                </a>
+                            </li>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-shield-lock me-1"></i> Admin
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                                        <li>
+                                            <a class="dropdown-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Subscription" ? "active" : "")"
+                                               asp-controller="Subscription" asp-action="Index">
+                                                <i class="bi bi-credit-card me-2"></i> Subscriptions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "User" ? "active" : "")"
+                                               asp-controller="User" asp-action="Index">
+                                                <i class="bi bi-people me-2"></i> Users
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (User?.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center user-dropdown" href="#"
+                                   id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="avatar-container me-2">
+                                        @{
+                                            var profilePictureUrl = User.FindFirst("ProfilePicture")?.Value;
+                                        }
+                                        <img src="@profilePictureUrl" alt="Profile" class="avatar-img" onerror="this.src='/images/avatars/default-avatar.png'" />
+                                    </div>
+                                    <span class="d-none d-md-inline">@User.Identity?.Name</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end user-dropdown-menu" aria-labelledby="userDropdown">
+                                    <li class="user-info px-3 py-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-container me-3">
+                                                <img src="@profilePictureUrl" alt="Profile" class="avatar-img" onerror="this.src='/images/avatars/default-avatar.png'" />
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">@User.Identity?.Name</h6>
+                                                <small class="text-muted">@User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><hr class="dropdown-divider my-2"></li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Account" asp-action="Profile">
+                                            <i class="bi bi-person me-2"></i> My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Message" asp-action="Index">
+                                            <i class="bi bi-chat me-2"></i> My Messages
+                                        </a>
+                                    </li>
+                                    @if (!User.IsInRole("Admin"))
+                                    {
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="User" asp-action="MySubscriptions">
+                                                <i class="bi bi-star me-2"></i> My Subscription
+                                            </a>
+                                        </li>
+                                    }
+                                    <li><hr class="dropdown-divider my-2"></li>
+                                    <li>
+                                        <button id="logoutBtn" class="dropdown-item">
+                                            <i class="bi bi-box-arrow-right me-2"></i> Logout
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-light btn-sm px-3 me-2" href="#" id="loginNavLink">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Login
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-light btn-sm px-3 text-primary" href="#" id="registerNavLink">
+                                    <i class="bi bi-person-plus me-1"></i> Register
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    @if (User?.Identity?.IsAuthenticated == true)
+    {
+        <!-- Floating Action Button -->
+        <div class="fab-container d-md-none">
+            <div class="floating-action-button">
+                <i class="bi bi-plus"></i>
+            </div>
+            <div class="fab-options">
+                <a href="/Message/Index" class="fab-item fab-message" data-tooltip="Messages">
+                    <i class="bi bi-chat-dots"></i>
+                </a>
+                <a href="/Event/Index" class="fab-item fab-event" data-tooltip="Events">
+                    <i class="bi bi-calendar-event"></i>
+                </a>
+                <a href="/Account/Profile" class="fab-item fab-profile" data-tooltip="Profile">
+                    <i class="bi bi-person"></i>
+                </a>
+            </div>
+        </div>
+    }
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-chat-dots-fill me-2"></i>WeChat</h5>
+                    <p class="opacity-75">Your secure messaging platform for personal and organizational communication. Share messages, files, and organize events with colleagues and friends.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">About us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Blog</a></li>
+                        <li class="mb-0"><a href="#" class="text-white opacity-75 text-decoration-none">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Tutorials</a></li>
+                        <li class="mb-0"><a href="#" class="text-white opacity-75 text-decoration-none">Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-white opacity-75 text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-0"><a href="#" class="text-white opacity-75 text-decoration-none">GDPR</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-0">
+                    <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
+                    <p class="mb-1 opacity-75 small"><i class="bi bi-envelope me-2"></i>support@wechat.com</p>
+                    <p class="mb-1 opacity-75 small"><i class="bi bi-telephone me-2"></i>+84 123 456 789</p>
+                    <p class="mb-0 opacity-75 small"><i class="bi bi-geo-alt me-2"></i>123 Nguyen Hue St., District 1, Ho Chi Minh City</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 - WeChat. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-sm btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe me-1"></i> English
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Modals for Login/Register -->
+    <div id="loginModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold">Login to WeChat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" class="form-control" id="loginEmail" name="UsernameOrEmail" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" id="loginPassword" name="Password" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" name="RememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg btn-hover-effect">
+                                <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                            </button>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <p>Don't have an account? <a href="#" id="showRegisterModal" class="text-decoration-none">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold">Create your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <form id="registerForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="registerFirstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="registerFirstName" name="FirstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="registerLastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="registerLastName" name="LastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" class="form-control" id="registerEmail" name="Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" id="registerPassword" name="Password" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerConfirmPassword" class="form-label">Confirm password</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" id="registerConfirmPassword" name="ConfirmPassword" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsAccept" name="TermsAccept" required>
+                            <label class="form-check-label" for="termsAccept">I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Privacy Policy</a></label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg btn-hover-effect">
+                                <i class="bi bi-person-plus me-2"></i>Register
+                            </button>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <p>Already have an account? <a href="#" id="showLoginModal" class="text-decoration-none">Sign in</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Make sure Bootstrap JS is loaded before any script that uses it -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Then your custom scripts -->
+    <script src="~/js/layout.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

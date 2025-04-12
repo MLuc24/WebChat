@@ -1,0 +1,147 @@
+﻿@{
+    ViewData["Title"] = "Tin nhắn";
+    int otherUserId = ViewBag.OtherUserId;
+}
+
+<link rel="stylesheet" href="~/css/conversation.css" />
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Conversations List -->
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm rounded-3 h-100">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center rounded-top">
+                    <h5 class="mb-0"><i class="bi bi-chat-dots me-2"></i>Cuộc trò chuyện</h5>
+                    <a href="/Message" class="btn btn-sm btn-light rounded-pill">
+                        <i class="bi bi-arrow-left"></i> Quay lại
+                    </a>
+                </div>
+
+                <div class="px-3 py-2 border-bottom">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" id="searchConversation" class="form-control border-0 bg-light"
+                               placeholder="Tìm kiếm cuộc trò chuyện...">
+                    </div>
+                </div>
+
+                <div class="list-group list-group-flush overflow-auto" id="conversationsList" style="max-height: 65vh;">
+                    <!-- Conversations will be loaded here -->
+                    <div class="text-center p-3" id="loadingConversations">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Đang tải...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Conversation -->
+        <div class="col-md-8">
+            <div class="card border-0 shadow-sm rounded-3 h-100">
+                <!-- Chat Header -->
+                <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="position-relative me-3">
+                            <img id="otherUserAvatar" src="/images/default-avatar.png" alt="User avatar"
+                                 class="rounded-circle" style="width: 45px; height: 45px; object-fit: cover;">
+                            <span id="onlineIndicator" class="position-absolute bottom-0 end-0 bg-success rounded-circle p-1 border border-white"
+                                  style="width: 12px; height: 12px; display: none;"></span>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 fw-bold" id="conversationUsername">Đang tải...</h5>
+                            <small id="conversationStatus" class="text-muted"></small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-light rounded-circle" data-bs-toggle="dropdown">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-images me-2"></i>Xem file phương tiện</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Xóa cuộc trò chuyện</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Messages -->
+                <div class="card-body p-0 position-relative">
+                    <div class="chat-messages p-3" id="messagesList" style="height: 60vh; overflow-y: auto; background-color: #f5f7fb;">
+                        <!-- Messages will be loaded here -->
+                        <div class="text-center p-5 mt-5" id="loadingMessages">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Đang tải tin nhắn...</span>
+                            </div>
+                            <p class="mt-3 text-muted">Đang tải tin nhắn...</p>
+                        </div>
+                    </div>
+
+                    <!-- Typing indicator -->
+                    <div id="typingIndicator" class="typing-indicator p-3 position-absolute bottom-0 start-0" style="display: none;">
+                        <div class="d-flex align-items-center">
+                            <img id="typingAvatar" src="/images/default-avatar.png" class="rounded-circle me-2"
+                                 style="width: 30px; height: 30px; object-fit: cover;">
+                            <div class="typing-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New message indicator -->
+                    <div id="newMessagesIndicator" class="position-absolute" style="display: none;">
+                        <button class="btn btn-primary px-3 py-1 rounded-pill shadow-sm">
+                            Tin nhắn mới <i class="bi bi-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chat Input -->
+                <div class="card-footer bg-white border-top">
+                    <form id="messageForm" enctype="multipart/form-data">
+                        <div class="d-flex align-items-center">
+                            <div class="dropdown me-2">
+                                <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <label for="attachments" class="dropdown-item">
+                                            <i class="bi bi-paperclip me-2"></i>Đính kèm file
+                                        </label>
+                                        <input type="file" class="d-none" id="attachments" name="attachments" multiple>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-image me-2"></i>Hình ảnh</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control border-0 bg-light rounded-pill" id="messageContent"
+                                       placeholder="Nhập tin nhắn..." autocomplete="off">
+                                <button class="btn btn-primary rounded-circle ms-2" type="submit">
+                                    <i class="bi bi-send"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mt-2" id="attachmentPreview"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script>
+        const otherUserId = @otherUserId;
+    </script>
+    <script src="~/js/conversation.js"></script>
+}

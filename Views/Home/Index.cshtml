@@ -1,0 +1,649 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Đang tải...</span>
+    </div>
+</div>
+
+<!-- Floating Action Button -->
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="fab-container">
+        <div class="floating-action-button">
+            <i class="bi bi-plus"></i>
+        </div>
+        <div class="fab-options">
+            <a href="/Message/Index" class="fab-item fab-message" data-tooltip="Tin nhắn">
+                <i class="bi bi-chat-dots"></i>
+            </a>
+            <a href="/Event/Index" class="fab-item fab-event" data-tooltip="Sự kiện">
+                <i class="bi bi-calendar-event"></i>
+            </a>
+            <a href="/Account/Profile" class="fab-item fab-profile" data-tooltip="Hồ sơ">
+                <i class="bi bi-person"></i>
+            </a>
+        </div>
+    </div>
+}
+
+<div class="container py-5">
+    <!-- Hero Banner -->
+    <section id="hero" class="hero-section mb-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <span class="badge bg-primary bg-opacity-10 text-primary mb-2 fw-normal px-3 py-2">
+                    <i class="bi bi-lightning-charge-fill me-1"></i>Nền tảng trò chuyện hiệu quả
+                </span>
+                <h1 class="display-4 fw-bold mb-3 animate-on-scroll">Kết nối và trò chuyện với <span class="text-gradient">WeChat</span></h1>
+                <p class="lead mb-4 animate-on-scroll">Nền tảng nhắn tin trực tuyến an toàn và dễ sử dụng cho cá nhân và tổ chức. Chia sẻ tin nhắn, tệp và tạo sự kiện với đồng nghiệp và bạn bè.</p>
+
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <div class="d-grid gap-2 d-sm-flex animate-on-scroll">
+                        <button id="btnRegister" class="btn btn-primary btn-lg px-4 gap-3 btn-hover-effect">
+                            <i class="bi bi-person-plus-fill me-2"></i>Đăng ký miễn phí
+                        </button>
+                        <button id="btnLogin" class="btn btn-outline-secondary btn-lg px-4 btn-hover-effect">
+                            <i class="bi bi-box-arrow-in-right me-2"></i>Đăng nhập
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="d-grid gap-2 d-sm-flex animate-on-scroll">
+                        <a href="/Message/Index" class="btn btn-primary btn-lg px-4 gap-3 btn-hover-effect">
+                            <i class="bi bi-chat-dots-fill me-2"></i>Bắt đầu trò chuyện
+                        </a>
+                        <a href="/Event/Index" class="btn btn-outline-secondary btn-lg px-4 btn-hover-effect">
+                            <i class="bi bi-calendar-event me-2"></i>Quản lý sự kiện
+                        </a>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-6 animate-on-scroll position-relative">
+                <div class="hero-image-wrapper">
+                    <img src="/images/home-hero.svg" alt="WeChat Messaging" class="img-fluid rounded shadow-lg" onerror="this.src='/images/default-image.png'">
+                    <div class="hero-shape shape-1"></div>
+                    <div class="hero-shape shape-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <!-- Quick Access Section -->
+        <section id="quickAccess" class="quick-access-section mb-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="quick-access-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon bg-message-gradient text-white mx-auto">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <h5 class="card-title">Tin nhắn</h5>
+                            <p class="card-text text-muted">Trò chuyện với bạn bè và đồng nghiệp. Chia sẻ tệp và hình ảnh.</p>
+                            <a href="/Message/Index" class="btn btn-primary btn-circle mt-2" data-bs-toggle="tooltip" title="Đi đến tin nhắn">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="quick-access-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon bg-event-gradient text-white mx-auto">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <h5 class="card-title">Sự kiện</h5>
+                            <p class="card-text text-muted">Tạo và quản lý sự kiện. Mời người tham gia và theo dõi phản hồi.</p>
+                            <a href="/Event/Index" class="btn btn-success btn-circle mt-2" data-bs-toggle="tooltip" title="Đi đến sự kiện">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="quick-access-card card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon bg-profile-gradient text-white mx-auto">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <h5 class="card-title">Hồ sơ</h5>
+                            <p class="card-text text-muted">Xem và cập nhật thông tin cá nhân. Quản lý tài khoản của bạn.</p>
+                            <a href="/Account/Profile" class="btn btn-purple btn-circle mt-2" data-bs-toggle="tooltip" title="Đi đến hồ sơ">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section - Only for authenticated users -->
+        <section id="upcomingEventsSection" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Sự kiện sắp tới</h2>
+                <a href="/Event/Index" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-calendar-plus me-1"></i>Xem tất cả
+                </a>
+            </div>
+            <div id="upcomingEvents">
+                <!-- This will be filled by JavaScript -->
+            </div>
+        </section>
+
+        <!-- User Subscription Section - Only for authenticated users (who aren't admins) -->
+        @if (!User.IsInRole("Admin"))
+        {
+            <section id="subscriptionSection" class="mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="section-title">Gói đăng ký của bạn</h2>
+                    <a href="/User/Plans" class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-stars me-1"></i>Nâng cấp
+                    </a>
+                </div>
+                <div id="userSubscription">
+                    <!-- This will be filled by JavaScript -->
+                </div>
+            </section>
+        }
+    }
+
+    <!-- Statistics Section -->
+    <section id="stats" class="mb-5 py-4">
+        <div class="row g-4 text-center">
+            <div class="col-md-3 col-6">
+                <div class="stats-item">
+                    <div class="stats-icon bg-primary bg-opacity-10 text-primary">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h2 class="counter" data-count="10000">0</h2>
+                    <p class="mb-0 text-muted">Người dùng</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-item">
+                    <div class="stats-icon bg-success bg-opacity-10 text-success">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h2 class="counter" data-count="5000000">0</h2>
+                    <p class="mb-0 text-muted">Tin nhắn mỗi ngày</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-item">
+                    <div class="stats-icon bg-info bg-opacity-10 text-info">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h2 class="counter" data-count="15000">0</h2>
+                    <p class="mb-0 text-muted">Sự kiện đã tạo</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-item">
+                    <div class="stats-icon bg-danger bg-opacity-10 text-danger">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h2 class="counter" data-count="75">0</h2>
+                    <p class="mb-0 text-muted">Quốc gia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 mb-5">
+        <div class="text-center mb-5 animate-on-scroll">
+            <span class="badge bg-success bg-opacity-10 text-success mb-2 fw-normal px-3 py-2">
+                <i class="bi bi-lightning-charge-fill me-1"></i>Khám phá
+            </span>
+            <h2 class="fw-bold">Tính năng nổi bật</h2>
+            <p class="lead text-muted">Khám phá những gì WeChat mang đến cho bạn</p>
+        </div>
+
+        <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <div class="features-item d-flex align-items-start feature-card">
+                    <div class="icon-square text-body-emphasis bg-primary bg-gradient bg-opacity-10 p-3 rounded-3 me-3">
+                        <i class="bi bi-chat-text fs-3 text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-2">Trò chuyện an toàn</h3>
+                        <p class="text-muted">Trao đổi tin nhắn một cách an toàn với bạn bè và đồng nghiệp. Hỗ trợ tin nhắn văn bản, hình ảnh và tệp đính kèm.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="features-item d-flex align-items-start feature-card">
+                    <div class="icon-square text-body-emphasis bg-success bg-gradient bg-opacity-10 p-3 rounded-3 me-3">
+                        <i class="bi bi-calendar-check fs-3 text-success"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-2">Quản lý sự kiện</h3>
+                        <p class="text-muted">Tạo và quản lý sự kiện, lịch hẹn và cuộc họp. Gửi lời mời và theo dõi phản hồi từ những người tham dự.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="features-item d-flex align-items-start feature-card">
+                    <div class="icon-square text-body-emphasis bg-info bg-gradient bg-opacity-10 p-3 rounded-3 me-3">
+                        <i class="bi bi-shield-lock fs-3 text-info"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-2">Bảo mật cao</h3>
+                        <p class="text-muted">Bảo vệ thông tin cá nhân và dữ liệu của bạn với các tính năng bảo mật tiên tiến và mã hóa đầu cuối.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section for regular users (not admins) -->
+    @if (User.Identity.IsAuthenticated && !User.IsInRole("Admin"))
+    {
+        <section id="cta" class="mb-5">
+            <div class="cta-section">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3 text-white">Nâng cấp tài khoản của bạn</h2>
+                        <p class="lead text-white opacity-90">Khám phá thêm nhiều tính năng cao cấp với các gói đăng ký WeChat Premium. Nhận thêm dung lượng lưu trữ, tạo nhóm không giới hạn và nhiều hơn nữa.</p>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-center justify-content-lg-end mt-3 mt-lg-0">
+                        <a href="/User/Plans" class="btn btn-light btn-lg btn-hover-effect">
+                            <i class="bi bi-arrow-up-circle me-2"></i>Xem các gói đăng ký
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 mb-5">
+        <div class="text-center mb-5 animate-on-scroll">
+            <span class="badge bg-info bg-opacity-10 text-info mb-2 fw-normal px-3 py-2">
+                <i class="bi bi-quote me-1"></i>Đánh giá
+            </span>
+            <h2 class="fw-bold">Người dùng nói gì về chúng tôi</h2>
+            <p class="lead text-muted">Khám phá trải nghiệm của những người đã sử dụng WeChat</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card card h-100 border-0 shadow-sm">
+                    <div class="card-body position-relative">
+                        <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/images/avatars/user1.jpg" alt="User testimonial" class="rounded-circle" width="60" height="60" onerror="this.src='/images/avatars/default-avatar.png'">
+                            <div class="ms-3">
+                                <h5 class="card-title mb-0">Nguyễn Văn A</h5>
+                                <p class="card-subtitle text-muted mb-0">Giám đốc kinh doanh</p>
+                            </div>
+                        </div>
+                        <p class="card-text">"WeChat đã giúp đội ngũ của tôi liên lạc hiệu quả hơn và tổ chức các cuộc họp một cách dễ dàng. Tính năng quản lý sự kiện thực sự hữu ích!"</p>
+                        <div class="text-warning mt-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card card h-100 border-0 shadow-sm">
+                    <div class="card-body position-relative">
+                        <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/images/avatars/user2.jpg" alt="User testimonial" class="rounded-circle" width="60" height="60" onerror="this.src='/images/avatars/default-avatar.png'">
+                            <div class="ms-3">
+                                <h5 class="card-title mb-0">Trần Thị B</h5>
+                                <p class="card-subtitle text-muted mb-0">Nhà thiết kế</p>
+                            </div>
+                        </div>
+                        <p class="card-text">"Tôi yêu thích giao diện đơn giản và dễ sử dụng của WeChat. Việc chia sẻ file thiết kế với khách hàng trở nên nhanh chóng và dễ dàng hơn bao giờ hết."</p>
+                        <div class="text-warning mt-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card card h-100 border-0 shadow-sm">
+                    <div class="card-body position-relative">
+                        <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/images/avatars/user3.jpg" alt="User testimonial" class="rounded-circle" width="60" height="60" onerror="this.src='/images/avatars/default-avatar.png'">
+                            <div class="ms-3">
+                                <h5 class="card-title mb-0">Lê Văn C</h5>
+                                <p class="card-subtitle text-muted mb-0">Trưởng phòng IT</p>
+                            </div>
+                        </div>
+                        <p class="card-text">"Là người phụ trách CNTT, tôi đánh giá cao các tính năng bảo mật của WeChat. Dễ dàng quản lý và đảm bảo an toàn cho dữ liệu của công ty."</p>
+                        <div class="text-warning mt-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="text-center mb-5 animate-on-scroll">
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-2 fw-normal px-3 py-2">
+                <i class="bi bi-envelope me-1"></i>Liên hệ
+            </span>
+            <h2 class="fw-bold">Liên hệ với chúng tôi</h2>
+            <p class="lead text-muted">Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 mb-4 mb-lg-0 animate-on-scroll">
+                <div class="contact-info-card card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Thông tin liên hệ</h4>
+
+                        <div class="d-flex mb-4 contact-item">
+                            <div class="contact-icon me-3 bg-primary bg-opacity-10">
+                                <i class="bi bi-envelope-fill text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Email</h5>
+                                <p class="text-muted mb-0">support@wechat.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4 contact-item">
+                            <div class="contact-icon me-3 bg-primary bg-opacity-10">
+                                <i class="bi bi-telephone-fill text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Điện thoại</h5>
+                                <p class="text-muted mb-0">+84 123 456 789</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex contact-item">
+                            <div class="contact-icon me-3 bg-primary bg-opacity-10">
+                                <i class="bi bi-geo-alt-fill text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Địa chỉ</h5>
+                                <p class="text-muted mb-0">123 Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h5 class="mb-3">Kết nối với chúng tôi</h5>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 animate-on-scroll">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 contact-form">
+                        <h4 class="fw-bold mb-4">Gửi tin nhắn</h4>
+
+                        <div class="mb-3 floating-label">
+                            <input type="text" class="form-control" id="name" placeholder=" ">
+                            <label for="name" class="form-label">Họ tên</label>
+                        </div>
+
+                        <div class="mb-3 floating-label">
+                            <input type="email" class="form-control" id="email" placeholder=" ">
+                            <label for="email" class="form-label">Email</label>
+                        </div>
+
+                        <div class="mb-4 floating-label">
+                            <textarea class="form-control" id="message" rows="4" placeholder=" "></textarea>
+                            <label for="message" class="form-label">Tin nhắn</label>
+                        </div>
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg btn-hover-effect" id="btnSendMessage">
+                                <i class="bi bi-send me-2"></i>Gửi tin nhắn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 mb-5">
+        <div class="text-center mb-5 animate-on-scroll">
+            <span class="badge bg-warning bg-opacity-10 text-warning mb-2 fw-normal px-3 py-2">
+                <i class="bi bi-question-circle me-1"></i>FAQ
+            </span>
+            <h2 class="fw-bold">Câu hỏi thường gặp</h2>
+            <p class="lead text-muted">Những thắc mắc phổ biến về WeChat</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <i class="bi bi-question-circle text-primary me-2"></i>WeChat có những gói đăng ký nào?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">WeChat cung cấp nhiều gói đăng ký khác nhau để phù hợp với nhu cầu của bạn. Chúng tôi có gói Cơ bản, Tiêu chuẩn, Cao cấp và Doanh nghiệp. Mỗi gói cung cấp các tính năng và quyền lợi khác nhau như dung lượng lưu trữ lớn hơn, số lượng thành viên nhóm nhiều hơn và hỗ trợ nâng cao. Bạn có thể xem chi tiết tại trang <a href="/User/Plans" class="text-decoration-none">Gói đăng ký</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <i class="bi bi-question-circle text-primary me-2"></i>Làm thế nào để tạo một sự kiện?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Để tạo một sự kiện, bạn cần đăng nhập vào tài khoản WeChat của mình, sau đó nhấp vào phần "Sự kiện" trong menu chính. Tại trang quản lý sự kiện, bạn sẽ thấy nút "Tạo sự kiện mới". Nhấp vào đó và điền các thông tin cần thiết như tên sự kiện, thời gian, địa điểm và mô tả. Bạn cũng có thể mời người khác tham gia sự kiện của mình.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <i class="bi bi-question-circle text-primary me-2"></i>WeChat có an toàn không?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Có, WeChat được xây dựng với các tính năng bảo mật tiên tiến để đảm bảo thông tin của bạn luôn được an toàn. Chúng tôi sử dụng mã hóa đầu cuối cho các tin nhắn, xác thực hai lớp cho tài khoản, và thường xuyên cập nhật các biện pháp bảo mật. Dữ liệu của bạn được lưu trữ an toàn trên máy chủ của chúng tôi và chỉ có thể truy cập bởi những người được bạn cho phép.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <i class="bi bi-question-circle text-primary me-2"></i>Làm thế nào để liên hệ với hỗ trợ?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Bạn có thể liên hệ với đội hỗ trợ của chúng tôi thông qua email support@wechat.com, hoặc điền vào biểu mẫu liên hệ trên trang web. Đội ngũ hỗ trợ của chúng tôi sẽ phản hồi trong vòng 24 giờ. Đối với người dùng gói cao cấp và doanh nghiệp, chúng tôi cung cấp hỗ trợ ưu tiên và đường dây hỗ trợ trực tiếp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section id="download" class="py-5 mb-5 bg-light rounded-4 position-relative overflow-hidden animate-on-scroll">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2 fw-normal px-3 py-2">
+                        <i class="bi bi-phone me-1"></i>Di động
+                    </span>
+                    <h2 class="fw-bold mb-3">Sử dụng WeChat mọi lúc mọi nơi</h2>
+                    <p class="lead mb-4">Tải ứng dụng WeChat cho điện thoại di động để luôn giữ kết nối với bạn bè và đồng nghiệp.</p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#" class="btn btn-dark btn-lg d-inline-flex align-items-center app-store-btn">
+                            <i class="bi bi-apple me-2 fs-3"></i>
+                            <div class="text-start">
+                                <div class="small">Tải về từ</div>
+                                <div class="fw-bold">App Store</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="btn btn-dark btn-lg d-inline-flex align-items-center app-store-btn">
+                            <i class="bi bi-google-play me-2 fs-3"></i>
+                            <div class="text-start">
+                                <div class="small">Tải về từ</div>
+                                <div class="fw-bold">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <p class="text-muted"><i class="bi bi-info-circle me-1"></i> Ứng dụng khả dụng cho iOS 11+ và Android 6.0+</p>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="/images/app-phones.png" alt="WeChat Mobile Apps" class="img-fluid app-showcase-img" style="max-height: 400px;" onerror="this.src='/images/default-image.png'">
+                </div>
+            </div>
+
+            <!-- Decorative elements -->
+            <div class="position-absolute app-shape app-shape-1"></div>
+            <div class="position-absolute app-shape app-shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg newsletter-card">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <span class="badge bg-primary bg-opacity-10 text-primary mb-2 fw-normal px-3 py-2">
+                                    <i class="bi bi-envelope me-1"></i>Bản tin
+                                </span>
+                                <h2 class="fw-bold">Đăng ký nhận bản tin</h2>
+                                <p class="text-muted">Nhận thông tin cập nhật mới nhất về tính năng, mẹo sử dụng và ưu đãi đặc biệt.</p>
+                            </div>
+
+                            <form class="newsletter-form">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Email của bạn" aria-label="Email của bạn">
+                                    <button class="btn btn-primary btn-hover-effect px-4" type="button" id="btnSubscribeNewsletter">
+                                        <i class="bi bi-send me-2"></i>Đăng ký
+                                    </button>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck">
+                                    <label class="form-check-label small text-muted" for="privacyCheck">
+                                        Tôi đồng ý với <a href="#" class="text-decoration-none">Chính sách bảo mật</a> và <a href="#" class="text-decoration-none">Điều khoản sử dụng</a>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-4 mb-5">
+        <div class="text-center mb-4">
+            <h6 class="text-uppercase text-muted fw-semibold">Đối tác của chúng tôi</h6>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-4 col-md-2 mb-4 mb-md-0">
+                <div class="partner-logo">
+                    <img src="/images/partners/partner1.png" alt="Partner 1" class="img-fluid" onerror="this.src='/images/default-image.png'">
+                </div>
+            </div>
+            <div class="col-4 col-md-2 mb-4 mb-md-0">
+                <div class="partner-logo">
+                    <img src="/images/partners/partner2.png" alt="Partner 2" class="img-fluid" onerror="this.src='/images/default-image.png'">
+                </div>
+            </div>
+            <div class="col-4 col-md-2 mb-4 mb-md-0">
+                <div class="partner-logo">
+                    <img src="/images/partners/partner3.png" alt="Partner 3" class="img-fluid" onerror="this.src='/images/default-image.png'">
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="partner-logo">
+                    <img src="/images/partners/partner4.png" alt="Partner 4" class="img-fluid" onerror="this.src='/images/default-image.png'">
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="partner-logo">
+                    <img src="/images/partners/partner5.png" alt="Partner 5" class="img-fluid" onerror="this.src='/images/default-image.png'">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" aria-label="Quay lại đầu trang">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+@section Scripts {
+    <script src="~/js/home.js"></script>
+    <script>
+        // Image error handling function
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default images for all images if they fail to load
+            document.querySelectorAll('img').forEach(function(img) {
+                if (!img.hasAttribute('onerror')) {
+                    img.onerror = function() {
+                        // Use a specific default image for avatars
+                        if (img.classList.contains('rounded-circle') || img.classList.contains('avatar-img')) {
+                            this.src = '/images/avatars/default-avatar.png';
+                        } else {
+                            this.src = '/images/default-image.png';
+                        }
+                    };
+                }
+            });
+        });
+    </script>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
