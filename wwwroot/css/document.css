@@ -1,0 +1,172 @@
+﻿/* Main layout styles */
+.document-page {
+    display: flex;
+    min-height: calc(100vh - 160px); /* Adjust for header and footer */
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    padding: 1.5rem 1rem;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.content {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-x: hidden;
+}
+
+/* Custom header */
+.document-header {
+    background-color: #4e73df;
+    color: white;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem rgba(0, 0, 0, 0.15);
+}
+
+/* Custom footer */
+.document-footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Sidebar menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .sidebar-menu li {
+        margin-bottom: 0.75rem;
+    }
+
+    .sidebar-menu .divider {
+        height: 0;
+        border-top: 1px solid #e3e6f0;
+        margin: 1rem 0;
+    }
+
+.sidebar-menu-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #4e73df;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+/* Document table */
+.document-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+    .document-table th {
+        background-color: #f8f9fa;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .document-table th, .document-table td {
+        padding: 0.75rem;
+        vertical-align: middle;
+        border-bottom: 1px solid #e3e6f0;
+    }
+
+    .document-table tbody tr {
+        transition: background-color 0.2s;
+        cursor: pointer;
+    }
+
+        .document-table tbody tr:hover {
+            background-color: rgba(78, 115, 223, 0.05);
+        }
+
+        .document-table tbody tr.selected {
+            background-color: rgba(78, 115, 223, 0.1);
+        }
+
+.document-category-badge {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    background-color: rgba(78, 115, 223, 0.1);
+    color: #4e73df;
+}
+
+/* Action buttons in sidebar */
+.btn-action {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s;
+    font-weight: 500;
+    border-width: 2px;
+}
+
+    .btn-action i {
+        width: 1.5rem;
+        text-align: center;
+    }
+
+    .btn-action:hover {
+        transform: translateX(5px);
+    }
+
+/* Filter section */
+.filter-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .document-page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #dee2e6;
+        padding: 1rem;
+        position: static;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+/* Add this to wwwroot/css/document.css if not already present */
+.document-footer {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+    font-size: 0.875rem;
+}

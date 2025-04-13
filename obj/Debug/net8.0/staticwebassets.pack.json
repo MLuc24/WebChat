@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\conversation.css"
     },
     {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\document.css",
+      "PackagePath": "staticwebassets\\css\\document.css"
+    },
+    {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\event.css",
       "PackagePath": "staticwebassets\\css\\event.css"
     },
@@ -51,6 +55,14 @@
     {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\conversation.js",
       "PackagePath": "staticwebassets\\js\\conversation.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document-management.js",
+      "PackagePath": "staticwebassets\\js\\document-management.js"
+    },
+    {
+      "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document.js",
+      "PackagePath": "staticwebassets\\js\\document.js"
     },
     {
       "Id": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2buQ4fBdfoi6Khv3TSW0VYvjpua4SlzfZztCbaVm7aM=",
+  "Hash": "RmDlNJhm4ZNSznsoRurINIn7DihOGLxwK0byw78IYzw=",
   "Source": "WeChat",
   "BasePath": "_content/WeChat",
   "Mode": "Default",
@@ -80,6 +80,27 @@
       "OriginalItemSpec": "wwwroot\\css\\conversation.css"
     },
     {
+      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\document.css",
+      "SourceId": "WeChat",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Web nâng cao\\WeChat\\wwwroot\\",
+      "BasePath": "_content/WeChat",
+      "RelativePath": "css/document#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x3ikk8lb4q",
+      "Integrity": "rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\document.css"
+    },
+    {
       "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\event.css",
       "SourceId": "WeChat",
       "SourceType": "Discovered",
@@ -157,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nty3a9rly1",
-      "Integrity": "9S4FXKs04W3vnFXW+wG3yg1Jdjw6rKkRkTkoBZR1y9M=",
+      "Fingerprint": "ycn8x7oczb",
+      "Integrity": "vhp+g6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\layout.css"
@@ -311,6 +332,48 @@
       "OriginalItemSpec": "wwwroot\\js\\conversation.js"
     },
     {
+      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document.js",
+      "SourceId": "WeChat",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Web nâng cao\\WeChat\\wwwroot\\",
+      "BasePath": "_content/WeChat",
+      "RelativePath": "js/document#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b8ac15jc91",
+      "Integrity": "NTyCZQfQaKfJM+r2zOrxWKy2TWleuWW0w7C/i1k6B/M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\document.js"
+    },
+    {
+      "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document-management.js",
+      "SourceId": "WeChat",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Web nâng cao\\WeChat\\wwwroot\\",
+      "BasePath": "_content/WeChat",
+      "RelativePath": "js/document-management#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "99qce2xik6",
+      "Integrity": "E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\document-management.js"
+    },
+    {
       "Identity": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",
       "SourceId": "WeChat",
       "SourceType": "Discovered",
@@ -388,8 +451,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jhh8pgs3iv",
-      "Integrity": "eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=",
+      "Fingerprint": "sz1odz5ar8",
+      "Integrity": "GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa+a3M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\layout.js"
@@ -2117,6 +2180,88 @@
       ]
     },
     {
+      "Route": "css/document.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\document.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 15:42:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk="
+        }
+      ]
+    },
+    {
+      "Route": "css/document.x3ikk8lb4q.css",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\document.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 15:42:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x3ikk8lb4q"
+        },
+        {
+          "Name": "label",
+          "Value": "css/document.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk="
+        }
+      ]
+    },
+    {
       "Route": "css/event.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\event.css",
       "Selectors": [],
@@ -2373,7 +2518,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11555"
+          "Value": "12522"
         },
         {
           "Name": "Content-Type",
@@ -2381,11 +2526,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9S4FXKs04W3vnFXW+wG3yg1Jdjw6rKkRkTkoBZR1y9M=\""
+          "Value": "\"vhp+g6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+          "Value": "Sun, 13 Apr 2025 15:42:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2395,12 +2540,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9S4FXKs04W3vnFXW+wG3yg1Jdjw6rKkRkTkoBZR1y9M="
+          "Value": "sha256-vhp+g6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U="
         }
       ]
     },
     {
-      "Route": "css/layout.nty3a9rly1.css",
+      "Route": "css/layout.ycn8x7oczb.css",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\css\\layout.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2410,7 +2555,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11555"
+          "Value": "12522"
         },
         {
           "Name": "Content-Type",
@@ -2418,11 +2563,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9S4FXKs04W3vnFXW+wG3yg1Jdjw6rKkRkTkoBZR1y9M=\""
+          "Value": "\"vhp+g6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+          "Value": "Sun, 13 Apr 2025 15:42:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2432,7 +2577,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nty3a9rly1"
+          "Value": "ycn8x7oczb"
         },
         {
           "Name": "label",
@@ -2440,7 +2585,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9S4FXKs04W3vnFXW+wG3yg1Jdjw6rKkRkTkoBZR1y9M="
+          "Value": "sha256-vhp+g6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U="
         }
       ]
     },
@@ -3019,6 +3164,170 @@
       ]
     },
     {
+      "Route": "js/document.b8ac15jc91.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11547"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NTyCZQfQaKfJM+r2zOrxWKy2TWleuWW0w7C/i1k6B/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 14:20:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b8ac15jc91"
+        },
+        {
+          "Name": "label",
+          "Value": "js/document.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NTyCZQfQaKfJM+r2zOrxWKy2TWleuWW0w7C/i1k6B/M="
+        }
+      ]
+    },
+    {
+      "Route": "js/document.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11547"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NTyCZQfQaKfJM+r2zOrxWKy2TWleuWW0w7C/i1k6B/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 14:20:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NTyCZQfQaKfJM+r2zOrxWKy2TWleuWW0w7C/i1k6B/M="
+        }
+      ]
+    },
+    {
+      "Route": "js/document-management.99qce2xik6.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document-management.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 15:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "99qce2xik6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/document-management.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04="
+        }
+      ]
+    },
+    {
+      "Route": "js/document-management.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\document-management.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 15:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04="
+        }
+      ]
+    },
+    {
       "Route": "js/event.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\event.js",
       "Selectors": [],
@@ -3265,51 +3574,6 @@
       ]
     },
     {
-      "Route": "js/layout.jhh8pgs3iv.js",
-      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\layout.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15872"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jhh8pgs3iv"
-        },
-        {
-          "Name": "label",
-          "Value": "js/layout.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A="
-        }
-      ]
-    },
-    {
       "Route": "js/layout.js",
       "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\layout.js",
       "Selectors": [],
@@ -3320,7 +3584,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15872"
+          "Value": "17586"
         },
         {
           "Name": "Content-Type",
@@ -3328,11 +3592,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=\""
+          "Value": "\"GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa+a3M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 12 Apr 2025 10:10:21 GMT"
+          "Value": "Sun, 13 Apr 2025 15:24:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3342,7 +3606,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eXxwrws+NMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A="
+          "Value": "sha256-GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa+a3M="
+        }
+      ]
+    },
+    {
+      "Route": "js/layout.sz1odz5ar8.js",
+      "AssetFile": "E:\\Web nâng cao\\WeChat\\wwwroot\\js\\layout.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17586"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa+a3M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 15:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sz1odz5ar8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/layout.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa+a3M="
         }
       ]
     },

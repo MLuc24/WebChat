@@ -2,9 +2,9 @@
 using System;
 using WeChat.Models;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Infrastructure;// Add this namespace for query splitting behavior
-
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Query;
+
 namespace WeChat.Data
 {
     public class WebChatContext : DbContext
@@ -132,19 +132,25 @@ namespace WeChat.Data
                 entity.HasIndex(e => e.LastActivity);
             });
 
-            // Configure Document entity
+            // Configure Document entity - UPDATED
             modelBuilder.Entity<Document>(entity =>
             {
                 entity.HasKey(e => e.DocumentId);
-                entity.Property(e => e.Title).IsRequired().HasMaxLength(255);
-                entity.Property(e => e.FilePath).IsRequired().HasMaxLength(500);
-                entity.Property(e => e.FileType).HasMaxLength(100);
+                entity.Property(e => e.Title).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Description).HasMaxLength(500);
+                entity.Property(e => e.Category).IsRequired().HasMaxLength(50);
+                entity.Property(e => e.UploadDate).HasDefaultValueSql("GETDATE()");
+                entity.Property(e => e.IsPublic).HasDefaultValue(true);
 
                 // Configure relationship
                 entity.HasOne(d => d.UploadedByNavigation)
                     .WithMany(u => u.Documents)
                     .HasForeignKey(d => d.UploadedBy)
                     .OnDelete(DeleteBehavior.Restrict);
+
+                // Add indexes for better performance
+                entity.HasIndex(e => e.UploadedBy);
+                entity.HasIndex(e => e.Category);
             });
 
             // Configure Event entity
@@ -161,8 +167,6 @@ namespace WeChat.Data
                     .OnDelete(DeleteBehavior.Restrict);
             });
 
-            // Configure Subscription entity
-            // Configure Subscription entity
             // Configure Subscription entity
             modelBuilder.Entity<Subscription>(entity =>
             {
@@ -187,20 +191,19 @@ namespace WeChat.Data
                     .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // Add in OnModelCreating method
-            modelBuilder.Entity<Friend>()
-                .HasOne(f => f.Requester)
-                .WithMany(u => u.SentFriendRequests)
-                .HasForeignKey(f => f.RequesterId)
-                .OnDelete(DeleteBehavior.Restrict);
+            // Configure Friend entity
+            modelBuilder.Entity<Friend>(entity =>
+            {
+                entity.HasOne(f => f.Requester)
+                    .WithMany(u => u.SentFriendRequests)
+                    .HasForeignKey(f => f.RequesterId)
+                    .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Friend>()
-                .HasOne(f => f.Recipient)
-                .WithMany(u => u.ReceivedFriendRequests)
-                .HasForeignKey(f => f.RecipientId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-
+                entity.HasOne(f => f.Recipient)
+                    .WithMany(u => u.ReceivedFriendRequests)
+                    .HasForeignKey(f => f.RecipientId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
         }
     }
 }

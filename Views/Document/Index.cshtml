@@ -1,0 +1,271 @@
+﻿@{
+    Layout = null; // This removes the shared layout
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý Document</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/document.css" />
+</head>
+<body>
+    <!-- Page header -->
+    <div class="document-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0">Quản lý Document</h1>
+            <div>
+                <button id="refreshDocumentList" class="btn btn-light btn-sm">
+                    <i class="bi bi-arrow-clockwise me-1"></i>
+                    <span class="d-none d-sm-inline">Làm mới</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Anti forgery token -->
+    @Html.AntiForgeryToken()
+
+    <div class="document-page">
+        <!-- Sidebar with CRUD actions only -->
+        <div class="sidebar">
+            <div class="user-info mb-3 p-2 bg-light rounded">
+                @if (User?.Identity?.IsAuthenticated == true)
+                {
+                    <p class="mb-0"><i class="bi bi-person-circle me-1"></i> @User.Identity.Name</p>
+                    <p class="mb-0 text-muted small">@(User.IsInRole("Admin") ? "Administrator" : "Regular User")</p>
+                }
+            </div>
+
+            <p class="sidebar-menu-title">QUẢN LÝ DOCUMENT</p>
+
+            <ul class="sidebar-menu">
+                <li>
+                    <button id="btnViewDocument" class="btn btn-action btn-outline-primary disabled">
+                        <i class="bi bi-eye"></i> Xem chi tiết
+                    </button>
+                </li>
+                @if (User?.IsInRole("Admin") == true)
+                {
+                    <li>
+                        <button id="btnAddDocumentSidebar" class="btn btn-action btn-outline-success">
+                            <i class="bi bi-plus-circle"></i> Thêm mới
+                        </button>
+                    </li>
+                    <li>
+                        <button id="btnEditDocument" class="btn btn-action btn-outline-warning disabled">
+                            <i class="bi bi-pencil"></i> Chỉnh sửa
+                        </button>
+                    </li>
+                    <li>
+                        <button id="btnDeleteDocument" class="btn btn-action btn-outline-danger disabled">
+                            <i class="bi bi-trash"></i> Xóa
+                        </button>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <!-- Main content with document list -->
+        <div class="content">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                    <h5 class="mb-0">Danh sách Document</h5>
+                    <span class="badge bg-primary" id="documentsCount">Loading...</span>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="document-table" id="documentTable">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px">#</th>
+                                    <th>Tiêu đề</th>
+                                    <th>Thể loại</th>
+                                    <th>Mô tả</th>
+                                    <th>Người tạo</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody id="documentTableBody">
+                                <tr>
+                                    <td colspan="7" class="text-center py-5">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p class="mt-2 mb-0 text-muted">Đang tải dữ liệu...</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Modal -->
+    <div class="modal fade" id="documentModal" tabindex="-1" aria-labelledby="documentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="documentModalLabel">Thêm Document mới</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger d-none" id="documentFormErrors"></div>
+                    <form id="documentForm">
+                        <input type="hidden" id="documentId" name="documentId" value="0" />
+
+                        <div class="mb-3">
+                            <label for="title" class="form-label required">Tiêu đề</label>
+                            <input type="text" class="form-control" id="title" name="title" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="category" class="form-label required">Thể loại</label>
+                            <select class="form-select" id="category" name="category" required>
+                                <option value="">Chọn thể loại</option>
+                                <option value="Report">Report</option>
+                                <option value="Presentation">Presentation</option>
+                                <option value="Manual">Manual</option>
+                                <option value="Contract">Contract</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Mô tả</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="isPublic" name="isPublic" checked>
+                            <label class="form-check-label" for="isPublic">
+                                Công khai document
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary" id="saveDocument">
+                        <span id="saveDocumentSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        Lưu Document
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Document Modal -->
+    <div class="modal fade" id="deleteDocumentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xóa Document</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="avatar mb-3">
+                            <i class="bi bi-trash text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5>Bạn có chắc chắn muốn xóa document này?</h5>
+                        <p class="text-muted">Hành động này không thể hoàn tác.</p>
+                    </div>
+
+                    <input type="hidden" id="deleteDocumentId" value="" />
+                    <div class="mb-3">
+                        <label class="form-label">Tiêu đề document</label>
+                        <div class="form-control" id="deleteDocumentTitle">Document title will appear here</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteDocument">
+                        <span id="deleteDocumentSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        Xác nhận xóa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View Document Modal -->
+    <div class="modal fade" id="viewDocumentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chi tiết Document</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="avatar mb-3">
+                            <i class="bi bi-file-earmark-text text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 id="viewDocumentTitle">Document Title</h4>
+                        <span id="viewDocumentCategory" class="badge bg-primary">Category</span>
+                        <span id="viewDocumentVisibility" class="badge bg-success ms-1">Public</span>
+                    </div>
+
+                    <dl class="row">
+                        <dt class="col-sm-4">Mô tả:</dt>
+                        <dd class="col-sm-8" id="viewDocumentDescription">Description text here</dd>
+
+                        <dt class="col-sm-4">Người tạo:</dt>
+                        <dd class="col-sm-8" id="viewDocumentCreator">Username</dd>
+
+                        <dt class="col-sm-4">Ngày tạo:</dt>
+                        <dd class="col-sm-8" id="viewDocumentDate">Creation date</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    @if (User?.IsInRole("Admin") == true)
+                    {
+                        <button type="button" class="btn btn-warning" id="viewDocumentEdit">
+                            <i class="bi bi-pencil me-1"></i> Chỉnh sửa
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this right before the closing </body> tag in Views/Document/Index.cshtml -->
+
+    <footer class="document-footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        <strong>Nhóm: 2</strong> -
+                        Thành viên: Nguyễn Thị Oanh, Nguyễn Văn Nam
+                    </p>
+                    <p class="text-muted small mb-0">© 2025 Document Management System. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <!-- Toasts will be added dynamically -->
+    </div>
+
+    <!-- Include necessary scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ADMIN_STATUS = @(User.IsInRole("Admin").ToString().ToLower());
+    </script>
+    <script src="~/js/document-management.js"></script>
+</body>
+</html>

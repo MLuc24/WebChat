@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yryr5au6nw"},{"Name":"integrity","Value":"sha256-MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk="},{"Name":"label","Value":"_content/WeChat/css/conversation.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5205"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022MiqxwyBnkn7yGgFxDneNhhcIXEREQ7NdB7hT9LtOXKk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 12:53:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/css/document.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\document.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3498"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:42:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/css/document.x3ikk8lb4q.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\document.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x3ikk8lb4q"},{"Name":"integrity","Value":"sha256-rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk="},{"Name":"label","Value":"_content/WeChat/css/document.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3498"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rVyJkKqs5eVPFAhGwIlmMvWTGKZJGDn6uULhzJstVpk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:42:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WeChat/css/event.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\event.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -51,14 +63,14 @@
     <StaticWebAssetEndpoint Include="_content/WeChat/css/layout.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\layout.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9S4FXKs04W3vnFXW\u002BwG3yg1Jdjw6rKkRkTkoBZR1y9M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11555"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229S4FXKs04W3vnFXW\u002BwG3yg1Jdjw6rKkRkTkoBZR1y9M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:10:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vhp\u002Bg6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12522"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vhp\u002Bg6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:42:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WeChat/css/layout.nty3a9rly1.css">
+    <StaticWebAssetEndpoint Include="_content/WeChat/css/layout.ycn8x7oczb.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\layout.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nty3a9rly1"},{"Name":"integrity","Value":"sha256-9S4FXKs04W3vnFXW\u002BwG3yg1Jdjw6rKkRkTkoBZR1y9M="},{"Name":"label","Value":"_content/WeChat/css/layout.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11555"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229S4FXKs04W3vnFXW\u002BwG3yg1Jdjw6rKkRkTkoBZR1y9M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:10:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ycn8x7oczb"},{"Name":"integrity","Value":"sha256-vhp\u002Bg6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U="},{"Name":"label","Value":"_content/WeChat/css/layout.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12522"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vhp\u002Bg6hfXSOEBSKaOmoYDWLuFMUjobc0bUaM9SDOa7U=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:42:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WeChat/css/profile.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile.css'))</AssetFile>
@@ -144,6 +156,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-p8AVvOGDemql/2J9efjyR\u002BWiCaERbgaor4ts6C5kxP0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"46459"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022p8AVvOGDemql/2J9efjyR\u002BWiCaERbgaor4ts6C5kxP0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 12:53:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/js/document-management.99qce2xik6.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\document-management.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"99qce2xik6"},{"Name":"integrity","Value":"sha256-E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04="},{"Name":"label","Value":"_content/WeChat/js/document-management.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13612"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:24:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/js/document-management.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\document-management.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13612"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E0o94beX2X7Hzo8BKjXeTTX2vKIAXZW0mtY4t7gka04=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:24:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/js/document.b8ac15jc91.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\document.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b8ac15jc91"},{"Name":"integrity","Value":"sha256-NTyCZQfQaKfJM\u002Br2zOrxWKy2TWleuWW0w7C/i1k6B/M="},{"Name":"label","Value":"_content/WeChat/js/document.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11547"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NTyCZQfQaKfJM\u002Br2zOrxWKy2TWleuWW0w7C/i1k6B/M=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 14:20:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/js/document.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\document.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NTyCZQfQaKfJM\u002Br2zOrxWKy2TWleuWW0w7C/i1k6B/M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11547"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NTyCZQfQaKfJM\u002Br2zOrxWKy2TWleuWW0w7C/i1k6B/M=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 14:20:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WeChat/js/event.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\event.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -180,17 +216,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"25304"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226MfYvpy2v3c61PR7vh4IYifWptX7kZnIjU7TQM4AZa4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:10:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WeChat/js/layout.jhh8pgs3iv.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\layout.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jhh8pgs3iv"},{"Name":"integrity","Value":"sha256-eXxwrws\u002BNMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A="},{"Name":"label","Value":"_content/WeChat/js/layout.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15872"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eXxwrws\u002BNMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:10:21 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WeChat/js/layout.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\layout.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eXxwrws\u002BNMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15872"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eXxwrws\u002BNMusC1VG5lQ/wkKS8o4oLUHxo0kKDEyf20A=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:10:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa\u002Ba3M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"17586"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa\u002Ba3M=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:24:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WeChat/js/layout.sz1odz5ar8.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\layout.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sz1odz5ar8"},{"Name":"integrity","Value":"sha256-GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa\u002Ba3M="},{"Name":"label","Value":"_content/WeChat/js/layout.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17586"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GImHHuRUHRFABydDtGjufoKizPBOCB3YAhjmsaa\u002Ba3M=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 15:24:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WeChat/js/message-index.4wh8z9z182.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\message-index.js'))</AssetFile>

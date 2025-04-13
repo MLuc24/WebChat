@@ -10,7 +10,7 @@
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
-@*     <!-- Preloader -->
+    @*     <!-- Preloader -->
     <div class="preloader">
         <div class="spinner-grow text-primary" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -57,6 +57,12 @@
                                 <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Event" ? "active" : "")"
                                    asp-controller="Event" asp-action="Index">
                                     <i class="bi bi-calendar-event me-1"></i> Events
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Document" ? "active" : "")"
+                                   asp-controller="Document" asp-action="Index">
+                                    <i class="bi bi-file-earmark-text me-1"></i> Documents
                                 </a>
                             </li>
                             @if (User.IsInRole("Admin"))
@@ -122,6 +128,12 @@
                                             <i class="bi bi-chat me-2"></i> My Messages
                                         </a>
                                     </li>
+                                    <li class="nav-item me-2">
+                                        <button id="documentAccessBtn" class="btn btn-sm btn-outline-light" title="View last document access time">
+                                            <i class="bi bi-clock-history"></i>
+                                        </button>
+                                    </li>
+
                                     @if (!User.IsInRole("Admin"))
                                     {
                                         <li>
@@ -171,6 +183,9 @@
                 </a>
                 <a href="/Event/Index" class="fab-item fab-event" data-tooltip="Events">
                     <i class="bi bi-calendar-event"></i>
+                </a>
+                <a href="/Document/Index" class="fab-item fab-document" data-tooltip="Documents">
+                    <i class="bi bi-file-earmark-text"></i>
                 </a>
                 <a href="/Account/Profile" class="fab-item fab-profile" data-tooltip="Profile">
                     <i class="bi bi-person"></i>
@@ -366,6 +381,19 @@
     <!-- Then your custom scripts -->
     <script src="~/js/layout.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <!-- Add this right after the JavaScript imports, before the closing </body> tag -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Display last document access time in the footer info
+            const lastDocumentAccess = getCookie('lastDocumentAccess');
+            const lastDocumentAccessElement = document.getElementById('lastDocumentAccess');
 
+            if (lastDocumentAccess && lastDocumentAccessElement) {
+                lastDocumentAccessElement.textContent = formatDate(decodeURIComponent(lastDocumentAccess));
+            } else if (lastDocumentAccessElement) {
+                lastDocumentAccessElement.textContent = "Chưa có thông tin";
+            }
+        });
+    </script>
 </body>
 </html>

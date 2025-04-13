@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "E:\\Web n\u00E2ng cao\\WeChat\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\document.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\document.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\document-management.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\document-management.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\document\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\document\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\document.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\document.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\data\\webchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:data\\webchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\viewmodels\\documentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:viewmodels\\documentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\friendcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\message-index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\data\\webchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:data\\webchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -133,10 +165,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\views\\subscription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:views\\subscription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -169,10 +197,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|solutionrelative:wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB91814A-8F00-4EAA-B7D3-A8B1046AE952}|WeChat.csproj|e:\\web n\u00E2ng cao\\wechat\\wwwroot\\css\\event.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -266,20 +290,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "friend-management.js",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\friend-management.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\friend-management.js",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\friend-management.js",
-              "RelativeToolTip": "wwwroot\\js\\friend-management.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "layout.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\layout.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\layout.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\layout.js",
+              "RelativeToolTip": "wwwroot\\js\\layout.js",
+              "ViewState": "AgIAAKgBAAAAAAAAAAAywMcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-12T13:07:54.494Z",
+              "WhenOpened": "2025-04-12T01:55:56.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:52:42.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "document.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\document.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\document.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\document.css",
+              "RelativeToolTip": "wwwroot\\css\\document.css",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAgwJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-13T14:51:29.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "layout.css",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\layout.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\layout.css",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\layout.css",
+              "RelativeToolTip": "wwwroot\\css\\layout.css",
+              "ViewState": "AgIAACsCAAAAAAAAAAAowFgCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T01:55:47.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "document-management.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\document-management.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\document-management.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\document-management.js",
+              "RelativeToolTip": "wwwroot\\js\\document-management.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-13T14:57:44.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Document\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Document\\Index.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Document\\Index.cshtml",
+              "RelativeToolTip": "Views\\Document\\Index.cshtml",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:04:29.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Profile.cshtml",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T09:18:10.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "document.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\document.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\document.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\document.js",
+              "RelativeToolTip": "wwwroot\\js\\document.js",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAswCABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-13T14:18:17.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WebChatContext.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\WebChatContext.cs",
+              "RelativeDocumentMoniker": "Data\\WebChatContext.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\WebChatContext.cs",
+              "RelativeToolTip": "Data\\WebChatContext.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAqwNEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:44:38.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DocumentController.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "Controllers\\DocumentController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAqwOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T14:03:16.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocumentViewModel.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\DocumentViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DocumentViewModel.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\DocumentViewModel.cs",
+              "RelativeToolTip": "ViewModels\\DocumentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T14:03:52.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Friend\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Friend\\Index.cshtml",
@@ -292,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "FriendController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\FriendController.cs",
               "RelativeDocumentMoniker": "Controllers\\FriendController.cs",
@@ -300,25 +454,36 @@
               "RelativeToolTip": "Controllers\\FriendController.cs",
               "ViewState": "AgIAAJIAAAAAAAAAAAAYwLEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:49:38.769Z",
+              "WhenOpened": "2025-04-12T12:49:38.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Document.cs",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "Models\\Document.cs",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Document.cs",
+              "RelativeToolTip": "Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:07:30.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACYBAAAAAAAAAAAAAHMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T07:52:42.6Z",
-              "EditorCaption": ""
+              "DocumentIndex": 13,
+              "Title": "friend-management.js",
+              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\friend-management.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\friend-management.js",
+              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\friend-management.js",
+              "RelativeToolTip": "wwwroot\\js\\friend-management.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T13:07:54.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "MessageController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\MessageController.cs",
               "RelativeDocumentMoniker": "Controllers\\MessageController.cs",
@@ -326,12 +491,11 @@
               "RelativeToolTip": "Controllers\\MessageController.cs",
               "ViewState": "AgIAADUBAAAAAAAAAAAAwD4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T08:14:51.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T08:14:51.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "ConversationViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\ConversationViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\ConversationViewModel.cs",
@@ -339,12 +503,11 @@
               "RelativeToolTip": "ViewModels\\ConversationViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T15:53:43.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T15:53:43.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Conversation.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Message\\Conversation.cshtml",
               "RelativeDocumentMoniker": "Views\\Message\\Conversation.cshtml",
@@ -357,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "conversation.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\conversation.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\conversation.css",
@@ -365,12 +528,11 @@
               "RelativeToolTip": "wwwroot\\css\\conversation.css",
               "ViewState": "AgIAAKcAAAAAAAAAAAAAwPkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-11T15:32:01.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T15:32:01.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "conversation.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\conversation.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\conversation.js",
@@ -378,12 +540,11 @@
               "RelativeToolTip": "wwwroot\\js\\conversation.js",
               "ViewState": "AgIAAPMBAAAAAAAAAAAwwEACAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T15:32:22.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T15:32:22.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "message-index.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\message-index.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\message-index.js",
@@ -391,25 +552,11 @@
               "RelativeToolTip": "wwwroot\\js\\message-index.js",
               "ViewState": "AgIAAJMCAAAAAAAAAAAwwOACAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T15:59:19.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T15:59:19.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WebChatContext.cs",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\WebChatContext.cs",
-              "RelativeDocumentMoniker": "Data\\WebChatContext.cs",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\WebChatContext.cs",
-              "RelativeToolTip": "Data\\WebChatContext.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAcwMgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:44:38.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -417,12 +564,11 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:55:58.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T07:55:58.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "Friend.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Friend.cs",
               "RelativeDocumentMoniker": "Models\\Friend.cs",
@@ -430,12 +576,11 @@
               "RelativeToolTip": "Models\\Friend.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:46:21.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T12:46:21.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "user-management.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\user-management.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\user-management.js",
@@ -443,12 +588,11 @@
               "RelativeToolTip": "wwwroot\\js\\user-management.js",
               "ViewState": "AgIAAJMDAAAAAAAAAAAIwNwDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-12T08:36:34.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T08:36:34.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "user-subscriptions.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\user-subscriptions.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\user-subscriptions.js",
@@ -456,12 +600,11 @@
               "RelativeToolTip": "wwwroot\\js\\user-subscriptions.js",
               "ViewState": "AgIAAG4AAAAAAAAAAAAgwLoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-12T04:39:50.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T04:39:50.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "subscription-management.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\subscription-management.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\subscription-management.js",
@@ -469,12 +612,11 @@
               "RelativeToolTip": "wwwroot\\js\\subscription-management.js",
               "ViewState": "AgIAAGYBAAAAAAAAAAAAAGYBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T16:43:28.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T16:43:28.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "event.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\event.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\event.js",
@@ -482,12 +624,11 @@
               "RelativeToolTip": "wwwroot\\js\\event.js",
               "ViewState": "AgIAAFICAAAAAAAAAAAkwJgCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-12T02:41:03.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T02:41:03.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "home.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\home.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\home.js",
@@ -495,25 +636,11 @@
               "RelativeToolTip": "wwwroot\\js\\home.js",
               "ViewState": "AgIAAPABAAAAAAAAAAAUwBcCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T17:03:53.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T17:03:53.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "layout.js",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\layout.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\layout.js",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\layout.js",
-              "RelativeToolTip": "wwwroot\\js\\layout.js",
-              "ViewState": "AgIAAEkBAAAAAAAAAAAowI0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-12T01:55:56.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -521,12 +648,11 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAAN8BAAAAAAAAAIAwwAoCAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:51:51.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T07:51:51.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
@@ -539,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "AccountController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -547,12 +673,11 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAlwHMAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:57:47.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T07:57:47.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "CreateUserViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\CreateUserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\CreateUserViewModel.cs",
@@ -560,12 +685,11 @@
               "RelativeToolTip": "ViewModels\\CreateUserViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:12:23.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T12:12:23.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "UpdateUserViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\UpdateUserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UpdateUserViewModel.cs",
@@ -573,12 +697,11 @@
               "RelativeToolTip": "ViewModels\\UpdateUserViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:12:00.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T12:12:00.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -590,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
@@ -602,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -615,20 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Account\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Profile.cshtml",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Account\\Profile.cshtml",
-              "RelativeToolTip": "Views\\Account\\Profile.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T09:18:10.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Event\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Event\\Index.cshtml",
@@ -640,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Message\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Message\\Index.cshtml",
@@ -648,12 +758,11 @@
               "RelativeToolTip": "Views\\Message\\Index.cshtml",
               "ViewState": "AgIAAB0AAAAAAAAAAAAowE0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T08:16:18.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T08:16:18.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "Plans.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\Plans.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Plans.cshtml",
@@ -666,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "MySubscriptions.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Users\\MySubscriptions.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\MySubscriptions.cshtml",
@@ -678,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Views\\Subscription\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Subscription\\Index.cshtml",
@@ -686,23 +795,12 @@
               "RelativeToolTip": "Views\\Subscription\\Index.cshtml",
               "ViewState": "AgIAAGgAAAAAAAAAAAArwJEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T16:15:09.279Z"
+              "WhenOpened": "2025-04-11T16:15:09.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Document.cs",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Document.cs",
-              "RelativeDocumentMoniker": "Models\\Document.cs",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Document.cs",
-              "RelativeToolTip": "Models\\Document.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T08:07:30.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "Attachment.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Attachment.cs",
               "RelativeDocumentMoniker": "Models\\Attachment.cs",
@@ -714,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "SubcriptionController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\SubcriptionController.cs",
               "RelativeDocumentMoniker": "Controllers\\SubcriptionController.cs",
@@ -722,12 +820,11 @@
               "RelativeToolTip": "Controllers\\SubcriptionController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAIwEoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T16:14:40.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T16:14:40.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -739,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "EventController.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventController.cs",
@@ -751,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "site.js",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -763,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "user-management.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\user-management.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\user-management.css",
@@ -775,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "site.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -787,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 48,
               "Title": "profile.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\profile.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\profile.css",
@@ -799,19 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "layout.css",
-              "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\layout.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\layout.css",
-              "ToolTip": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\layout.css",
-              "RelativeToolTip": "wwwroot\\css\\layout.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-12T01:55:47.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "event.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\event.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\event.css",
@@ -823,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
@@ -835,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "SendMessageViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\SendMessageViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\SendMessageViewModel.cs",
@@ -847,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "MessageViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\MessageViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\MessageViewModel.cs",
@@ -859,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
@@ -871,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "EventViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\EventViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\EventViewModel.cs",
@@ -883,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -891,11 +976,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAnwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:47:13.806Z"
+              "WhenOpened": "2025-04-11T07:47:13.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "Subscription.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Subscription.cs",
               "RelativeDocumentMoniker": "Models\\Subscription.cs",
@@ -907,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Helpers\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "Helpers\\PasswordHasher.cs",
@@ -919,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
@@ -931,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "Conversation.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Conversation.cs",
               "RelativeDocumentMoniker": "Models\\Conversation.cs",
@@ -939,12 +1025,11 @@
               "RelativeToolTip": "Models\\Conversation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T15:04:27.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T15:04:27.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "Message.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Message.cs",
               "RelativeDocumentMoniker": "Models\\Message.cs",
@@ -956,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 61,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -968,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 62,
               "Title": "Event.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\Event.cs",
               "RelativeDocumentMoniker": "Models\\Event.cs",
@@ -980,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 63,
               "Title": "UserRole.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "Models\\UserRole.cs",
@@ -992,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "UpdateProfileViewModel.cs",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\ViewModels\\UpdateProfileViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UpdateProfileViewModel.cs",
@@ -1000,12 +1085,11 @@
               "RelativeToolTip": "ViewModels\\UpdateProfileViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T09:18:54.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T09:18:54.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 65,
               "Title": "home.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\home.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\home.css",
@@ -1017,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 66,
               "Title": "home.css",
               "DocumentMoniker": "E:\\Web n\u00E2ng cao\\WeChat\\wwwroot\\css\\home.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\home.css",

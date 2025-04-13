@@ -1,4 +1,5 @@
 wwwroot\css\conversation.css
+wwwroot\css\document.css
 wwwroot\css\event.css
 wwwroot\css\friend-management.css
 wwwroot\css\home.css
@@ -10,6 +11,8 @@ wwwroot\favicon.ico
 wwwroot\images\avatars\default-avatar.png
 wwwroot\images\default-image.png
 wwwroot\js\conversation.js
+wwwroot\js\document.js
+wwwroot\js\document-management.js
 wwwroot\js\event.js
 wwwroot\js\friend-management.js
 wwwroot\js\home.js

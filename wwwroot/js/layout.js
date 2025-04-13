@@ -3,6 +3,14 @@
  * Handles common interactions across the entire site with fetch API
  */
 document.addEventListener('DOMContentLoaded', function () {
+    // Display the last document access time if it exists
+    const documentAccessBtn = document.getElementById('documentAccessBtn');
+    if (documentAccessBtn) {
+        documentAccessBtn.addEventListener('click', function () {
+            showLastDocumentAccess();
+        });
+    }
+
     // Preloader
     setTimeout(function () {
         const preloader = document.querySelector('.preloader');
@@ -395,3 +403,54 @@ function checkImageExists(url, fallbackUrl) {
     };
 }
 
+/**
+ * Show the last document access time in a toast notification
+ */
+function showLastDocumentAccess() {
+    const lastDocumentAccess = getCookie('lastDocumentAccess');
+
+    if (lastDocumentAccess) {
+        const formattedDate = formatDate(decodeURIComponent(lastDocumentAccess));
+        showToast('Document Access', 'Lần cuối truy cập trang quản lý document: ' + formattedDate, 'info');
+    } else {
+        showToast('Document Access', 'Bạn chưa truy cập trang quản lý document', 'info');
+    }
+}
+
+/**
+ * Get a cookie value by name
+ * @param {string} name - Cookie name
+ * @returns {string|null} Cookie value or null if not found
+ */
+function getCookie(name) {
+    const cookieValue = document.cookie
+        .split('; ')
+        .find(row => row.startsWith(`${name}=`));
+
+    if (cookieValue) {
+        return cookieValue.split('=')[1];
+    }
+    return null;
+}
+
+/**
+ * Format a date string for display
+ * @param {string} dateStr - ISO date string
+ * @returns {string} Formatted date
+ */
+function formatDate(dateStr) {
+    if (!dateStr) return '';
+
+    try {
+        const date = new Date(dateStr);
+        return date.toLocaleString('vi-VN', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    } catch (e) {
+        return '';
+    }
+}
